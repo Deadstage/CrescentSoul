@@ -610,3 +610,376 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5718.969911 seconds.
+  path: Assets/Prefabs/Enemy1.prefab
+  artifactKey: Guid(a1642a0dc3ee5e7428f538c41ae33f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy1.prefab using Guid(a1642a0dc3ee5e7428f538c41ae33f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae3601b79438002fefd1de79b5e91bb') in 0.157169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Prefabs/Enemy2.prefab
+  artifactKey: Guid(a615e8231ace4674dbdf97a06313ca75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy2.prefab using Guid(a615e8231ace4674dbdf97a06313ca75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee20261281fa5d01cfbc4fe02168e29b') in 0.030620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.702574 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette
+  artifactKey: Guid(54f2921fb6e38fa48847a0acf11866c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette using Guid(54f2921fb6e38fa48847a0acf11866c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61135b782bc9190065915d26c48a4836') in 0.005313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009579 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Entrance TilePalette.prefab
+  artifactKey: Guid(1aec44f89f522494bb3559baa359b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Entrance TilePalette.prefab using Guid(1aec44f89f522494bb3559baa359b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e9cd2aae5f915d25ebd5767635a34a1') in 0.047419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Fall-Through Floors.prefab
+  artifactKey: Guid(b700ff88a66239c4480e1a7587437ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Fall-Through Floors.prefab using Guid(b700ff88a66239c4480e1a7587437ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808e382c4d1b22464d501aecf4725923') in 0.025106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.042392 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Outside Tileset.png
+  artifactKey: Guid(5b77c6f2266a5c3408d51309ddc39fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Outside Tileset.png using Guid(5b77c6f2266a5c3408d51309ddc39fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '167e9167a9c68d7457a256f87854afa0') in 0.028181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.039055 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Outside Tileset.png
+  artifactKey: Guid(5b77c6f2266a5c3408d51309ddc39fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Outside Tileset.png using Guid(5b77c6f2266a5c3408d51309ddc39fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d547af2ff7fe4c8c72ac9a90ebef3e') in 0.014665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.393954 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Outside Tileset.png
+  artifactKey: Guid(5b77c6f2266a5c3408d51309ddc39fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Outside Tileset.png using Guid(5b77c6f2266a5c3408d51309ddc39fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69905f7f0b23b4dacb522db9e90de172') in 0.018493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.915091 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Outside Tileset.png
+  artifactKey: Guid(5b77c6f2266a5c3408d51309ddc39fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Outside Tileset.png using Guid(5b77c6f2266a5c3408d51309ddc39fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10b501022a985f1158555e485c95abe') in 0.070756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 245.637847 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Outside Tileset.asset
+  artifactKey: Guid(b30460952eeca764bae284dfefbfade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Outside Tileset.asset using Guid(b30460952eeca764bae284dfefbfade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8154fd26913820d94d2a49f27b49d1a8') in 0.012517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.870833 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Outside Auto Tile.asset
+  artifactKey: Guid(b30460952eeca764bae284dfefbfade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Outside Auto Tile.asset using Guid(b30460952eeca764bae284dfefbfade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09607aa2ad51c92b2e2297b8b55e97cb') in 0.008423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.892545 seconds.
+  path: Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Death.png
+  artifactKey: Guid(46fe3e0e745c4534d94034ec6f21bd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Death.png using Guid(46fe3e0e745c4534d94034ec6f21bd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861daf34802958861393f9aed5780e6c') in 0.138681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.375895 seconds.
+  path: Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Hurt.png
+  artifactKey: Guid(c7d785317c8f4604f90f5398198f929f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Hurt.png using Guid(c7d785317c8f4604f90f5398198f929f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e63dd20605b3b9d066d8ea14b03a4bd9') in 0.038661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Leapcrouch.png
+  artifactKey: Guid(dfaab338b67ff7e4c80c927561b60660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Leapcrouch.png using Guid(dfaab338b67ff7e4c80c927561b60660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ceff5d16d16b6e8e84b091f05fad3d7') in 0.017349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Idle.png
+  artifactKey: Guid(517bbbbfed3e69746b2afc6f5c2ad84e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Idle.png using Guid(517bbbbfed3e69746b2afc6f5c2ad84e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39dfdf08a94881b99877e4e56129575') in 0.056393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Leapfall.png
+  artifactKey: Guid(a147c569e9003944088f854e813f49ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Leapfall.png using Guid(a147c569e9003944088f854e813f49ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6e76584ad8d4c9351e3be9aefd3baf') in 0.017990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Leapback.png
+  artifactKey: Guid(beb925ccfa88e9d47ad5ad59e4c072a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Leapback.png using Guid(beb925ccfa88e9d47ad5ad59e4c072a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a03f9caf16f09945e4cd9c3b6dfac1') in 0.015531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031880 seconds.
+  path: Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Stunned.png
+  artifactKey: Guid(37922b337e6c6c14392ca7d291ed7661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Stunned.png using Guid(37922b337e6c6c14392ca7d291ed7661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05326cd0009ad5220fa343e72aae8c3') in 0.041086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Walk.png
+  artifactKey: Guid(7ff02338fc0082543abda54684f7c66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Ranged Enemies/M1/Maid Ranged Walk.png using Guid(7ff02338fc0082543abda54684f7c66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e87c3b05c87cbf3c1a66652b16f77e0') in 0.040181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.282595 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Z1/ZG Attack.png
+  artifactKey: Guid(6d6b60ab13f5d78499586698c4ac40fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Z1/ZG Attack.png using Guid(6d6b60ab13f5d78499586698c4ac40fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b6676f32209df514f2153184bfbebb') in 0.108689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 345.491933 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Entrance TilePalette.prefab
+  artifactKey: Guid(1aec44f89f522494bb3559baa359b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Entrance TilePalette.prefab using Guid(1aec44f89f522494bb3559baa359b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a93d47dadcb313364e778e5a7428d3b3') in 0.023590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 743.191598 seconds.
+  path: Assets/Scripts/ExtendedRuleTile.cs
+  artifactKey: Guid(4e97a25b3a4f0d245aefe54369c72260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ExtendedRuleTile.cs using Guid(4e97a25b3a4f0d245aefe54369c72260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4a16b0293ac9ee0f7c82962985f586b') in 0.005494 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004857 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Games\CrescentSoul\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.470 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1470ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1255ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (535ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (390ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (259ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3875 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 167.7 MB.
+System memory in use after: 164.3 MB.
+
+Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 4480.
+Total: 19.616800 ms (FindLiveObjects: 1.050700 ms CreateObjectMapping: 0.698000 ms MarkObjects: 14.878900 ms  DeleteObjects: 2.987800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005412 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Games\CrescentSoul\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1172ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (974ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (326ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (348ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3875 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 167.7 MB.
+System memory in use after: 164.3 MB.
+
+Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 4483.
+Total: 5.660300 ms (FindLiveObjects: 0.322600 ms CreateObjectMapping: 0.172800 ms MarkObjects: 3.279900 ms  DeleteObjects: 1.884200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 859.567906 seconds.
+  path: Assets/Scripts/ExtendedRuleTile.cs
+  artifactKey: Guid(4e97a25b3a4f0d245aefe54369c72260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ExtendedRuleTile.cs using Guid(4e97a25b3a4f0d245aefe54369c72260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18463fe01d6a626fe2f27a128f33df46') in 0.005867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 198.457000 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Outside Extended Auto Tile.asset
+  artifactKey: Guid(4fc626d832c782f4c964aec496a704a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Outside Extended Auto Tile.asset using Guid(4fc626d832c782f4c964aec496a704a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54c5750b8d76dc6dc697f71b504977d') in 0.027382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1480.124232 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Z1/ZG Death.png
+  artifactKey: Guid(9fc399304ad45fb4f9ff26287abddb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Z1/ZG Death.png using Guid(9fc399304ad45fb4f9ff26287abddb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3172580fbf1ef7b3f79df32030e693b') in 0.177341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.580589 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Entrance Extended Auto tile.asset
+  artifactKey: Guid(ecfb17aae867a6c49af99cb469d7b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Entrance Extended Auto tile.asset using Guid(ecfb17aae867a6c49af99cb469d7b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ccf9d2e42af0943b2d015532393c73') in 0.008371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 324.909761 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Entrance Extended Auto tile.asset
+  artifactKey: Guid(ecfb17aae867a6c49af99cb469d7b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Entrance Extended Auto tile.asset using Guid(ecfb17aae867a6c49af99cb469d7b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c96f28fdb2ae0f1282e4040dcd8cb6') in 0.020081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Outside Auto Tile.asset
+  artifactKey: Guid(b30460952eeca764bae284dfefbfade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Outside Auto Tile.asset using Guid(b30460952eeca764bae284dfefbfade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ef17ddd443c375e4256441f858e75e') in 0.017926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Outside Extended Auto Tile.asset
+  artifactKey: Guid(4fc626d832c782f4c964aec496a704a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Outside Extended Auto Tile.asset using Guid(4fc626d832c782f4c964aec496a704a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4443b99d86add4447d405a06767328b4') in 0.012625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.782829 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Entrance TilePalette.prefab
+  artifactKey: Guid(1aec44f89f522494bb3559baa359b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Entrance TilePalette.prefab using Guid(1aec44f89f522494bb3559baa359b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad48a432a4b12342c8f1c6c969af4f6') in 0.141225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.288148 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Entrance TilePalette.prefab
+  artifactKey: Guid(1aec44f89f522494bb3559baa359b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Entrance TilePalette.prefab using Guid(1aec44f89f522494bb3559baa359b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd13483f7813ab512f010b7dfa0991d8c') in 0.022922 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006789 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Games\CrescentSoul\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.793 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1794ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1540ms)
+			LoadAssemblies (173ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (681ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (460ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (315ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3875 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 167.8 MB.
+System memory in use after: 164.5 MB.
+
+Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 4527.
+Total: 7.822300 ms (FindLiveObjects: 0.423500 ms CreateObjectMapping: 0.324700 ms MarkObjects: 4.769700 ms  DeleteObjects: 2.303500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1064.873152 seconds.
+  path: Assets/Sprites/Level Assets/TilePalette/Entrance Extended Auto tile.asset
+  artifactKey: Guid(ecfb17aae867a6c49af99cb469d7b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/TilePalette/Entrance Extended Auto tile.asset using Guid(ecfb17aae867a6c49af99cb469d7b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492e9aa420c419a3dd65187d0b2ff897') in 0.054560 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
