@@ -1,0 +1,420 @@
+fileFormatVersion: 2
+guid: e389a6a7a5f42c14b90ef7f555e9ecba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8704277862614141552
+    second: MCJumpForwardApex_0
+  - first:
+      213: 6746801194184520388
+    second: MCJumpForwardApex_1
+  - first:
+      213: -2290820231443815505
+    second: MCJumpForwardApex_2
+  - first:
+      213: -190093520824301175
+    second: MCJumpForwardApex_3
+  - first:
+      213: 4086430700183922394
+    second: MCJumpForwardApex_4
+  - first:
+      213: 175993147122463075
+    second: MCJumpForwardApex_5
+  - first:
+      213: -2368789592459090533
+    second: MCJumpForwardApex_6
+  - first:
+      213: 4619946021587138494
+    second: MCJumpForwardApex_7
+  - first:
+      213: 970567196688637449
+    second: MCJumpForwardApex_8
+  - first:
+      213: 8387801865653844441
+    second: MCJumpForwardApex_9
+  - first:
+      213: -7964647017480822931
+    second: MCJumpForwardApex_10
+  - first:
+      213: -4974102530581669380
+    second: MCJumpForwardApex_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MCJumpForwardApex_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0957694b661343780800000000000000
+      internalID: -8704277862614141552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2bc85a0f371ad50800000000000000
+      internalID: 6746801194184520388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa36384032f5530e0800000000000000
+      internalID: -2290820231443815505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_3
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9890a2133f6ac5df0800000000000000
+      internalID: -190093520824301175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_4
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6a6bb221be5b830800000000000000
+      internalID: 4086430700183922394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_5
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3613329b5d0417200800000000000000
+      internalID: 175993147122463075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_6
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9565d18a6e502fd0800000000000000
+      internalID: -2368789592459090533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_7
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb73e2add685d1040800000000000000
+      internalID: 4619946021587138494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_8
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ed54d19b5287d00800000000000000
+      internalID: 970567196688637449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_9
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9f7a83b55776470800000000000000
+      internalID: 8387801865653844441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_10
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f5ea17cb3e77190800000000000000
+      internalID: -7964647017480822931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCJumpForwardApex_11
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 0
+        width: 161
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5913238, y: 0.5230845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9de443a1078fab0800000000000000
+      internalID: -4974102530581669380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1212 @@
+fileFormatVersion: 2
+guid: 9fc399304ad45fb4f9ff26287abddb8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3824261667710023266
+    second: ZG Death_0
+  - first:
+      213: -8580520902131920601
+    second: ZG Death_1
+  - first:
+      213: -6790738289589646348
+    second: ZG Death_2
+  - first:
+      213: -6729053220939035033
+    second: ZG Death_3
+  - first:
+      213: -1783921921135858210
+    second: ZG Death_4
+  - first:
+      213: -7986747381826295042
+    second: ZG Death_5
+  - first:
+      213: 4599219845494042862
+    second: ZG Death_6
+  - first:
+      213: -1706434754955492391
+    second: ZG Death_7
+  - first:
+      213: -359109447723008011
+    second: ZG Death_8
+  - first:
+      213: 3989043332986587914
+    second: ZG Death_9
+  - first:
+      213: -6305609699500833693
+    second: ZG Death_10
+  - first:
+      213: 3638595842095857092
+    second: ZG Death_11
+  - first:
+      213: 676303545241965410
+    second: ZG Death_12
+  - first:
+      213: 8816048382342106854
+    second: ZG Death_13
+  - first:
+      213: -6454675982911759073
+    second: ZG Death_14
+  - first:
+      213: 5529499040849075893
+    second: ZG Death_15
+  - first:
+      213: -1258077505261100820
+    second: ZG Death_16
+  - first:
+      213: 7247125724971264574
+    second: ZG Death_17
+  - first:
+      213: 7095808118963277164
+    second: ZG Death_18
+  - first:
+      213: 4925892669202185322
+    second: ZG Death_19
+  - first:
+      213: -716829527934588030
+    second: ZG Death_20
+  - first:
+      213: 9038736522319927407
+    second: ZG Death_21
+  - first:
+      213: -4768135644316808459
+    second: ZG Death_22
+  - first:
+      213: -4981842940997164563
+    second: ZG Death_23
+  - first:
+      213: 4873209874106991493
+    second: ZG Death_24
+  - first:
+      213: 7737159550331844182
+    second: ZG Death_25
+  - first:
+      213: -6301960683039913148
+    second: ZG Death_26
+  - first:
+      213: 358977636711836689
+    second: ZG Death_27
+  - first:
+      213: -6395367471984632265
+    second: ZG Death_28
+  - first:
+      213: 5698726986496377781
+    second: ZG Death_29
+  - first:
+      213: 1103051926718985587
+    second: ZG Death_30
+  - first:
+      213: -6043859609277056154
+    second: ZG Death_31
+  - first:
+      213: -3358842722226642698
+    second: ZG Death_32
+  - first:
+      213: -1501465486152994531
+    second: ZG Death_33
+  - first:
+      213: 6530823688951767974
+    second: ZG Death_34
+  - first:
+      213: 1894291903047232329
+    second: ZG Death_35
+  - first:
+      213: -7465059394992463256
+    second: ZG Death_36
+  - first:
+      213: -8235199307807760355
+    second: ZG Death_37
+  - first:
+      213: 1240044034763075281
+    second: ZG Death_38
+  - first:
+      213: -7940156171611213182
+    second: ZG Death_39
+  - first:
+      213: -8632714011274474763
+    second: ZG Death_40
+  - first:
+      213: 8698498428544636251
+    second: ZG Death_41
+  - first:
+      213: 2770729437704663563
+    second: ZG Death_42
+  - first:
+      213: 945066279392137393
+    second: ZG Death_43
+  - first:
+      213: 6600871520927005559
+    second: ZG Death_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ZG Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e994008664e7deac0800000000000000
+      internalID: -3824261667710023266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721dc9873bddbe880800000000000000
+      internalID: -8580520902131920601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb8d56218372c1a0800000000000000
+      internalID: -6790738289589646348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e0b336fb99d92a0800000000000000
+      internalID: -6729053220939035033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd2aafd67c3e37e0800000000000000
+      internalID: -1783921921135858210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa6673629f592190800000000000000
+      internalID: -7986747381826295042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0799ee416b3df30800000000000000
+      internalID: 4599219845494042862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d34f76a1a68158e0800000000000000
+      internalID: -1706434754955492391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffbbf42cdf240bf0800000000000000
+      internalID: -359109447723008011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b4e48c6cdeb5730800000000000000
+      internalID: 3989043332986587914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364cef80369fd78a0800000000000000
+      internalID: -6305609699500833693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd3659e3a3ee7230800000000000000
+      internalID: 3638595842095857092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2631c7ebd76b26900800000000000000
+      internalID: 676303545241965410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee88285b45e85a70800000000000000
+      internalID: 8816048382342106854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d9c4254626c66a0800000000000000
+      internalID: -6454675982911759073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be1ca3c41abcbc40800000000000000
+      internalID: 5529499040849075893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0a00fac296a8ee0800000000000000
+      internalID: -1258077505261100820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_17
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ae18f2376f29460800000000000000
+      internalID: 7247125724971264574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_18
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d832593ef597260800000000000000
+      internalID: 7095808118963277164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_19
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c3f7db8494c5440800000000000000
+      internalID: 4925892669202185322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_20
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ba2fe975f4d06f0800000000000000
+      internalID: -716829527934588030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_21
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f689a3f4afa007d70800000000000000
+      internalID: 9038736522319927407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_22
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa4e97e4ed24ddb0800000000000000
+      internalID: -4768135644316808459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_23
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1a3177d30fcdab0800000000000000
+      internalID: -4981842940997164563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_24
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583c216af8e11a340800000000000000
+      internalID: 4873209874106991493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_25
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656fc082e99ef5b60800000000000000
+      internalID: 7737159550331844182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_26
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b8de2e520fa88a0800000000000000
+      internalID: -6301960683039913148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_27
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ca48632485bf400800000000000000
+      internalID: 358977636711836689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_28
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e94481b271f37a0800000000000000
+      internalID: -6395367471984632265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_29
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b38c064002f51f40800000000000000
+      internalID: 5698726986496377781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_30
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37535e412e3de4f00800000000000000
+      internalID: 1103051926718985587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_31
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bb5b405b5ef1ca0800000000000000
+      internalID: -6043859609277056154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_32
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0664d075ef261d0800000000000000
+      internalID: -3358842722226642698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_33
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11775f6819b92be0800000000000000
+      internalID: -1501465486152994531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_34
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a32da61b8522aa50800000000000000
+      internalID: 6530823688951767974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_35
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b670e0370e94a10800000000000000
+      internalID: 1894291903047232329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_36
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86228462808c66890800000000000000
+      internalID: -7465059394992463256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_37
+      rect:
+        serializedVersion: 2
+        x: 4736
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10639b8cd1b6bd80800000000000000
+      internalID: -8235199307807760355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_38
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de25e5ca75853110800000000000000
+      internalID: 1240044034763075281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_39
+      rect:
+        serializedVersion: 2
+        x: 4992
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282fcf9d706eec190800000000000000
+      internalID: -7940156171611213182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_40
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa82764850723880800000000000000
+      internalID: -8632714011274474763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_41
+      rect:
+        serializedVersion: 2
+        x: 5248
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5552b0fb3647b870800000000000000
+      internalID: 8698498428544636251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_42
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02ba1f5ebb937620800000000000000
+      internalID: 2770729437704663563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_43
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b05e5026cc8d1d00800000000000000
+      internalID: 945066279392137393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZG Death_44
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.4840605, y: 0.4187946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bb8d4eca10b9b50800000000000000
+      internalID: 6600871520927005559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

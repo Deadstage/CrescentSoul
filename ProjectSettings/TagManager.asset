@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Enemy
+  - enemy
+  - firstCam
+  - ParticleContainer
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - Player
+  - Ground
+  - Damageable
+  - test
+  - Dead Layer
+  - Weapon
+  - Boundary
+  - WorldCollider
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1252536059
+    locked: 0
+  - name: Floor
+    uniqueID: 1699127141
+    locked: 0
+  - name: Enemy
+    uniqueID: 1349380357
+    locked: 0
+  - name: Player
+    uniqueID: 2216200721
+    locked: 0
+  - name: Foreground
+    uniqueID: 2837371147
+    locked: 0
+  - name: UI
+    uniqueID: 4069417945
+    locked: 0

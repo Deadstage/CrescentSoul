@@ -1,0 +1,540 @@
+fileFormatVersion: 2
+guid: f7a13efc326016a47a2535b7f61953c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4654827603169444102
+    second: MC Idle New Attack 1 Blade_0
+  - first:
+      213: 5848186502610784631
+    second: MC Idle New Attack 1 Blade_1
+  - first:
+      213: -9162466778290540181
+    second: MC Idle New Attack 1 Blade_2
+  - first:
+      213: 1419910521762176826
+    second: MC Idle New Attack 1 Blade_3
+  - first:
+      213: 5383859274379606992
+    second: MC Idle New Attack 1 Blade_4
+  - first:
+      213: 8025270668244391204
+    second: MC Idle New Attack 1 Blade_5
+  - first:
+      213: 4307017358848850615
+    second: MC Idle New Attack 1 Blade_6
+  - first:
+      213: -6936839910732824237
+    second: MC Idle New Attack 1 Blade_7
+  - first:
+      213: -917950894061731604
+    second: MC Idle New Attack 1 Blade_8
+  - first:
+      213: -6853224555451208975
+    second: MC Idle New Attack 1 Blade_9
+  - first:
+      213: 2480675758901090959
+    second: MC Idle New Attack 1 Blade_10
+  - first:
+      213: -8145947842214511081
+    second: MC Idle New Attack 1 Blade_11
+  - first:
+      213: 329445903831370107
+    second: MC Idle New Attack 1 Blade_12
+  - first:
+      213: -3722126583836373018
+    second: MC Idle New Attack 1 Blade_13
+  - first:
+      213: 399435358414970498
+    second: MC Idle New Attack 1 Blade_14
+  - first:
+      213: 1007197408219038998
+    second: MC Idle New Attack 1 Blade_15
+  - first:
+      213: -7595519521717208388
+    second: MC Idle New Attack 1 Blade_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afef66e05fab66fb0800000000000000
+      internalID: -4654827603169444102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771995c93aee82150800000000000000
+      internalID: 5848186502610784631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61bcad820168d080800000000000000
+      internalID: -9162466778290540181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f5976b81984b310800000000000000
+      internalID: 1419910521762176826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_4
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbb6123c7f47ba40800000000000000
+      internalID: 5383859274379606992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_5
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425911f272d7f5f60800000000000000
+      internalID: 8025270668244391204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_6
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba70a3e77995cb30800000000000000
+      internalID: 4307017358848850615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_7
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3518409aad46bbf90800000000000000
+      internalID: -6936839910732824237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_8
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0c23e7688c243f0800000000000000
+      internalID: -917950894061731604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_9
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1faa856a39474e0a0800000000000000
+      internalID: -6853224555451208975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_10
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ad834a5712d6220800000000000000
+      internalID: 2480675758901090959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_11
+      rect:
+        serializedVersion: 2
+        x: 3212
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71eb1f9b897c3fe80800000000000000
+      internalID: -8145947842214511081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_12
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b798396dd4d629400800000000000000
+      internalID: 329445903831370107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_13
+      rect:
+        serializedVersion: 2
+        x: 3796
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef0569b799585cc0800000000000000
+      internalID: -3722126583836373018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_14
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e1e0997541b8500800000000000000
+      internalID: 399435358414970498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_15
+      rect:
+        serializedVersion: 2
+        x: 4380
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6150797d4b84afd00800000000000000
+      internalID: 1007197408219038998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Idle New Attack 1 Blade_16
+      rect:
+        serializedVersion: 2
+        x: 4672
+        y: 0
+        width: 292
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba308fdc3b479690800000000000000
+      internalID: -7595519521717208388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
