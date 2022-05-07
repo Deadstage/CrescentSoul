@@ -1,4 +1,5 @@
- using UnityEngine;
+ 
+using UnityEngine;
 using UnityEngine.Tilemaps;
  
 [CreateAssetMenu(fileName = "Extended Rule Tile", menuName = "2D/Tiles/Extended Rule Tile")]
