@@ -8,7 +8,7 @@ TagManager:
   - Enemy
   - enemy
   - firstCam
-  - ParticleContainer
+  - Health Bar
   layers:
   - Default
   - TransparentFX
