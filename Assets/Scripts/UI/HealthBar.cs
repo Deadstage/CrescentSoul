@@ -5,16 +5,23 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public HealthBar healthBar;
     private Core core;
-    private Player player;
-    public Slider slider;
-    private Stats Stats { get => stats ?? core.GetCoreComponent(ref stats); }
-    private Stats stats;
+    private GameObject player;
 
-    private void Start()
+    public Slider slider;
+    public HealthBar healthBar;
+
+    private Stats Stats { get => stats ?? core.GetCoreComponent(ref stats); }
+    public Stats stats;
+
+    void Awake()
     {
-        GameObject.Find("Player");
+        Debug.Log(stats);
+
+        player = GameObject.Find("Player");
+        player.GetComponentInChildren<Core>();
+        stats.OnHealthChange += UpdateHealthBar;
+
     }
 
     private void UpdateHealthBar(float value)
@@ -23,13 +30,13 @@ public class HealthBar : MonoBehaviour
         slider.value = stats.currentHealth;
     }
 
-  private void OnEnable()
+    private void OnEnable()
     {
-    stats.OnHealthChange += UpdateHealthBar;
+        stats.OnHealthChange += UpdateHealthBar;
     }
 
     private void OnDisable()
     {
-    stats.OnHealthChange -= UpdateHealthBar;
+        stats.OnHealthChange -= UpdateHealthBar;
     }
 }
