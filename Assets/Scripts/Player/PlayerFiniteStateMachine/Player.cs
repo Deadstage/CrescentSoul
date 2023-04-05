@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IPlayerState
 {
     #region State Variables
     public PlayerStateMachine StateMachine { get; private set; }
@@ -15,11 +15,21 @@ public class Player : MonoBehaviour
     public PlayerDashState DashState { get; private set; }
     public PlayerCrouchIdleState CrouchIdleState { get; private set; }
     public PlayerCrouchMoveState CrouchMoveState { get; private set; }
+    public PlayerCrouchAttackState CrouchAttackState { get; private set; }
     public PlayerAttackState PrimaryAttackState { get; private set; }
     public PlayerAttackState SecondaryAttackState { get; private set; }
+    public PlayerStunState StunState { get; private set; }
+    public PlayerEngagedState EngagedState { get; private set; }
 
     [SerializeField]
     private PlayerData playerData;
+
+    public Stats stats;
+    private Stats Stats => stats ? stats : Core.GetCoreComponent(ref stats);
+
+    public Movement movement;
+    private Movement Movement => movement ? movement : Core.GetCoreComponent(ref movement);
+
     #endregion
 
     #region Components
@@ -31,11 +41,14 @@ public class Player : MonoBehaviour
     public PlayerInventory Inventory { get; private set; }
     #endregion
 
+    public SceneDictionary sceneDictionary;
+
     #region Other Variables
 
     private Vector2 workspace;
 
     public bool canFlip = true;
+    public bool isEngaged = false;
 
     public float movementForceInAir;
     public float airDragMultiplier = 0.95f;
@@ -56,8 +69,11 @@ public class Player : MonoBehaviour
         DashState = new PlayerDashState(this, StateMachine, playerData, "backDash");
         CrouchIdleState = new PlayerCrouchIdleState(this, StateMachine, playerData, "crouchIdle");
         CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData, "crouchMove");
+        CrouchAttackState = new PlayerCrouchAttackState(this, StateMachine, playerData, "crouchAttack");
         PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
         SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
+        StunState = new PlayerStunState(this, StateMachine, playerData, "stun");
+        EngagedState = new PlayerEngagedState(this, StateMachine, playerData, "engage");
     }
 
     private void Start()
@@ -70,14 +86,23 @@ public class Player : MonoBehaviour
 
         PrimaryAttackState.SetStance(Inventory.stances[(int)CombatInputs.primary]);
         //SecondaryAttackState.SetStance(Inventory.stances[(int)CombatInputs.primary]);
+        CrouchAttackState.SetStance(Inventory.stances[(int)CombatInputs.primary]);
 
         StateMachine.Initialize(IdleState);
+
+        Stats.StaminaZero += () => StateMachine.ChangeState(StunState);
     }
 
     private void Update()
     {
         Core.LogicUpdate();
         StateMachine.CurrentState.LogicUpdate();
+
+        if(isEngaged == true)
+        {
+            //this.gameObject.SetActive(false);
+            StateMachine.ChangeState(EngagedState);
+        }
     }
 
     private void FixedUpdate()
@@ -102,6 +127,17 @@ public class Player : MonoBehaviour
     private void AnimationTriggerFunction() => StateMachine.CurrentState.AnimationFinishTrigger();
 
     private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
+
+    public PlayerState CurrentPlayerState()
+    {
+        return StateMachine.CurrentState;
+
+    }
+
+    public void PlayerEngaged()
+    {
+        movement.SetVelocityX(0f);
+    }
 
 
     #endregion

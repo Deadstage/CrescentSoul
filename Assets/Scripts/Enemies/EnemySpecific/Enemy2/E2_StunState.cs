@@ -5,6 +5,8 @@ using UnityEngine;
 public class E2_StunState : StunState
 {
     private Enemy2 enemy;
+
+    public PlayerEnemyCache playerEnemyCache;
     public E2_StunState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_StunState stateData, Enemy2 enemy) : base(etity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;
@@ -18,6 +20,7 @@ public class E2_StunState : StunState
     public override void Enter()
     {
         base.Enter();
+        playerEnemyCache = GameObject.FindObjectOfType<PlayerEnemyCache>();
     }
 
     public override void Exit()

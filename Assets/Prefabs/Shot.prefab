@@ -158,6 +158,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   damagePosition: {fileID: 6128479083115410624}
+  rangedAttackStateData: {fileID: 11400000, guid: 4323d1d3e1a3b564d9ee44b5f2ddb1e7, type: 2}
 --- !u!95 &2916365403167061373
 Animator:
   serializedVersion: 3

@@ -6,6 +6,8 @@ public class E2_PlayerDetectedState : PlayerDetectedState
 {
     private Enemy2 enemy;
 
+    public PlayerEnemyCache playerEnemyCache;
+
     public E2_PlayerDetectedState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_PlayerDetected stateData, Enemy2 enemy) : base(etity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;
@@ -19,6 +21,7 @@ public class E2_PlayerDetectedState : PlayerDetectedState
     public override void Enter()
     {
         base.Enter();
+        playerEnemyCache = GameObject.FindObjectOfType<PlayerEnemyCache>();
     }
 
     public override void Exit()
@@ -32,11 +35,24 @@ public class E2_PlayerDetectedState : PlayerDetectedState
 
         if (performCloseRangeAction)
         {
-            if (Time.time >= enemy.dodgeState.startTime + enemy.dodgeStateData.dodgeCooldown)
+            playerEnemyCache?.CheckPlayerState();
+
+            if (Time.time >= enemy.dodgeState.startTime + enemy.dodgeStateData.dodgeCooldown && playerEnemyCache.playerIsStunned == true)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+
+            else if (Time.time >= enemy.dodgeState.startTime + enemy.dodgeStateData.dodgeCooldown && playerEnemyCache.playerIsStunned == false)
             {
                 stateMachine.ChangeState(enemy.dodgeState);
             }
-            else
+            
+            else if (playerEnemyCache.playerIsStunned == true && performCloseRangeAction)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+
+            else if (playerEnemyCache.playerIsStunned == false && performCloseRangeAction)
             {
                 stateMachine.ChangeState(enemy.meleeAttackState);
             }
@@ -45,7 +61,17 @@ public class E2_PlayerDetectedState : PlayerDetectedState
 
         else if (performLongRangeAction)
         {
-            stateMachine.ChangeState(enemy.rangedAttackState);
+            playerEnemyCache?.CheckPlayerState();
+
+            if(playerEnemyCache.playerIsStunned == true && performLongRangeAction)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+
+            else if (playerEnemyCache.playerIsStunned == false && performLongRangeAction)
+            {
+                stateMachine.ChangeState(enemy.rangedAttackState);
+            }
         }
         
         else if (!isPlayerInMaxAgroRange)

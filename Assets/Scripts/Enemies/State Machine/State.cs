@@ -8,6 +8,8 @@ public class State
     protected Entity entity;
     protected Core core;
 
+    protected SceneDictionary sceneDictionary;
+
     public float startTime { get; protected set; }
 
     protected string animBoolName;
@@ -18,6 +20,7 @@ public class State
         this.stateMachine = stateMachine;
         this.animBoolName = animBoolName;
         core = entity.Core;
+        sceneDictionary = GameObject.Find("ScenePlayer").GetComponent<SceneDictionary>();
     }
 
     public virtual void Enter()

@@ -10,8 +10,6 @@ public class VerticalPlatform : MonoBehaviour
     private bool FallThroughInput;
     private bool FallThroughInputStop;
 
-
-
     private void Start()
     {
         playerInputHandler = FindObjectOfType<PlayerInputHandler>();

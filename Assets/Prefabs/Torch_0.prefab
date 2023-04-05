@@ -152,12 +152,12 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0.68675137, b: 0.19339621, a: 1}
   m_Intensity: 1.38
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000fb2ea84a659f466505e96d50118a1884d9638ef20bd91ea9
+  m_ApplyToSortingLayers: 00000000fb2ea84a659f466505e96d50118a18840bd91ea9
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 230.69
   m_PointLightOuterAngle: 320.41

@@ -6,6 +6,10 @@ public class E1_StunState : StunState
 {
 
     private Enemy1 enemy;
+
+    //Player State Detection
+    public PlayerEnemyCache playerEnemyCache;
+
     public E1_StunState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_StunState stateData, Enemy1 enemy) : base(etity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;
@@ -19,6 +23,7 @@ public class E1_StunState : StunState
     public override void Enter()
     {
         base.Enter();
+        playerEnemyCache = GameObject.FindObjectOfType<PlayerEnemyCache>();
     }
 
     public override void Exit()
@@ -32,7 +37,13 @@ public class E1_StunState : StunState
 
         if (isStunTimeOver)
         {
-            if (performCloseRangeAction)
+            playerEnemyCache?.CheckPlayerState();
+
+            if (performCloseRangeAction && playerEnemyCache.playerIsStunned == true)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+            else if (performCloseRangeAction && playerEnemyCache.playerIsStunned == false)
             {
                 stateMachine.ChangeState(enemy.meleeAttackState);
             }

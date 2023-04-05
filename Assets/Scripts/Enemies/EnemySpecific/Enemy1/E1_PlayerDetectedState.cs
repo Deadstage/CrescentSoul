@@ -10,6 +10,10 @@ public class E1_PlayerDetectedState : PlayerDetectedState
 
     private Enemy1 enemy;
 
+    //Player State Detection
+    public PlayerEnemyCache playerEnemyCache;
+    
+
     public E1_PlayerDetectedState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_PlayerDetected stateData, Enemy1 enemy) : base(etity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;
@@ -18,6 +22,10 @@ public class E1_PlayerDetectedState : PlayerDetectedState
     public override void Enter()
     {
         base.Enter();
+        playerEnemyCache = GameObject.FindObjectOfType<PlayerEnemyCache>();
+        
+        //Player State Detection
+        //playerEnemyCache.CheckPlayerState();
     }
 
     public override void Exit()
@@ -30,23 +38,113 @@ public class E1_PlayerDetectedState : PlayerDetectedState
         base.LogicUpdate();
 
         if (performCloseRangeAction)
-        {
-            stateMachine.ChangeState(enemy.meleeAttackState);
+        {   
+            playerEnemyCache?.CheckPlayerState();
+
+            if(playerEnemyCache.playerIsStunned == true)
+            {
+                Debug.Log("Charging");
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+
+            else if(playerEnemyCache.playerIsStunned == false && performCloseRangeAction)
+            {
+                Debug.Log("Attacking");
+                stateMachine.ChangeState(enemy.meleeAttackState);
+            }
         }
 
         else if (performLongRangeAction)
         {
-            stateMachine.ChangeState(enemy.chargeState);
+            playerEnemyCache?.CheckPlayerState();
+
+            if(playerEnemyCache.playerIsStunned == true)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+
+            else if(playerEnemyCache.playerIsStunned == false && performLongRangeAction)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
         }
+
         else if (!isPlayerInMaxAgroRange)
         {
-            stateMachine.ChangeState(enemy.lookForPlayerState);
+            playerEnemyCache?.CheckPlayerState();
+
+            if(playerEnemyCache.playerIsStunned == true)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+
+            else if(playerEnemyCache.playerIsStunned == false && !isPlayerInMaxAgroRange)
+            {
+                stateMachine.ChangeState(enemy.lookForPlayerState);
+            }
         }
+
         else if (!isDetectingLedge)
         {
-            Movement?.Flip();
-            stateMachine.ChangeState(enemy.moveState);
+            playerEnemyCache?.CheckPlayerState();
+
+            if(playerEnemyCache.playerIsStunned == true)
+            {   
+                Movement?.Flip();
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+
+            else if(playerEnemyCache.playerIsStunned == false && !isDetectingLedge)
+            {
+                Movement?.Flip();
+                stateMachine.ChangeState(enemy.moveState);
+            }
         }
+
+        // else if (playerEnemyCache.playerIsStunned == true)
+        // {
+        //     stateMachine.ChangeState(enemy.chargeState);
+        // }
+
+        //------------------------------------------------------------------
+
+        // else if (isPlayerStunned == true && performCloseRangeAction)
+        // {
+        //     stateMachine.ChangeState(enemy.chargeState);
+        // }
+        // else if (isPlayerStunned == true && performLongRangeAction)
+        // {
+        //     stateMachine.ChangeState(enemy.chargeState);
+        // }
+        // else if (isPlayerStunned == true && !isPlayerInMaxAgroRange)
+        // {
+        //     stateMachine.ChangeState(enemy.chargeState);
+        // }
+        // else if (isPlayerStunned == true && !isDetectingLedge)
+        // {
+        //     movement?.Flip();
+        //     stateMachine.ChangeState(enemy.chargeState);
+        // }
+
+        //------------------------------------------------------------------
+
+        // else if (isPlayerStunned == false && performCloseRangeAction)
+        // {
+        //     stateMachine.ChangeState(enemy.meleeAttackState);
+        // }
+        // else if (isPlayerStunned == false && performLongRangeAction)
+        // {
+        //     stateMachine.ChangeState(enemy.chargeState);
+        // }
+        // else if (isPlayerStunned == false && !isPlayerInMaxAgroRange)
+        // {
+        //     stateMachine.ChangeState(enemy.lookForPlayerState);
+        // }
+        // else if (isPlayerStunned == false && !isDetectingLedge)
+        // {
+        //     Movement?.Flip();
+        //     stateMachine.ChangeState(enemy.moveState);
+        // }
 
     }
 

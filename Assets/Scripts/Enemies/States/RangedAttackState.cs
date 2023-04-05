@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RangedAttackState : AttackState
 {
+    protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
+    private Movement movement;
+
     protected D_RangedAttackState stateData;
 
     protected GameObject projectile;

@@ -9,6 +9,8 @@ public class PlayerGroundedState : PlayerState
 
     protected bool isTouchingCeiling;
 
+    private PlayerCrouchAttackState crouchAttack;
+
     protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
     private Movement movement;
 
@@ -65,6 +67,11 @@ public class PlayerGroundedState : PlayerState
         {
             stateMachine.ChangeState(player.SecondaryAttackState);
         }
+        else if (player.InputHandler.AttackInputs[(int)CombatInputs.primary] && crouchAttack.isCrouching == true)
+        {
+            stateMachine.ChangeState(player.CrouchAttackState);
+        }
+
 
         else if (JumpInput && player.JumpState.CanJump() && !isTouchingCeiling)
         {
@@ -85,4 +92,16 @@ public class PlayerGroundedState : PlayerState
     {
         base.PhysicsUpdate();
     }
+
+    //public bool PlayerGrounded()
+    //{
+    //    if (!isGrounded)
+    //    {
+    //        return isGrounded = false;
+    //    }
+    //    else
+    //    {
+    //        return isGrounded = true;
+    //    }
+    //}
 }

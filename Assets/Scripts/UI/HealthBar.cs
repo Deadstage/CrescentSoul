@@ -16,7 +16,7 @@ public class HealthBar : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log(stats);
+        //Debug.Log(stats);
 
         player = GameObject.Find("Player");
         player.GetComponentInChildren<Core>();

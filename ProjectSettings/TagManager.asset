@@ -9,6 +9,9 @@ TagManager:
   - enemy
   - firstCam
   - Health Bar
+  - ParticleContainer
+  - Entity
+  - eightCam
   layers:
   - Default
   - TransparentFX
@@ -20,12 +23,12 @@ TagManager:
   - Player
   - Ground
   - Damageable
-  - test
-  - Dead Layer
+  - Engaged1Layer
+  - Engaged2Layer
   - Weapon
   - Boundary
   - WorldCollider
-  - 
+  - DeadLayer
   - 
   - 
   - 

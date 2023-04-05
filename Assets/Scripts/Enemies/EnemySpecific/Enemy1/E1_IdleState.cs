@@ -6,6 +6,9 @@ public class E1_IdleState : IdleState
 {
     private Enemy1 enemy;
 
+    //Player State Detection
+    public PlayerEnemyCache playerEnemyCache;
+
     public E1_IdleState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData, Enemy1 enemy) : base(etity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;

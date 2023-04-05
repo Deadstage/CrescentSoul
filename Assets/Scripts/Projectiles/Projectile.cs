@@ -27,6 +27,16 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     private Transform damagePosition;
 
+    protected D_RangedAttackState stateData;
+
+    [SerializeField]
+    private D_RangedAttackState rangedAttackStateData;
+
+    private Core core;
+
+    protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
+    private Movement movement;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -62,7 +72,15 @@ public class Projectile : MonoBehaviour
 
             if (damageHit)
             {
-                //damageHit.transform.SendMessage("Damage", attackDetails);
+                if(damageHit.TryGetComponent(out IDamageable damageable))
+{
+                damageable.Damage(10);
+
+                //if (damageHit.TryGetComponent(out IKnockbackable knockbackable))
+                //{
+                //knockbackable.Knockback(stateData.knockbackAngle, stateData.knockbackStrength, Movement.FacingDirection);
+                //}
+}
                 Destroy(gameObject);
             }
 

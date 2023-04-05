@@ -17,6 +17,7 @@ MonoBehaviour:
   amountOfJumps: 1
   coyoteTime: 0.2
   variableJumpHeightMultiplier: 0.5
+  airDrag: 5
   dashCooldown: 0.5
   dashTime: 0.2
   dashVelocity: 19
@@ -26,7 +27,4 @@ MonoBehaviour:
   crouchMovementVelocity: 5
   crouchColliderHeight: 0.62
   standColliderHeight: 1.05
-  groundCheckRadius: 0.3
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
+  stunTime: 10

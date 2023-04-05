@@ -23,7 +23,6 @@ public class PlayerCrouchIdleState : PlayerGroundedState
     {
         base.Exit();
         player.SetColliderHeight(playerData.standColliderHeight);
-        isCrouching = false;
     }
 
     public override void LogicUpdate()
@@ -40,6 +39,12 @@ public class PlayerCrouchIdleState : PlayerGroundedState
             {
                 stateMachine.ChangeState(player.IdleState);
             }
+        }
+
+        if (player.InputHandler.AttackInputs[(int)CombatInputs.primary])
+        {
+            isCrouching = true;
+            stateMachine.ChangeState(player.CrouchAttackState);
         }
     }
 }

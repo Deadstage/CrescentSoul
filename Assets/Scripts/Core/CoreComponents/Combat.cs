@@ -23,25 +23,63 @@ public class Combat : CoreComponent, IDamageable, IKnockbackable
     private CollisionSenses collisionSenses;
     private Stats stats;
 
+    private bool isDamageImmune;
+    private float damageImmuneStartTime;
+
+    private bool isKnockbackImmune;
+    private float knockbackImmuneStartTime;
+
+    [SerializeField]
+    private float maxDamageImmuneTime = 1.0f;
+    [SerializeField]
+    private float maxKnockbackImmuneTime = 1.0f;
+
+    [SerializeField]
+    public bool canImmuneDamage;
+    [SerializeField]
+    public bool canImmuneKnockback;
+
 
     public override void LogicUpdate()
     {
         CheckKnockback();
+        CheckDamageImmune();
+        CheckKnockbackImmune();
     }
 
     public void Damage(float amount)
     {
-        Debug.Log(core.transform.parent.name + " Damaged!");
-        Stats?.DecreaseHealth(amount);
-        ParticleManager?.StartParticlesWithRandomRotation(damageParticles);
+        if (isDamageImmune == false)
+        {
+            //Debug.Log(core.transform.parent.name + "Damaged!");
+            Stats?.DecreaseHealth(amount);
+            Stats?.ExternalDecreaseStamina(amount);
+            ParticleManager?.StartParticlesWithRandomRotation(damageParticles);
+
+            if (canImmuneDamage == true)
+            {
+                isDamageImmune = true;
+                damageImmuneStartTime = Time.time;
+            }
+        }
+
     }
 
     public void Knockback(Vector2 angle, float strength, int direction)
     {
-        Movement?.SetVelocity(strength, angle, direction);
-        Movement.CanSetVelocity = false;
-        isKnockbackActive = true;
-        knockbackStartTime = Time.time;
+        if (isKnockbackImmune == false)
+        {
+            Movement?.SetVelocity(strength, angle, direction);
+            Movement.CanSetVelocity = false;
+            isKnockbackActive = true;
+            knockbackStartTime = Time.time;
+
+            if (canImmuneKnockback == true)
+            {
+                isKnockbackImmune = true;
+                knockbackImmuneStartTime = Time.time;
+            }
+        }
     }
 
     private void CheckKnockback()
@@ -50,6 +88,22 @@ public class Combat : CoreComponent, IDamageable, IKnockbackable
         {
             isKnockbackActive = false;
             Movement.CanSetVelocity = true;
+        }
+    }
+
+    private void CheckKnockbackImmune()
+    {
+        if (isKnockbackImmune && Time.time >= knockbackImmuneStartTime + maxKnockbackImmuneTime)
+        {
+            isKnockbackImmune = false;
+        }
+    }
+
+    private void CheckDamageImmune()
+    {
+        if (isDamageImmune && Time.time >= damageImmuneStartTime + maxDamageImmuneTime)
+        {
+            isDamageImmune = false;
         }
     }
 }

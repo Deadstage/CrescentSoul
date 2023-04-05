@@ -5,6 +5,10 @@ using UnityEngine;
 public class E1_ChargeState : ChargeState
 {
     private Enemy1 enemy;
+
+    //Player State Detection
+    public PlayerEnemyCache playerEnemyCache;
+
     public E1_ChargeState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_ChargeState stateData, Enemy1 enemy) : base(etity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;
@@ -18,6 +22,7 @@ public class E1_ChargeState : ChargeState
     public override void Enter()
     {
         base.Enter();
+        playerEnemyCache = GameObject.FindObjectOfType<PlayerEnemyCache>();
     }
 
     public override void Exit()
@@ -31,7 +36,17 @@ public class E1_ChargeState : ChargeState
 
         if (performCloseRangeAction)
         {
-            stateMachine.ChangeState(enemy.meleeAttackState);
+            playerEnemyCache?.CheckPlayerState();
+
+            if(playerEnemyCache.playerIsStunned == true)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+
+            else if(playerEnemyCache.playerIsStunned == false && performCloseRangeAction)
+            {
+                stateMachine.ChangeState(enemy.meleeAttackState);
+            }
         }
 
         else if (!isDetectingLedge || isDetectingWall)

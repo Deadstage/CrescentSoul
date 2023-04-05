@@ -20,6 +20,8 @@ public class PlayerInputHandler : MonoBehaviour
     public bool DashInputStop { get; private set; }
     public bool FallThroughInput { get; private set; }
     public bool FallThroughInputStop { get; private set; }
+    public bool MashInput { get; private set; }
+    public bool MashInputStop { get; private set; }
 
     public bool[] AttackInputs { get; private set; }
 
@@ -30,6 +32,9 @@ public class PlayerInputHandler : MonoBehaviour
     private float jumpInputStartTime;
     private float dashInputStartTime;
 
+    public float mashDelay = .5f;
+    float mash;
+
     private void Start()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -38,6 +43,8 @@ public class PlayerInputHandler : MonoBehaviour
         AttackInputs = new bool[count];
 
         cam = Camera.main;
+
+        mash = mashDelay;
     }
 
     private void Update()
@@ -118,14 +125,38 @@ public class PlayerInputHandler : MonoBehaviour
             FallThroughInput = true;
             FallThroughInputStop = false;
 
-            Debug.Log("FallThrough True");
+            //Debug.Log("FallThrough True");
         }
 
         if (context.canceled)
         {
             FallThroughInputStop = true;
 
-            Debug.Log("Fallthrough False");
+            //Debug.Log("Fallthrough False");
+        }
+    }
+
+    public void OnMashInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            MashInput = true;
+            MashInputStop = false;
+            mash -= Time.deltaTime;
+            mash = mashDelay;
+
+            //Debug.Log("MashInput True");
+
+            if (mash <= 0)
+            {
+                //Debug.Log("MashInput Failed");
+            }
+        }
+        if (context.canceled)
+        {
+            MashInput = false;
+            MashInputStop = true;
+            //Debug.Log("MashInput False");
         }
     }
 

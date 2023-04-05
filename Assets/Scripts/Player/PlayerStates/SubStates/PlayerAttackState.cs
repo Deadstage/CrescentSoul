@@ -13,6 +13,8 @@ public class PlayerAttackState : PlayerAbilityState
     private bool setVelocity;
     private bool shouldCheckFlip;
 
+    private Stats stats;
+
 
     public PlayerAttackState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -22,9 +24,13 @@ public class PlayerAttackState : PlayerAbilityState
     {
         base.Enter();
 
-        setVelocity = false;
+        stats = player.stats;
+
+        //setVelocity = false;
 
         stance.EnterStance();
+
+        stats.InternalDecreaseStamina(20);
     }
 
     public override void Exit()

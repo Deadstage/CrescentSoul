@@ -258,5 +258,6 @@ public class BasicEnemyController : MonoBehaviour
         Gizmos.DrawLine(topRight, topLeft);
         Gizmos.DrawLine(topLeft, botLeft);
     }
+
 }
 

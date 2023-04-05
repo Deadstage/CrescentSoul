@@ -18,6 +18,10 @@ public class PlayerDetectedState : State
     protected bool performCloseRangeAction;
     protected bool isDetectingLedge;
 
+    //Player State Detection
+    //private PlayerEnemyCache playerEnemyCache;
+    protected bool isPlayerStunned;
+
     public PlayerDetectedState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_PlayerDetected stateData) : base(etity, stateMachine, animBoolName)
     {
         this.stateData = stateData;
@@ -30,8 +34,12 @@ public class PlayerDetectedState : State
         isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
         isPlayerInMaxAgroRange = entity.CheckPlayerInMaxAgroRange();
         isDetectingLedge = CollisionSenses.LedgeVertical;
-
+        
         performCloseRangeAction = entity.CheckPlayerInCloseRangeAction();
+
+        //Player State Detection
+        isPlayerStunned = entity.CheckPlayerIsStunned();
+
     }
 
     public override void Enter()
@@ -40,6 +48,9 @@ public class PlayerDetectedState : State
 
         performLongRangeAction = false;
         Movement?.SetVelocityX(0f);
+
+        //Player State Detection
+        //playerEnemyCache = GameObject.Find("PlayerEnemyCacher").GetComponent<PlayerEnemyCache>();
 
     }
 

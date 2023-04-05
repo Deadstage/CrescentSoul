@@ -5,6 +5,8 @@ using UnityEngine;
 public class E2_DodgeState : DodgeState
 {
     private Enemy2 enemy;
+
+    public PlayerEnemyCache playerEnemyCache;
     public E2_DodgeState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_DodgeState stateData, Enemy2 enemy) : base(etity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;
@@ -18,6 +20,7 @@ public class E2_DodgeState : DodgeState
     public override void Enter()
     {
         base.Enter();
+        playerEnemyCache = GameObject.FindObjectOfType<PlayerEnemyCache>();
     }
 
     public override void Exit()
@@ -31,12 +34,22 @@ public class E2_DodgeState : DodgeState
 
         if (isDodgeOver)
         {
-            if(isPlayerInMaxAgroRange && performCloseRangeAction)
+            playerEnemyCache?.CheckPlayerState();
+
+            if (isPlayerInMaxAgroRange && performCloseRangeAction && playerEnemyCache.playerIsStunned == true)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+            else if (isPlayerInMaxAgroRange && performCloseRangeAction && playerEnemyCache.playerIsStunned == false)
             {
                 stateMachine.ChangeState(enemy.meleeAttackState);
             }
 
-            else if(isPlayerInMaxAgroRange && !performCloseRangeAction)
+            else if (isPlayerInMaxAgroRange && !performCloseRangeAction && playerEnemyCache.playerIsStunned == true)
+            {
+                stateMachine.ChangeState(enemy.chargeState);
+            }
+            else if (isPlayerInMaxAgroRange && !performCloseRangeAction && playerEnemyCache.playerIsStunned == false)
             {
                 stateMachine.ChangeState(enemy.rangedAttackState);
             }

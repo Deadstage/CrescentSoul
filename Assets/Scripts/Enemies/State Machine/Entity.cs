@@ -17,6 +17,8 @@ public class Entity : MonoBehaviour
     public int lastDamageDirection { get; private set; }
     public Core Core { get; private set; }
 
+    public IPlayerState detectedIPlayerState { get; set; }
+
     [SerializeField]
     private Transform wallCheck;
     [SerializeField]
@@ -30,11 +32,14 @@ public class Entity : MonoBehaviour
     private float currentStunResistance;
     private float lastDamageTime;
 
-
     private Vector2 velocityWorkspace;
 
     protected bool isStunned;
     protected bool isDead;
+
+    //Player Detected State
+    private PlayerEnemyCache playerEnemyCache;
+
 
     public virtual void Awake()
     {
@@ -47,6 +52,10 @@ public class Entity : MonoBehaviour
         atsm = GetComponent<AnimationToStateMachine>();
 
         stateMachine = new FiniteStateMachine();
+
+        //Player Detected State
+        playerEnemyCache = GameObject.Find("PlayerEnemyCacher").GetComponent<PlayerEnemyCache>();
+
     }
 
     public virtual void Update()
@@ -61,6 +70,7 @@ public class Entity : MonoBehaviour
         {
             ResetStunResistance();
         }
+
     }
 
     public virtual void FixedUpdate()
@@ -81,6 +91,12 @@ public class Entity : MonoBehaviour
     public virtual bool CheckPlayerInCloseRangeAction()
     {
         return Physics2D.Raycast(playerCheck.position, transform.right, entityData.closeRangeActionDistance, entityData.whatIsPlayer);
+    }
+
+    //Player Detected State
+    public virtual bool CheckPlayerIsStunned()
+    {
+        return playerEnemyCache.playerIsStunned;
     }
 
     public virtual void DamageHop(float velocity)

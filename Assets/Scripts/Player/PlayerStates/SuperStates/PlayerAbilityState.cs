@@ -25,7 +25,7 @@ public class PlayerAbilityState : PlayerState
         if (CollisionSenses)
         { 
             isGrounded = CollisionSenses.Ground;
-       }
+        }
     }
 
     public override void Enter()

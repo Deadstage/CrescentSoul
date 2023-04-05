@@ -17,9 +17,9 @@ public class Stance : MonoBehaviour
     private float resetTime;
     private float attackTimer = 1.0f;
 
-    protected PlayerAttackState state;
+    protected PlayerAttackState attackState;
     protected Core core;
-    protected PlayerCrouchIdleState crouch;
+    protected PlayerCrouchAttackState crouchState;
 
     protected virtual void Awake()
     {
@@ -29,8 +29,51 @@ public class Stance : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public virtual void EnterCrouchStance()
+    {
+        gameObject.SetActive(true);
+        //Debug.Log("CroucStance Entered");
+
+        if (attackCounter >= 3 || Time.time >= resetTime + attackTimer)
+        {
+            attackCounter = 4;
+            //Debug.Log("attackCounter " + attackCounter);
+        }
+
+        if (collisionSenses.Ground)
+        {
+            //baseAnimator.SetBool("attack", true);
+            //stanceAnimator.SetBool("attack", true);
+
+            baseAnimator.SetBool("crouchAttack", true);
+            stanceAnimator.SetBool("crouchAttack", true);
+
+            attackCounter = 4;
+
+            baseAnimator.SetBool("attack", true);
+            stanceAnimator.SetBool("attack", true);
+
+            attackCounter = 4;
+
+            baseAnimator.SetInteger("attackCounter", 4);
+            stanceAnimator.SetInteger("attackCounter", 4);
+
+            attackCounter = 4;
+
+            //Debug.Log("CrouchAttack");
+            //Debug.Log("attackCounter =" + attackCounter);
+
+            attackCounter = 4;
+        }
+
+        resetTime = Time.time;
+
+    }
+
     public virtual void EnterStance()
     {
+        //Debug.Log("isCrouching =" + crouchState.isCrouching);
+
         gameObject.SetActive(true);
 
         if (attackCounter >= 3 || Time.time >= resetTime + attackTimer)
@@ -46,23 +89,7 @@ public class Stance : MonoBehaviour
             baseAnimator.SetInteger("attackCounter", attackCounter);
             stanceAnimator.SetInteger("attackCounter", attackCounter);
 
-            Debug.Log("grounded");
-        }
-
-        else if (CollisionSenses.Ground && crouch.isCrouching)
-        {
-            baseAnimator.SetBool("attack", true);
-            stanceAnimator.SetBool("attack", true);
-        
-            baseAnimator.SetBool("crouchAttack", true);
-            stanceAnimator.SetBool("crouchAttack", true);
-        
-            baseAnimator.SetInteger("attackCounter", -1);
-            stanceAnimator.SetInteger("attackCounter", -1);
-        
-            attackCounter = 3;
-        
-            Debug.Log("grounded");
+            //Debug.Log("grounded");
         }
 
         else if (!CollisionSenses.Ground)
@@ -78,11 +105,35 @@ public class Stance : MonoBehaviour
 
             attackCounter = 3;
 
-            Debug.Log("not grounded");
+            //Debug.Log("not grounded");
         }
 
         resetTime = Time.time;
 
+    }
+
+    public virtual void ExitCrouchStance()
+    {
+        //Debug.Log("CrouchStance Exiting");
+
+        if (collisionSenses.Ground)
+        {
+            //baseAnimator.SetBool("attack", false);
+            //stanceAnimator.SetBool("attack", false);
+            baseAnimator.SetBool("crouchAttack", false);
+            stanceAnimator.SetBool("crouchAttack", false);
+
+            baseAnimator.SetBool("attack", false);
+            stanceAnimator.SetBool("attack", false);
+
+            //Debug.Log("CrouchAttack false");
+
+            attackCounter = 0;
+
+            //Debug.Log("attackCounter =" + attackCounter);
+        }
+
+        gameObject.SetActive(false);
     }
 
     public virtual void ExitStance()
@@ -94,6 +145,7 @@ public class Stance : MonoBehaviour
 
             attackCounter++;
         }
+
         else if (!CollisionSenses.Ground)
         {
             baseAnimator.SetBool("attack", false);
@@ -111,32 +163,38 @@ public class Stance : MonoBehaviour
 
     public virtual void AnimationFinishTrigger()
     {
-        state.AnimationFinishTrigger();
+        attackState.AnimationFinishTrigger();
+        crouchState.AnimationFinishTrigger();
     }
 
     public virtual void AnimationStartMovementTrigger()
     {
-        state.SetPlayerVelocity(weaponData.movementSpeed[attackCounter]);
+        attackState.SetPlayerVelocity(weaponData.movementSpeed[attackCounter]);
+        crouchState.SetPlayerVelocity(weaponData.movementSpeed[attackCounter]);
     }
 
     public virtual void AnimationStopMovementTrigger()
     {
-        state.SetPlayerVelocity(0f);
+        attackState.SetPlayerVelocity(0f);
+        crouchState.SetPlayerVelocity(0f);
     }
 
     public virtual void AnimationStartMovementTriggerReverse()
     {
-        state.SetPlayerReverseVelocity(weaponData.movementSpeed[attackCounter]);
+        attackState.SetPlayerReverseVelocity(weaponData.movementSpeed[attackCounter]);
+        crouchState.SetPlayerReverseVelocity(weaponData.movementSpeed[attackCounter]);
     }
 
     public virtual void AnimationTurnOffFlipTrigger()
     {
-        state.SetFlipCheck(false);
+        attackState.SetFlipCheck(false);
+        crouchState.SetFlipCheck(false);
     }
 
     public virtual void AnimationTurnOnFlipTrigger()
     {
-        state.SetFlipCheck(true);
+        attackState.SetFlipCheck(true);
+        crouchState.SetFlipCheck(true);
 
     }
 
@@ -149,7 +207,13 @@ public class Stance : MonoBehaviour
 
     public void InitalizeStance(PlayerAttackState state, Core core)
     {
-        this.state = state;
+        this.attackState = state;
+        this.core = core;
+    }
+
+    public void InitalizeCrouchStance(PlayerCrouchAttackState state, Core core)
+    {
+        this.crouchState = state;
         this.core = core;
     }
 }
