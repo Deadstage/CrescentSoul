@@ -25,8 +25,9 @@ public class PlayerAttackState : PlayerAbilityState
         base.Enter();
 
         stats = player.stats;
+        Debug.Log("Current Velocity:" + Movement.CurrentVelocity);
 
-        //setVelocity = false;
+        setVelocity = false;
 
         stance.EnterStance();
 
@@ -61,14 +62,17 @@ public class PlayerAttackState : PlayerAbilityState
     {
         this.stance = stance;
         this.stance.InitalizeStance(this, core);
+        Debug.Log("Current Velocity(SetStance):" + Movement.CurrentVelocity);
     }
 
     public void SetPlayerVelocity(float velocity)
     {
         Movement?.SetVelocityX(velocity * Movement.FacingDirection);
+        Debug.Log("Current Velocity(SetPlayerVelocity):" + Movement.CurrentVelocity);
 
         velocityToSet = velocity;
         setVelocity = true;
+        Debug.Log("Current Velocity(SetPlayerVelocity):" + Movement.CurrentVelocity);
     }
 
     public void SetPlayerReverseVelocity(float velocity)

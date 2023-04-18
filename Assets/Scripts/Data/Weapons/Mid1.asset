@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1cadedd60077d645a0cdc55c1609c4c, type: 3}
   m_Name: Mid1
   m_EditorClassIdentifier: 
+  amountOfAttacks: 5
   movementSpeed:
+  - 50
+  - 5
+  - 5
+  - 5
   - 5

@@ -43,13 +43,13 @@ public class E1_PlayerDetectedState : PlayerDetectedState
 
             if(playerEnemyCache.playerIsStunned == true)
             {
-                Debug.Log("Charging");
+                //Debug.Log("Charging");
                 stateMachine.ChangeState(enemy.chargeState);
             }
 
             else if(playerEnemyCache.playerIsStunned == false && performCloseRangeAction)
             {
-                Debug.Log("Attacking");
+                //Debug.Log("Attacking");
                 stateMachine.ChangeState(enemy.meleeAttackState);
             }
         }

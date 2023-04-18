@@ -20,15 +20,17 @@ public class SceneDictionary : MonoBehaviour
 
     public MashBar mashBar;
 
+    private Coroutine changeAnimationCoroutine;
+
     void Start()
     {
-        hScene.Add(0, "ZGScene1");
-        hScene.Add(1, "ZGScene2");
-        hScene.Add(2, "ZGScene3");
+        hScene.Add(0, "ZGScene1_1");
+        hScene.Add(1, "ZGScene2_1");
+        hScene.Add(2, "ZGScene3_1");
 
-        hScene.Add(4, "Maid1Scene1");
-        hScene.Add(5, "Maid1Scene2");
-        hScene.Add(6, "Maid1Scene3");
+        hScene.Add(4, "Maid1Scene1_1");
+        hScene.Add(5, "Maid1Scene2_1");
+        hScene.Add(6, "Maid1Scene3_1");
 
         anim = GetComponent<Animator>();
 
@@ -61,6 +63,12 @@ public class SceneDictionary : MonoBehaviour
             this.isEngaged = false;
             anim.SetInteger("hAnim", -1);
 
+            if (changeAnimationCoroutine != null)
+            {
+                StopCoroutine(changeAnimationCoroutine);
+                changeAnimationCoroutine = null;
+            }
+
             if (enemy1[0].isEngaged == true)
             {
                 foreach(var item in enemy1)
@@ -68,7 +76,6 @@ public class SceneDictionary : MonoBehaviour
                     item.EnemyDisengager();
                     item.EnemyDisengaged();
                 }
-
             }
 
             if(enemy2[0].isEngaged == true)
@@ -88,17 +95,33 @@ public class SceneDictionary : MonoBehaviour
         }
     }
 
+    private IEnumerator ChangeAnimationPhaseAfterDelay(float delay, int firstPhase, int nextPhase, int nextPhase2, float thirdPhaseDuration)
+    {
+        yield return new WaitForSeconds(delay);
+        if (mashBar.currentMash == 100) yield break;
+        anim.SetInteger("hAnim", nextPhase);
+
+        yield return new WaitForSeconds(delay);
+        if (mashBar.currentMash == 100) yield break;
+        anim.SetInteger("hAnim", nextPhase2);
+
+        yield return new WaitForSeconds(thirdPhaseDuration);
+        if (mashBar.currentMash == 100) yield break;
+        anim.SetInteger("hAnim", firstPhase);
+        changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(delay, firstPhase, nextPhase, nextPhase2, thirdPhaseDuration));
+    }
+
     public void ZGHScene()
     {
         int zgScene = rnd.Next(0, 3);
-        Debug.Log(hScene[zgScene]);
+        //Debug.Log(hScene[zgScene]);
 
         if (zgScene.Equals(0))
         {
             isEngaged = true;
             scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
             anim.SetInteger("hAnim", 0);
-            Debug.Log("playing first scene!");
+            //Debug.Log("playing first scene!");
 
             if(isEngaged == true)
             {
@@ -108,6 +131,7 @@ public class SceneDictionary : MonoBehaviour
                     item.EnemyEngager();
                 }
                 //enemy1[1].EnemyEngager();
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 0, 100, 200, 6.37f));
             }
         }
 
@@ -116,7 +140,7 @@ public class SceneDictionary : MonoBehaviour
             isEngaged = true;
             scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
             anim.SetInteger("hAnim", 1);
-            Debug.Log("playing second scene!");
+            //Debug.Log("playing second scene!");
 
             if (isEngaged == true)
             {
@@ -126,6 +150,7 @@ public class SceneDictionary : MonoBehaviour
                     item.EnemyEngager();
                 }
                 //enemy1[1].EnemyEngager();
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 1, 101, 201, 6.25f));
             }
         }
 
@@ -134,7 +159,7 @@ public class SceneDictionary : MonoBehaviour
             isEngaged = true;
             scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
             anim.SetInteger("hAnim", 2);
-            Debug.Log("playing third scene!");
+            //Debug.Log("playing third scene!");
 
             if (isEngaged == true)
             {
@@ -144,6 +169,7 @@ public class SceneDictionary : MonoBehaviour
                     item.EnemyEngager();
                 }
                 //enemy1[1].EnemyEngager();
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 2, 102, 202, 7.11f));
             }
 
         }
@@ -153,14 +179,14 @@ public class SceneDictionary : MonoBehaviour
     public void M1HScene()
     {
         int maid1Scene = rnd.Next(4, 7);
-        Debug.Log(hScene[maid1Scene]);
+        //Debug.Log(hScene[maid1Scene]);
 
         if (maid1Scene.Equals(4))
         {
             isEngaged = true;
             scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
             anim.SetInteger("hAnim", 3);
-            Debug.Log("playing first scene!");
+            //Debug.Log("playing first scene!");
 
             if (isEngaged == true)
             {
@@ -170,6 +196,7 @@ public class SceneDictionary : MonoBehaviour
                     item.EnemyEngager();
                 }
                 //enemy2.EnemyEngager();
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 4, 104, 204, 8.42f));
             }
         }
 
@@ -178,7 +205,7 @@ public class SceneDictionary : MonoBehaviour
             isEngaged = true;
             scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
             anim.SetInteger("hAnim", 4);
-            Debug.Log("playing second scene!");
+            //Debug.Log("playing second scene!");
 
             if (isEngaged == true)
             {
@@ -188,6 +215,7 @@ public class SceneDictionary : MonoBehaviour
                     item.EnemyEngager();
                 }
                 //enemy2.EnemyEngager();
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 5, 105, 205, 6.06f));
             }
         }
 
@@ -196,7 +224,7 @@ public class SceneDictionary : MonoBehaviour
             isEngaged = true;
             scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
             anim.SetInteger("hAnim", 5);
-            Debug.Log("playing third scene!");
+            //Debug.Log("playing third scene!");
 
             if (isEngaged == true)
             {
@@ -206,6 +234,7 @@ public class SceneDictionary : MonoBehaviour
                     item.EnemyEngager();
                 }
                 //enemy2.EnemyEngager();
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 6, 106, 206, 7f));
             }
         }
 

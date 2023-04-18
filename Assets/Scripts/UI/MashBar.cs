@@ -45,9 +45,11 @@ public class MashBar : MonoBehaviour
             //Debug.Log("mash added");
             amountOfClicksLeft = 0;
             IncreaseMash(8);
-            StopCoroutine(decay);
-
             
+            if (decay != null) // Add null check here
+            {
+                StopCoroutine(decay);
+            }
         }
         if (MashInputStop && amountOfClicksLeft < 1)
         {

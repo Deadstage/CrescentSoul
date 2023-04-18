@@ -20,6 +20,9 @@ public class Stats : CoreComponent
     private WaitForSeconds regenTick = new WaitForSeconds(0.01f);
     private Coroutine regen;
 
+    public AudioSource audioSource;
+    public AudioClip[] hitSounds;
+
     protected override void Awake()
     {
         base.Awake();
@@ -33,12 +36,20 @@ public class Stats : CoreComponent
         currentHealth -= amount;
         OnHealthChange?.Invoke(currentHealth);
 
+        // play a random hit sound
+        if (hitSounds.Length > 0)
+        {
+            int index = UnityEngine.Random.Range(0, hitSounds.Length);
+            AudioSource.PlayClipAtPoint(hitSounds[index], transform.position);
+        }
+
         if(currentHealth <= 0)
         {
             currentHealth = 0;
             HealthZero?.Invoke();
             //Debug.Log("Health is zero!");
         }
+        
     }
 
     public void InternalDecreaseStamina(float amount)
@@ -102,6 +113,34 @@ public class Stats : CoreComponent
             yield return regenTick;
         }
         regen = null;
+    }
+
+    public void PlayAudioClip(AudioClip clip)
+    {
+        if(transform.parent != null && transform.parent.parent != null && transform.parent.parent.name == "Enemy1")
+        {
+            AudioSource.PlayClipAtPoint(clip, transform.parent.parent.position);
+        }
+
+        if(transform.parent != null && transform.parent.parent != null && transform.parent.parent.name == "Enemy2")
+        {
+            AudioSource.PlayClipAtPoint(clip, transform.parent.parent.position);
+        }
+
+        if(transform.parent != null && transform.parent.parent != null && transform.parent.parent.name == "Player")
+        {
+            AudioSource.PlayClipAtPoint(clip, transform.parent.parent.position);
+        }
+    }
+
+    void DamagedSound()
+    {
+        if (audioSource != null && hitSounds != null && hitSounds.Length > 0)
+        {
+            int index = UnityEngine.Random.Range(0, hitSounds.Length);
+            audioSource.PlayOneShot(hitSounds[index]);
+            PlayAudioClip(hitSounds[index]);
+        }
     }
 }
 

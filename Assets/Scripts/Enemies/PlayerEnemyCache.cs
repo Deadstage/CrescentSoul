@@ -11,22 +11,19 @@ public class PlayerEnemyCache : MonoBehaviour
 
     void Start()
     {
-        
-        entity = GetComponent<Entity>();
         player = FindObjectOfType<Player>();
-        entity.detectedIPlayerState = player.GetComponent<IPlayerState>();
         playerIsStunned = false;
-        //Debug.Log("Player is Stunned = false");
-
     }
     public void CheckPlayerState()
     {
         //Debug.Log("CheckPlayerState called");
         FindObjectOfType<Player>();
 
-        if (entity.detectedIPlayerState != null)
+        IPlayerState playerState = player.GetComponent<IPlayerState>();
+
+        if (playerState != null)
         {
-            var returnedState = entity.detectedIPlayerState.CurrentPlayerState();
+            var returnedState = playerState.CurrentPlayerState();
             //Debug.Log("PlayerState detected");
 
             if (returnedState.GetType() == typeof(PlayerStunState))
@@ -34,7 +31,6 @@ public class PlayerEnemyCache : MonoBehaviour
                 playerIsStunned = true;
                 //Debug.Log("Player is Stunned");
             }
-
             else
             {
                 playerIsStunned = false;

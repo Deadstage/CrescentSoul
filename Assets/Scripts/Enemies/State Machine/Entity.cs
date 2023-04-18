@@ -40,7 +40,6 @@ public class Entity : MonoBehaviour
     //Player Detected State
     private PlayerEnemyCache playerEnemyCache;
 
-
     public virtual void Awake()
     {
         Core = GetComponentInChildren<Core>();
@@ -54,7 +53,7 @@ public class Entity : MonoBehaviour
         stateMachine = new FiniteStateMachine();
 
         //Player Detected State
-        playerEnemyCache = GameObject.Find("PlayerEnemyCacher").GetComponent<PlayerEnemyCache>();
+        playerEnemyCache = GameObject.FindGameObjectWithTag("PlayerEnemyCacher").GetComponent<PlayerEnemyCache>();
 
     }
 

@@ -24,15 +24,21 @@ public class Death : CoreComponent
         Stats.HealthZero += Die;
     }
 
-    private void OnEnable()
-    {
-        Stats.HealthZero += Die;
-    }
+    // private void OnEnable()
+    // {
+    //     if (Stats != null)
+    //     {
+    //         Stats.HealthZero += Die;
+    //     }
+    // }
 
-    private void OnDisable()
-    {
-        Stats.HealthZero -= Die;
-    }
+    // private void OnDisable()
+    // {
+    //     if (Stats != null)
+    //     {
+    //         Stats.HealthZero -= Die;
+    //     }
+    // }
 
     public void Die()
     {

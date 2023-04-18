@@ -66,6 +66,7 @@ public class PlayerCrouchAttackState : PlayerAbilityState
         if (setVelocity)
         {
             Movement?.SetVelocityX(velocityToSet * Movement.FacingDirection);
+            setVelocity = false;
         }
     }
 

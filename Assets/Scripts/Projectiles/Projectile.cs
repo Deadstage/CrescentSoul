@@ -37,6 +37,17 @@ public class Projectile : MonoBehaviour
     protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
     private Movement movement;
 
+    public AudioSource projectile;
+    public AudioClip glassShatter;
+
+    public float maxDistance = 10f;
+    public float volumeMultiplier = 1f;
+
+    public string playerTag = "Player";
+    private Transform playerTransform;
+
+    private bool hasHitPlayer = false;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -47,6 +58,16 @@ public class Projectile : MonoBehaviour
         isGravityOn = false;
 
         xStartPos = transform.position.x;
+
+        GameObject player = GameObject.FindGameObjectWithTag(playerTag);
+        if (player != null)
+        {
+            playerTransform = player.transform;
+        }
+        else
+        {
+            Debug.LogError("Player GameObject with tag '" + playerTag + "' not found.");
+        }
     }
 
     private void Update()
@@ -61,6 +82,18 @@ public class Projectile : MonoBehaviour
                 transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             }
         }
+
+        float distance = Vector2.Distance(transform.position, playerTransform.position);
+
+        if (distance > maxDistance)
+        {
+            projectile.volume = 0f;
+        }
+        else
+        {
+            float volume = Mathf.SmoothStep(0f, 1f, 1f - (distance / maxDistance)) * volumeMultiplier;
+            projectile.volume = volume;
+        }
     }
 
     private void FixedUpdate()
@@ -70,18 +103,20 @@ public class Projectile : MonoBehaviour
             Collider2D damageHit = Physics2D.OverlapCircle(damagePosition.position, damageRadius, whatIsPlayer);
             Collider2D groundHit = Physics2D.OverlapCircle(damagePosition.position, damageRadius, whatIsGround);
 
-            if (damageHit)
+            if (damageHit && !hasHitPlayer)
             {
                 if(damageHit.TryGetComponent(out IDamageable damageable))
 {
                 damageable.Damage(10);
+                hasHitPlayer = true;
 
                 //if (damageHit.TryGetComponent(out IKnockbackable knockbackable))
                 //{
                 //knockbackable.Knockback(stateData.knockbackAngle, stateData.knockbackStrength, Movement.FacingDirection);
                 //}
-}
-                Destroy(gameObject);
+}               //PlayGlassShatterAndDestroy();
+                //Destroy(gameObject);
+                DeactivateProjectile();
             }
 
             if (groundHit)
@@ -89,7 +124,9 @@ public class Projectile : MonoBehaviour
                 hasHitGround = true;
                 rb.gravityScale = 0f;
                 rb.velocity = Vector2.zero;
-                Destroy(gameObject);
+                //PlayGlassShatterAndDestroy();
+                //Destroy(gameObject);
+                DeactivateProjectile();
             }
 
             if(Mathf.Abs(xStartPos - transform.position.x) >= travelDistance && !isGravityOn)
@@ -102,6 +139,24 @@ public class Projectile : MonoBehaviour
 
     }
 
+    private void DeactivateProjectile()
+    {
+        // Disable components
+        rb.velocity = Vector2.zero;
+        rb.isKinematic = true;
+        //GetComponent<Collider2D>().enabled = false;
+
+        // Hide renderer
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        foreach (Renderer r in renderers)
+        {
+            r.enabled = false;
+        }
+
+        // Set as inactive
+        PlayGlassShatterAndDestroy();
+    }
+
     public void FireProjectile(float speed, float travelDistance, float damage)
     {
         this.speed = speed;
@@ -112,5 +167,11 @@ public class Projectile : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(damagePosition.position, damageRadius);
+    }
+
+    public void PlayGlassShatterAndDestroy()
+    {   
+        projectile.PlayOneShot(glassShatter);
+        Destroy(gameObject, 1.0f); // destroy the GameObject with a 0.1 second delay
     }
 }

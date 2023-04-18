@@ -169,12 +169,15 @@ public class Stance : MonoBehaviour
 
     public virtual void AnimationStartMovementTrigger()
     {
+        Debug.Log("AnimationStartMovementTrigger called");
+        Debug.Log("Weapon movement speed: " + weaponData.movementSpeed[attackCounter]);
         attackState.SetPlayerVelocity(weaponData.movementSpeed[attackCounter]);
         crouchState.SetPlayerVelocity(weaponData.movementSpeed[attackCounter]);
     }
 
     public virtual void AnimationStopMovementTrigger()
     {
+        Debug.Log("AnimationStopMovementTrigger called");
         attackState.SetPlayerVelocity(0f);
         crouchState.SetPlayerVelocity(0f);
     }

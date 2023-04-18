@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b474bce7b01f9714e8aa204cb98b1882, type: 3}
   m_Name: Scythe
   m_EditorClassIdentifier: 
+  amountOfAttacks: 5
+  movementSpeed:
+  - 50
+  - -50
+  - 0
+  - -50
+  - 0
   attackDetails:
   - attackName: Forward Sweep
     movementSpeed: 55

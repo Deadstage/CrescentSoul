@@ -27,10 +27,15 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+    }
+
     private void Die()
     {
-        GM.Respawn();
-        Destroy(gameObject);
+        //GM.Respawn();
+        gameObject.SetActive(false); // Deactivate the player instead of destroying it
     }
 
 }

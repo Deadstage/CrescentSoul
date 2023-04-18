@@ -12,6 +12,8 @@ TagManager:
   - ParticleContainer
   - Entity
   - eightCam
+  - Brazier
+  - PlayerEnemyCacher
   layers:
   - Default
   - TransparentFX
