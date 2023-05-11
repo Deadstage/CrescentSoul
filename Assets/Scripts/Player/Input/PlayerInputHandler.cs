@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -87,16 +88,20 @@ public class PlayerInputHandler : MonoBehaviour
     }
 
     public void OnSecondaryAttackInput(InputAction.CallbackContext context)
-    {   
+    {
+        //Debug.Log("OnSecondaryAttackInput called");
         if (isPaused == false)
         {
             if (context.started)
             {
+                //Debug.Log("Secondary attack started");
                 AttackInputs[(int)CombatInputs.secondary] = true;
+                
             }
 
             if (context.canceled)
             {
+                //Debug.Log("Secondary attack cancelled");
                 AttackInputs[(int)CombatInputs.secondary] = false;
             }
         }
@@ -318,6 +323,26 @@ public class PlayerInputHandler : MonoBehaviour
     public void ResetScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ResumeButton()
+    {
+        ResetInputActions();
+        ResetInputVariables();
+        isPaused = false;
+        PauseInput = true;
+        PauseInputStop = false;
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    public void QuitGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 }
 

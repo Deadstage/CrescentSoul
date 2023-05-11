@@ -17,7 +17,7 @@ public class Player : MonoBehaviour, IPlayerState
     public PlayerCrouchMoveState CrouchMoveState { get; private set; }
     public PlayerCrouchAttackState CrouchAttackState { get; private set; }
     public PlayerAttackState PrimaryAttackState { get; private set; }
-    public PlayerAttackState SecondaryAttackState { get; private set; }
+    public PlayerSecondaryAttackState SecondaryAttackState { get; private set; }
     public PlayerStunState StunState { get; private set; }
     public PlayerEngagedState EngagedState { get; private set; }
 
@@ -71,7 +71,7 @@ public class Player : MonoBehaviour, IPlayerState
         CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData, "crouchMove");
         CrouchAttackState = new PlayerCrouchAttackState(this, StateMachine, playerData, "crouchAttack");
         PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
-        SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
+        SecondaryAttackState = new PlayerSecondaryAttackState(this, StateMachine, playerData, "secondaryAttack");
         StunState = new PlayerStunState(this, StateMachine, playerData, "stun");
         EngagedState = new PlayerEngagedState(this, StateMachine, playerData, "engage");
     }
@@ -85,7 +85,7 @@ public class Player : MonoBehaviour, IPlayerState
         Inventory = GetComponent<PlayerInventory>();
 
         PrimaryAttackState.SetStance(Inventory.stances[(int)CombatInputs.primary]);
-        //SecondaryAttackState.SetStance(Inventory.stances[(int)CombatInputs.primary]);
+        SecondaryAttackState.SetStance(Inventory.stances[(int)CombatInputs.secondary]);
         CrouchAttackState.SetStance(Inventory.stances[(int)CombatInputs.primary]);
 
         StateMachine.Initialize(IdleState);
@@ -95,18 +95,44 @@ public class Player : MonoBehaviour, IPlayerState
 
     private void Update()
     {
+        if (Core == null)
+        {
+            Debug.LogError("Core is null");
+            return;
+        }
+        if (StateMachine == null)
+        {
+            Debug.LogError("StateMachine is null");
+            return;
+        }
+        if (StateMachine.CurrentState == null)
+        {
+            Debug.LogError("StateMachine.CurrentState is null");
+            return;
+        }
+
         Core.LogicUpdate();
         StateMachine.CurrentState.LogicUpdate();
 
         if(isEngaged == true)
         {
-            //this.gameObject.SetActive(false);
             StateMachine.ChangeState(EngagedState);
         }
     }
 
     private void FixedUpdate()
     {
+        if (StateMachine == null)
+        {
+            Debug.LogError("StateMachine is null");
+            return;
+        }
+        if (StateMachine.CurrentState == null)
+        {
+            Debug.LogError("StateMachine.CurrentState is null");
+            return;
+        }
+
         StateMachine.CurrentState.PhysicsUpdate();
     }
     #endregion

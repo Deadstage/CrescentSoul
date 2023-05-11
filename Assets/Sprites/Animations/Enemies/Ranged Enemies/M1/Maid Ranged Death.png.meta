@@ -26,57 +26,6 @@ TextureImporter:
   - first:
       213: 3722961774632043165
     second: Maid Ranged Death_7
-  - first:
-      213: -5427055773320957063
-    second: Maid Ranged Death_8
-  - first:
-      213: 8026489709904128105
-    second: Maid Ranged Death_9
-  - first:
-      213: 1276311657217839969
-    second: Maid Ranged Death_10
-  - first:
-      213: -4871257235204331100
-    second: Maid Ranged Death_11
-  - first:
-      213: 7103947754167174509
-    second: Maid Ranged Death_12
-  - first:
-      213: 2395311491160168917
-    second: Maid Ranged Death_13
-  - first:
-      213: -8615530588672913175
-    second: Maid Ranged Death_14
-  - first:
-      213: 5528603738490927613
-    second: Maid Ranged Death_15
-  - first:
-      213: 2817810590953433015
-    second: Maid Ranged Death_16
-  - first:
-      213: 8891747087284407303
-    second: Maid Ranged Death_17
-  - first:
-      213: 4406915615113806245
-    second: Maid Ranged Death_18
-  - first:
-      213: -8368885539430093759
-    second: Maid Ranged Death_19
-  - first:
-      213: 1050035668140206435
-    second: Maid Ranged Death_20
-  - first:
-      213: -7892042533549830631
-    second: Maid Ranged Death_21
-  - first:
-      213: -4207320967814207594
-    second: Maid Ranged Death_22
-  - first:
-      213: -4397876007868790684
-    second: Maid Ranged Death_23
-  - first:
-      213: 3977880496916144303
-    second: Maid Ranged Death_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -174,18 +123,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -195,10 +132,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 91
-        height: 188
+        width: 72
+        height: 180
       alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
+      pivot: {x: 0.5470216, y: 0.3054274}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,12 +151,12 @@ TextureImporter:
       name: Maid Ranged Death_1
       rect:
         serializedVersion: 2
-        x: 91
+        x: 72
         y: 0
-        width: 91
-        height: 188
+        width: 72
+        height: 180
       alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
+      pivot: {x: 0.5470216, y: 0.3054274}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,12 +172,12 @@ TextureImporter:
       name: Maid Ranged Death_2
       rect:
         serializedVersion: 2
-        x: 182
+        x: 144
         y: 0
-        width: 91
-        height: 188
+        width: 72
+        height: 180
       alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
+      pivot: {x: 0.5470216, y: 0.3054274}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,12 +193,12 @@ TextureImporter:
       name: Maid Ranged Death_3
       rect:
         serializedVersion: 2
-        x: 273
+        x: 216
         y: 0
-        width: 91
-        height: 188
+        width: 72
+        height: 180
       alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
+      pivot: {x: 0.5470216, y: 0.3054274}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,12 +214,12 @@ TextureImporter:
       name: Maid Ranged Death_4
       rect:
         serializedVersion: 2
-        x: 364
+        x: 288
         y: 0
-        width: 91
-        height: 188
+        width: 72
+        height: 180
       alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
+      pivot: {x: 0.5470216, y: 0.3054274}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,12 +235,12 @@ TextureImporter:
       name: Maid Ranged Death_5
       rect:
         serializedVersion: 2
-        x: 455
+        x: 360
         y: 0
-        width: 91
-        height: 188
+        width: 72
+        height: 180
       alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
+      pivot: {x: 0.5470216, y: 0.3054274}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,12 +256,12 @@ TextureImporter:
       name: Maid Ranged Death_6
       rect:
         serializedVersion: 2
-        x: 546
+        x: 432
         y: 0
-        width: 91
-        height: 188
+        width: 72
+        height: 180
       alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
+      pivot: {x: 0.5470216, y: 0.3054274}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,12 +277,12 @@ TextureImporter:
       name: Maid Ranged Death_7
       rect:
         serializedVersion: 2
-        x: 637
+        x: 504
         y: 0
-        width: 91
-        height: 188
+        width: 72
+        height: 180
       alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
+      pivot: {x: 0.5470216, y: 0.3054274}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -353,363 +290,6 @@ TextureImporter:
       bones: []
       spriteID: d920d49420e9aa330800000000000000
       internalID: 3722961774632043165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_8
-      rect:
-        serializedVersion: 2
-        x: 728
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 973b8f627893fa4b0800000000000000
-      internalID: -5427055773320957063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_9
-      rect:
-        serializedVersion: 2
-        x: 819
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 968e9207dd1d36f60800000000000000
-      internalID: 8026489709904128105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_10
-      rect:
-        serializedVersion: 2
-        x: 910
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 163d827a0be56b110800000000000000
-      internalID: 1276311657217839969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_11
-      rect:
-        serializedVersion: 2
-        x: 1001
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a928168a51d56cb0800000000000000
-      internalID: -4871257235204331100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_12
-      rect:
-        serializedVersion: 2
-        x: 1092
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d65811618da469260800000000000000
-      internalID: 7103947754167174509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_13
-      rect:
-        serializedVersion: 2
-        x: 1183
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d9530d3c1bdd3120800000000000000
-      internalID: 2395311491160168917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_14
-      rect:
-        serializedVersion: 2
-        x: 1274
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e093ae939c7f6880800000000000000
-      internalID: -8615530588672913175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_15
-      rect:
-        serializedVersion: 2
-        x: 1365
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df9f5a0fecb89bc40800000000000000
-      internalID: 5528603738490927613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_16
-      rect:
-        serializedVersion: 2
-        x: 1456
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b7ec169dcfda1720800000000000000
-      internalID: 2817810590953433015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_17
-      rect:
-        serializedVersion: 2
-        x: 1547
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70c833a8dd4d56b70800000000000000
-      internalID: 8891747087284407303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_18
-      rect:
-        serializedVersion: 2
-        x: 1638
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a10bf13762882d30800000000000000
-      internalID: 4406915615113806245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_19
-      rect:
-        serializedVersion: 2
-        x: 1729
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14cad5031febbdb80800000000000000
-      internalID: -8368885539430093759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_20
-      rect:
-        serializedVersion: 2
-        x: 1820
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 369acf870e9729e00800000000000000
-      internalID: 1050035668140206435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_21
-      rect:
-        serializedVersion: 2
-        x: 1911
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91e0d7b2125d97290800000000000000
-      internalID: -7892042533549830631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_22
-      rect:
-        serializedVersion: 2
-        x: 2002
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 697a1610fd79c95c0800000000000000
-      internalID: -4207320967814207594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_23
-      rect:
-        serializedVersion: 2
-        x: 2093
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46884c0621b97f2c0800000000000000
-      internalID: -4397876007868790684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maid Ranged Death_24
-      rect:
-        serializedVersion: 2
-        x: 2184
-        y: 0
-        width: 91
-        height: 188
-      alignment: 9
-      pivot: {x: 0.3622872, y: 0.2908607}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa024a97c35443730800000000000000
-      internalID: 3977880496916144303
       vertices: []
       indices: 
       edges: []

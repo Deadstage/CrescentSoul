@@ -44,6 +44,7 @@ public class Enemy1 : Entity, ICollisionHandler
     public override void Awake()
     {
         base.Awake();
+        //Debug.Log("Enemy1 Awake");
 
         moveState = new E1_MoveState(this, stateMachine, "move", moveStateData, this);
         idleState = new E1_IdleState(this, stateMachine, "idle", idleStateData, this);
@@ -60,6 +61,7 @@ public class Enemy1 : Entity, ICollisionHandler
 
         enemyOriginalPosition = GetComponent<EnemyOriginalPosition>();
 
+
     }
 
     public override void OnDrawGizmos()
@@ -72,6 +74,7 @@ public class Enemy1 : Entity, ICollisionHandler
     private void OnEnable()
     {
         this.stateMachine.ChangeState(idleState);
+        //Debug.Log("Enemy1 OnEnable");
     }
 
     public void CollisionEnter(string colliderName, GameObject other)

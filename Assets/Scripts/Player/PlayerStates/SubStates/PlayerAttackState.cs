@@ -23,9 +23,10 @@ public class PlayerAttackState : PlayerAbilityState
     public override void Enter()
     {
         base.Enter();
+        //Debug.Log("PrimaryAttackState Entered");
 
         stats = player.stats;
-        Debug.Log("Current Velocity:" + Movement.CurrentVelocity);
+        //Debug.Log("Current Velocity:" + Movement.CurrentVelocity);
 
         setVelocity = false;
 
@@ -37,6 +38,7 @@ public class PlayerAttackState : PlayerAbilityState
     public override void Exit()
     {
         base.Exit();
+        //Debug.Log("PrimaryAttackState Exit");
 
         stance.ExitStance();
     }
@@ -62,17 +64,17 @@ public class PlayerAttackState : PlayerAbilityState
     {
         this.stance = stance;
         this.stance.InitalizeStance(this, core);
-        Debug.Log("Current Velocity(SetStance):" + Movement.CurrentVelocity);
+        //Debug.Log("Current Velocity(SetStance):" + Movement.CurrentVelocity);
     }
 
     public void SetPlayerVelocity(float velocity)
     {
         Movement?.SetVelocityX(velocity * Movement.FacingDirection);
-        Debug.Log("Current Velocity(SetPlayerVelocity):" + Movement.CurrentVelocity);
+        //Debug.Log("Current Velocity(SetPlayerVelocity):" + Movement.CurrentVelocity);
 
         velocityToSet = velocity;
         setVelocity = true;
-        Debug.Log("Current Velocity(SetPlayerVelocity):" + Movement.CurrentVelocity);
+        //Debug.Log("Current Velocity(SetPlayerVelocity):" + Movement.CurrentVelocity);
     }
 
     public void SetPlayerReverseVelocity(float velocity)
@@ -81,6 +83,16 @@ public class PlayerAttackState : PlayerAbilityState
 
         velocityToSet = velocity;
         setVelocity = true;
+    }
+
+    public void SetPlayerVerticalVelocity(float velocity)
+    {
+        Movement?.SetVelocityY(velocity);
+    }
+
+    public void SetPlayerUpwardVelocity(float velocity)
+    {
+        Movement?.SetVelocityY(velocity);
     }
 
     public void SetFlipCheck(bool value)

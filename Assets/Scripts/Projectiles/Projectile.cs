@@ -22,8 +22,8 @@ public class Projectile : MonoBehaviour
 
     [SerializeField]
     private LayerMask whatIsGround;
-    [SerializeField]
-    private LayerMask whatIsPlayer;
+    // [SerializeField]
+    // private LayerMask whatIsPlayer;
     [SerializeField]
     private Transform damagePosition;
 
@@ -100,22 +100,26 @@ public class Projectile : MonoBehaviour
     {
         if (!hasHitGround)
         {
-            Collider2D damageHit = Physics2D.OverlapCircle(damagePosition.position, damageRadius, whatIsPlayer);
+            Collider2D[] hits = Physics2D.OverlapCircleAll(damagePosition.position, damageRadius);
             Collider2D groundHit = Physics2D.OverlapCircle(damagePosition.position, damageRadius, whatIsGround);
+            Collider2D playerCombatHit = null;
 
-            if (damageHit && !hasHitPlayer)
+            foreach (Collider2D hit in hits)
             {
-                if(damageHit.TryGetComponent(out IDamageable damageable))
-{
-                damageable.Damage(10);
-                hasHitPlayer = true;
+                if (hit.gameObject.CompareTag(playerTag) && hit.transform.parent != null && hit.transform.parent.GetComponent<Core>() != null)
+                {
+                    playerCombatHit = hit;
+                    break;
+                }
+            }
 
-                //if (damageHit.TryGetComponent(out IKnockbackable knockbackable))
-                //{
-                //knockbackable.Knockback(stateData.knockbackAngle, stateData.knockbackStrength, Movement.FacingDirection);
-                //}
-}               //PlayGlassShatterAndDestroy();
-                //Destroy(gameObject);
+            if (playerCombatHit && !hasHitPlayer)
+            {
+                if (playerCombatHit.TryGetComponent(out IDamageable damageable))
+                {
+                    damageable.Damage(10);
+                    hasHitPlayer = true;
+                }
                 DeactivateProjectile();
             }
 
@@ -124,19 +128,16 @@ public class Projectile : MonoBehaviour
                 hasHitGround = true;
                 rb.gravityScale = 0f;
                 rb.velocity = Vector2.zero;
-                //PlayGlassShatterAndDestroy();
-                //Destroy(gameObject);
                 DeactivateProjectile();
             }
 
-            if(Mathf.Abs(xStartPos - transform.position.x) >= travelDistance && !isGravityOn)
+            if (Mathf.Abs(xStartPos - transform.position.x) >= travelDistance && !isGravityOn)
             {
-            isGravityOn = true;
-            rb.gravityScale = gravity;
+                isGravityOn = true;
+                rb.gravityScale = gravity;
             }
 
         }
-
     }
 
     private void DeactivateProjectile()

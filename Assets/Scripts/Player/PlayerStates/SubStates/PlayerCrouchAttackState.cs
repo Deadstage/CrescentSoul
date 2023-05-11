@@ -37,7 +37,7 @@ public class PlayerCrouchAttackState : PlayerAbilityState
         stance.EnterCrouchStance();
         //Debug.Log("Stance called");
 
-        //stats.InternalDecreaseStamina(20);
+        stats.InternalDecreaseStamina(10);
 
         Movement?.SetVelocityZero();
         player.SetColliderHeight(playerData.crouchColliderHeight);
@@ -90,6 +90,16 @@ public class PlayerCrouchAttackState : PlayerAbilityState
 
         velocityToSet = velocity;
         setVelocity = true;
+    }
+
+    public void SetPlayerVerticalVelocity(float velocity)
+    {
+        Movement?.SetVelocityY(velocity);
+    }
+
+    public void SetPlayerUpwardVelocity(float velocity)
+    {
+        Movement?.SetVelocityY(velocity);
     }
 
     public void SetFlipCheck(bool value)

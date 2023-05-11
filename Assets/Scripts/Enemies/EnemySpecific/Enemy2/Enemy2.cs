@@ -53,6 +53,7 @@ public class Enemy2 : Entity, ICollisionHandler
     public override void Awake()
     {
         base.Awake();
+        //Debug.Log("Enemy2 Awake");
 
         moveState = new E2_MoveState(this, stateMachine, "move", moveStateData, this);
         idleState = new E2_IdleState(this, stateMachine, "idle", idleStateData, this);
@@ -81,6 +82,7 @@ public class Enemy2 : Entity, ICollisionHandler
     private void OnEnable()
     {
         this.stateMachine.ChangeState(idleState);
+        //Debug.Log("Enemy2 OnEnable");
     }
 
     public void CollisionEnter(string colliderName, GameObject other)

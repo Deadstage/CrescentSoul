@@ -42,5 +42,15 @@ public class WeaponAnimationToWeapon : MonoBehaviour
     {
         stance.AnimationActionTrigger();
     }
+    
+    private void AnimationMoveDownwardsTrigger()
+    {
+        stance.AnimationMoveDownwardsTrigger();
+    }
+
+    private void AnimationStartUpwardMovementTrigger()
+    {
+        stance.AnimationStartUpwardMovementTrigger();
+    }
 
 }

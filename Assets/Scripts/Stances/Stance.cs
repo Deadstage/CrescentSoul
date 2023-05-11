@@ -18,6 +18,7 @@ public class Stance : MonoBehaviour
     private float attackTimer = 1.0f;
 
     protected PlayerAttackState attackState;
+    protected PlayerSecondaryAttackState secondaryAttackState;
     protected Core core;
     protected PlayerCrouchAttackState crouchState;
 
@@ -112,6 +113,52 @@ public class Stance : MonoBehaviour
 
     }
 
+    public virtual void EnterSecondaryStance()
+    {
+        //Debug.Log("EnterSecondaryStance called");
+        gameObject.SetActive(true);
+
+        // if (attackCounter >= 3 || Time.time >= resetTime + attackTimer)
+        // {
+        //     attackCounter = 5;
+        // }
+
+        if (CollisionSenses.Ground)
+        {
+            //Debug.Log("Entering grounded secondary attack stance");
+            baseAnimator.SetBool("secondaryAttack", true);
+            stanceAnimator.SetBool("secondaryAttack", true);
+            //Debug.Log("Bools set to true");
+
+            attackCounter = 5;
+            
+            baseAnimator.SetInteger("attackCounter", 5);
+            stanceAnimator.SetInteger("attackCounter", 5);
+            //Debug.Log("Attack Counter set");
+
+
+            //Debug.Log("grounded");
+        }
+
+        else if (!CollisionSenses.Ground)
+        {
+            baseAnimator.SetBool("secondaryAttack", true);
+            stanceAnimator.SetBool("secondaryAttack", true);
+
+            baseAnimator.SetBool("secondaryAirAttack", true);
+            stanceAnimator.SetBool("secondaryAirAttack", true);
+
+            baseAnimator.SetInteger("attackCounter", -2);
+            stanceAnimator.SetInteger("attackCounter", -2);
+
+            attackCounter = 3;
+
+            //Debug.Log("not grounded");
+        }
+
+        resetTime = Time.time;
+    }
+
     public virtual void ExitCrouchStance()
     {
         //Debug.Log("CrouchStance Exiting");
@@ -159,44 +206,78 @@ public class Stance : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public virtual void ExitSecondaryStance()
+    {
+        //Debug.Log("Exiting Secondary Attack");
+
+        if (CollisionSenses.Ground)
+        {
+            baseAnimator.SetBool("secondaryAttack", false);
+            stanceAnimator.SetBool("secondaryAttack", false);
+            //Debug.Log("Bools set to false");
+
+            attackCounter = 0;
+            //Debug.Log("attackCounter set to 0");
+        }
+
+        else if (!CollisionSenses.Ground)
+        {
+            baseAnimator.SetBool("secondaryAttack", false);
+            stanceAnimator.SetBool("secondaryAttack", false);
+            baseAnimator.SetBool("airAttack", false);
+            stanceAnimator.SetBool("airAttack", false);
+
+            attackCounter = 0;
+        }
+
+        //Debug.Log("Deactivating gameObject");
+        gameObject.SetActive(false);
+    }
+
     #region Animation Triggers
 
     public virtual void AnimationFinishTrigger()
     {
         attackState.AnimationFinishTrigger();
+        secondaryAttackState.AnimationFinishTrigger();
         crouchState.AnimationFinishTrigger();
     }
 
     public virtual void AnimationStartMovementTrigger()
     {
-        Debug.Log("AnimationStartMovementTrigger called");
-        Debug.Log("Weapon movement speed: " + weaponData.movementSpeed[attackCounter]);
+        //Debug.Log("AnimationStartMovementTrigger called");
+        //Debug.Log("Weapon movement speed: " + weaponData.movementSpeed[attackCounter]);
         attackState.SetPlayerVelocity(weaponData.movementSpeed[attackCounter]);
+        secondaryAttackState.SetPlayerVelocity(weaponData.movementSpeed[attackCounter]);
         crouchState.SetPlayerVelocity(weaponData.movementSpeed[attackCounter]);
     }
 
     public virtual void AnimationStopMovementTrigger()
     {
-        Debug.Log("AnimationStopMovementTrigger called");
+        //Debug.Log("AnimationStopMovementTrigger called");
         attackState.SetPlayerVelocity(0f);
+        secondaryAttackState.SetPlayerVelocity(0f);
         crouchState.SetPlayerVelocity(0f);
     }
 
     public virtual void AnimationStartMovementTriggerReverse()
     {
         attackState.SetPlayerReverseVelocity(weaponData.movementSpeed[attackCounter]);
+        secondaryAttackState.SetPlayerReverseVelocity(weaponData.movementSpeed[attackCounter]);
         crouchState.SetPlayerReverseVelocity(weaponData.movementSpeed[attackCounter]);
     }
 
     public virtual void AnimationTurnOffFlipTrigger()
     {
         attackState.SetFlipCheck(false);
+        secondaryAttackState.SetFlipCheck(false);
         crouchState.SetFlipCheck(false);
     }
 
     public virtual void AnimationTurnOnFlipTrigger()
     {
         attackState.SetFlipCheck(true);
+        secondaryAttackState.SetFlipCheck(true);
         crouchState.SetFlipCheck(true);
 
     }
@@ -206,12 +287,37 @@ public class Stance : MonoBehaviour
 
     }
 
+    public virtual void AnimationMoveDownwardsTrigger()
+    {
+        float speed = weaponData.movementSpeed[attackCounter]; // Get the speed from the weapon data
+        float downwardSpeed = -Mathf.Abs(speed); // Ensure the speed is negative to move downwards
+
+        attackState.SetPlayerVerticalVelocity(downwardSpeed);
+        secondaryAttackState.SetPlayerVerticalVelocity(downwardSpeed);
+        crouchState.SetPlayerVerticalVelocity(downwardSpeed);
+    }
+
+    public virtual void AnimationStartUpwardMovementTrigger()
+    {
+        attackState.SetPlayerUpwardVelocity(weaponData.movementSpeed[attackCounter]);
+        secondaryAttackState.SetPlayerUpwardVelocity(weaponData.movementSpeed[attackCounter]);
+        crouchState.SetPlayerUpwardVelocity(weaponData.movementSpeed[attackCounter]);
+    }
+
     #endregion
 
     public void InitalizeStance(PlayerAttackState state, Core core)
     {
         this.attackState = state;
         this.core = core;
+    }
+
+    public void InitalizeSecondaryStance(PlayerSecondaryAttackState state, Core core)
+    {
+        //Debug.Log("Initializing Secondary Stance");
+        this.secondaryAttackState = state;
+        this.core = core;
+        //Debug.Log("Secondary Stance Initialized");
     }
 
     public void InitalizeCrouchStance(PlayerCrouchAttackState state, Core core)
