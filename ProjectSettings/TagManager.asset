@@ -14,6 +14,7 @@ TagManager:
   - eightCam
   - Brazier
   - PlayerEnemyCacher
+  - EnemyAttack
   layers:
   - Default
   - TransparentFX
@@ -65,6 +66,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 2837371147
+    locked: 0
+  - name: Particles
+    uniqueID: 2994678881
     locked: 0
   - name: UI
     uniqueID: 4069417945

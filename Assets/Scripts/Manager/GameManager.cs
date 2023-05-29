@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         CVC = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
+        //Time.timeScale = 0.1f;
+        //Time.timeScale = 0.5f;
+        //Time.timeScale = 0.7f;
     }
 
     private void Update()

@@ -5,10 +5,13 @@ using UnityEngine;
 public class WeaponAnimationToWeapon : MonoBehaviour
 {
     private Stance stance;
+    private BoxCollider2D parryHitbox;
     private void Start()
     {
         stance = GetComponentInParent<Stance>();
+        parryHitbox = GetComponentInChildren<BoxCollider2D>();
     }
+    
 
     private void AnimationFinishTrigger()
     {
@@ -53,4 +56,13 @@ public class WeaponAnimationToWeapon : MonoBehaviour
         stance.AnimationStartUpwardMovementTrigger();
     }
 
+    private void EnableParryHitbox()
+    {
+        parryHitbox.enabled = true;
+    }
+
+    private void DisableParryHitbox()
+    {
+        parryHitbox.enabled = false;
+    }
 }

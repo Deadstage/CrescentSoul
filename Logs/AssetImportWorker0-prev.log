@@ -1,0 +1,648 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.33f1 (915a7af8b0d5) revision 9525882'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32698 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\Games\2020.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Games/CrescentSoul
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51503
+Successfully changed project path to: D:/Games/CrescentSoul
+D:/Games/CrescentSoul
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 83.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path D:/Games/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Games/CrescentSoul/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   
+    VRAM:     8072 MB
+    Driver:   31.0.15.2698
+Initialize mono
+Mono path[0] = 'D:/Games/2020.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Games/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Games/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Games/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001841 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 75.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.604 seconds
+Domain Reload Profiling:
+	ReloadAssembly (604ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (456ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (142ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (192ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (76ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005215 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 84.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.319 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1320ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1101ms)
+			LoadAssemblies (133ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (350ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (455ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (85ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4017 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 169.5 MB.
+System memory in use after: 166.1 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 4410.
+Total: 6.724600 ms (FindLiveObjects: 0.378700 ms CreateObjectMapping: 0.250400 ms MarkObjects: 3.596500 ms  DeleteObjects: 2.497300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d77d630e082be70836998862544778') in 0.131562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.030603 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Walk.png
+  artifactKey: Guid(2564aaf7c136a2f44a15147ad7e3fc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Walk.png using Guid(2564aaf7c136a2f44a15147ad7e3fc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36eecfbb92d3c64818f56769cd6df82d') in 0.017146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.934301 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa3eede440687549a9dd27ba474f1fe') in 0.017433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.284340 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d67756b1e6deba6e3e2c7120e236d92') in 0.011785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.486897 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f967a4497576525925d83f114e0f6820') in 0.018555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 278.985128 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist 1.png
+  artifactKey: Guid(bf4f7ed336a1cd340826b6012ee04031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist 1.png using Guid(bf4f7ed336a1cd340826b6012ee04031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926ee95660a71ef7e780737d735bc741') in 0.025410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.176518 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7b8544a1cf6c2110da476454319765f') in 0.011719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.556354 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2caccbbaf26edcb28d8423b8d2f7943') in 0.011274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.443516 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca2f0991acc721822f3319571cb70b6') in 0.018397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.679921 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02fb5008ad788636198f0d645908d557') in 0.011411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.111118 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16089a73c9a76049553da64cee5ce13d') in 0.066338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.186712 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Walk.png
+  artifactKey: Guid(2564aaf7c136a2f44a15147ad7e3fc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Walk.png using Guid(2564aaf7c136a2f44a15147ad7e3fc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fea5569bf0cf24e068ecab1c7dce4f') in 0.018276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.007924 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Walk.png
+  artifactKey: Guid(2564aaf7c136a2f44a15147ad7e3fc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Walk.png using Guid(2564aaf7c136a2f44a15147ad7e3fc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c9262ff35fefb2b24881faa061d57d') in 0.030226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.042804 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/M3 Stun Transition.anim
+  artifactKey: Guid(b414fedaac0d6c94a9faefa51e10f27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/M3 Stun Transition.anim using Guid(b414fedaac0d6c94a9faefa51e10f27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79cd8480660c18fa78056e08a2e26f18') in 0.015756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 103.424063 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/M3.controller
+  artifactKey: Guid(a5c561f9142b1d34190a3686e5347d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/M3.controller using Guid(a5c561f9142b1d34190a3686e5347d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a6fc794af289d0448153bd12c1a4dbe') in 0.064859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 184.713361 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/M3.controller
+  artifactKey: Guid(a5c561f9142b1d34190a3686e5347d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/M3.controller using Guid(a5c561f9142b1d34190a3686e5347d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a3fd57d670a66a6fd4edd0d7652cc6a') in 0.007812 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005329 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.179 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1179ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (986ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (336ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (365ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3930 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.0 MB.
+System memory in use after: 164.6 MB.
+
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 4429.
+Total: 5.252600 ms (FindLiveObjects: 0.309000 ms CreateObjectMapping: 0.192100 ms MarkObjects: 3.193900 ms  DeleteObjects: 1.557000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 203.490983 seconds.
+  path: Assets/Scripts/Enemies/EnemySpecific/Enemy3/Data/E3_StunStateData.asset
+  artifactKey: Guid(ea960b11d2843dc499a01b949c00dfc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemies/EnemySpecific/Enemy3/Data/E3_StunStateData.asset using Guid(ea960b11d2843dc499a01b949c00dfc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d444a5edd998ebfbed9af61470cb211') in 0.024548 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004988 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.228 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1228ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1012ms)
+			LoadAssemblies (144ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (360ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (366ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3930 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.0 MB.
+System memory in use after: 164.6 MB.
+
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 4432.
+Total: 5.574700 ms (FindLiveObjects: 0.321000 ms CreateObjectMapping: 0.216500 ms MarkObjects: 3.393300 ms  DeleteObjects: 1.642800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006107 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.155 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1156ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (965ms)
+			LoadAssemblies (133ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (327ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (347ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3930 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.2 MB.
+System memory in use after: 164.7 MB.
+
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 4435.
+Total: 5.373400 ms (FindLiveObjects: 0.304600 ms CreateObjectMapping: 0.172400 ms MarkObjects: 3.235400 ms  DeleteObjects: 1.660200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 145.730304 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c9f88f9dd2b977b01ed943ccdd2bb7') in 0.062553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.229509 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f8afdca79be5de7b903b380d5ba389') in 0.016049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.313045 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7837f4d0831d9516685de93151c2e1ad') in 0.018367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.346070 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0dcee983661bab37bddd36b93b43d1a') in 0.014621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.151342 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe16ba0822bf2e163040bb733a70fab') in 0.015473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.095480 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2019210d39be794acd68db32139b14') in 0.055008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.966614 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad2afa3de189b9061fa98410ed50252') in 0.014291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.250812 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab95bfb59f99db1b2db73a51b630eab') in 0.017293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.430554 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09a3b908c5ea78dd66917d40b8c3f10') in 0.057796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.874210 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48133166d76e30c1c5cfe9160862478e') in 0.061678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.494690 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1919b2eaabe6bd48a511cd15344a9c05') in 0.055005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.107203 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb90e0a6cf8aa19f15b883f5b12f8bf') in 0.077065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.414072 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0817e7c7440fab030c36a9d2872ca5c') in 0.055383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.052130 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dfea08b5b8172946c7da68e61e3d68a') in 0.055176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.397159 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9155fb88411fc72bcd85522233e79fb') in 0.051594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.654053 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03092db592577b332791bf36e27f0cd5') in 0.053298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.956477 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b92a58ca2c1f7fed9dc2bbfbe7ecbd') in 0.055318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.212760 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e346249e5e041ea8893f7f8a32f1e53') in 0.054271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.532133 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a4437438096956d11653e7608827ff') in 0.064844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.290661 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcd5855b138270be30f9e6da28ad0b1') in 0.055346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.632222 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png
+  artifactKey: Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned.png using Guid(b48728e478de4f2469be162280967b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff39aff7874abe31b8be3c9c3bd384ff') in 0.059592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.693479 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879f22936b539939f610845bfc4d8d85') in 0.014541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.835069 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ef32fda33d7f493398563d16117c86') in 0.014077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.067929 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeccfae37f785dfa9d0c3476a43adcec') in 0.013947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.072319 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485fa679420f970f78b252bf863cf229') in 0.015509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.737937 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000844fe66ca9741b098f655f46df212') in 0.014351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.379460 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707cd91d9d8681f6a309218c9ee84703') in 0.014070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.196712 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74df7826f8ccf4d916c136dd79955d32') in 0.014174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.231682 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd87b8aef9396ae53766b45d4fa39e70') in 0.015287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.248448 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c3b0a96688a64446140670e7bed1e3') in 0.021125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.781628 seconds.
+  path: Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png
+  artifactKey: Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations/Enemies/Melee Enemies/Maids/M3/Maid Melee 3 Stunned Persist.png using Guid(b8b240c042b85a84392b5402f4e5b430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c49b5e37a631ac04c9405a01531d270') in 0.014052 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005037 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.126 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1127ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (934ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (318ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (348ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3930 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.2 MB.
+System memory in use after: 164.7 MB.
+
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 4439.
+Total: 5.747200 ms (FindLiveObjects: 0.315600 ms CreateObjectMapping: 0.160400 ms MarkObjects: 3.580000 ms  DeleteObjects: 1.690400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

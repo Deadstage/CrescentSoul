@@ -19,7 +19,7 @@ MonoBehaviour:
   - 0
   - -10
   - 0
-  - 5
+  - -20
   attackDetails:
   - attackName: Forward Sweep
     movementSpeed: 5
