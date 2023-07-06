@@ -24,11 +24,13 @@ public class E3_StunState : StunState
     {
         base.Enter();
         playerEnemyCache = GameObject.FindObjectOfType<PlayerEnemyCache>();
+        //Debug.Log("Entered Stun State");
     }
 
     public override void Exit()
     {
         base.Exit();
+        //Debug.Log("Exited Stun State");
     }
 
     public override void LogicUpdate()
@@ -53,7 +55,7 @@ public class E3_StunState : StunState
             }
             else
             {
-                enemy.lookForPlayerState.SetTurnImmediately(true);
+                enemy.lookForPlayerState.SetTurnImmediately(false);
                 stateMachine.ChangeState(enemy.lookForPlayerState);
             }
         }
@@ -67,5 +69,13 @@ public class E3_StunState : StunState
     public void SetStunDuration(float duration)
     {
         this.stateData.stunTime = duration;
+        //Debug.Log("Stun duration has been set to: " + duration);
+    }
+
+    public void ResetStunTimer()
+    {
+        isStunTimeOver = false;
+        startTime = Time.time;
+        //Debug.Log("Stun timer has been reset.");
     }
 }

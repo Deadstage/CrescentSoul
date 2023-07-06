@@ -93,11 +93,7 @@ public class Enemy3 : Entity, ICollisionHandler
                 if (colliderName == "TouchDamageCollider" && other.tag == "Player" && returnedState.GetType() == typeof(PlayerStunState) && returnedGrounded == true)
                 {
                     //Debug.Log("Crit Damage!");
-                    sceneDictionary.ZGHScene();
-                    //CHANGE
-                    //THIS
-                    //TO
-                    //MAID3
+                    sceneDictionary.M3HScene();
 
                     if (isEngaged == true)
                     {
@@ -149,7 +145,13 @@ public class Enemy3 : Entity, ICollisionHandler
 
     public void Stun(float duration)
     {
+        //Debug.Log("Stun method called with duration: " + duration);
         stunState.SetStunDuration(duration);
         stateMachine.ChangeState(stunState);
+    }
+
+    public bool IsInStunState()
+    {
+        return stateMachine.currentState == stunState;
     }
 }

@@ -40,6 +40,8 @@ public class Entity : MonoBehaviour
     //Player Detected State
     private PlayerEnemyCache playerEnemyCache;
 
+    public bool CanBeDamaged { get; set; } = false;
+
     public virtual void Awake()
     {
         Core = GetComponentInChildren<Core>();
@@ -71,6 +73,7 @@ public class Entity : MonoBehaviour
         }
 
     }
+
 
     public virtual void FixedUpdate()
     {
@@ -121,6 +124,17 @@ public class Entity : MonoBehaviour
             Gizmos.DrawWireSphere(playerCheck.position + (Vector3)(Vector2.right * entityData.closeRangeActionDistance), 0.2f);
             Gizmos.DrawWireSphere(playerCheck.position + (Vector3)(Vector2.right * entityData.minAgroDistance), 0.2f);
             Gizmos.DrawWireSphere(playerCheck.position + (Vector3)(Vector2.right * entityData.maxAgroDistance), 0.2f);
+        }
+    }
+    public bool IsStunned 
+    {
+        get 
+        {
+            return isStunned;
+        }
+        set 
+        {
+            isStunned = value;
         }
     }
 }

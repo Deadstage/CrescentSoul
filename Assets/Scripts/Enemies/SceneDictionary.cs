@@ -16,6 +16,8 @@ public class SceneDictionary : MonoBehaviour
 
     public Enemy2[] enemy2;
 
+    public Enemy3[] enemy3;
+
     public bool isEngaged = false;
 
     public MashBar mashBar;
@@ -32,6 +34,10 @@ public class SceneDictionary : MonoBehaviour
         hScene.Add(5, "Maid1Scene2_1");
         hScene.Add(6, "Maid1Scene3_1");
 
+        hScene.Add(8, "Maid3Scene1_1");
+        hScene.Add(9, "Maid3Scene2_1");
+        hScene.Add(10, "Maid3Scene3_1");
+
         anim = GetComponent<Animator>();
 
         foreach(var item in enemy1)
@@ -40,6 +46,11 @@ public class SceneDictionary : MonoBehaviour
         }
 
         foreach(var item in enemy2)
+        {
+            Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), item.GetComponent<Collider2D>());
+        }
+
+        foreach(var item in enemy3)
         {
             Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), item.GetComponent<Collider2D>());
         }
@@ -59,6 +70,7 @@ public class SceneDictionary : MonoBehaviour
         {
             enemy1[0].isEngaged = false;
             enemy2[0].isEngaged = false;
+            enemy3[0].isEngaged = false;
             player.isEngaged = false;
             this.isEngaged = false;
             anim.SetInteger("hAnim", -1);
@@ -81,6 +93,15 @@ public class SceneDictionary : MonoBehaviour
             if(enemy2[0].isEngaged == true)
             {
                 foreach(var item in enemy2)
+                {
+                    item.EnemyDisengager();
+                    item.EnemyDisengaged();
+                }
+            }
+
+            if(enemy3[0].isEngaged == true)
+            {
+                foreach(var item in enemy3)
                 {
                     item.EnemyDisengager();
                     item.EnemyDisengaged();
@@ -196,7 +217,7 @@ public class SceneDictionary : MonoBehaviour
                     item.EnemyEngager();
                 }
                 //enemy2.EnemyEngager();
-                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 4, 104, 204, 8.42f));
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 3, 103, 203, 8.42f));
             }
         }
 
@@ -215,7 +236,7 @@ public class SceneDictionary : MonoBehaviour
                     item.EnemyEngager();
                 }
                 //enemy2.EnemyEngager();
-                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 5, 105, 205, 6.06f));
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 4, 104, 204, 6.06f));
             }
         }
 
@@ -233,11 +254,73 @@ public class SceneDictionary : MonoBehaviour
                 {
                     item.EnemyEngager();
                 }
-                //enemy2.EnemyEngager();
-                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 6, 106, 206, 7f));
+                
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 5, 105, 205, 7f));
             }
         }
 
     }
-    
+
+    public void M3HScene()
+    {
+        int maid3Scene = rnd.Next(8, 11);
+        //Debug.Log(hScene[maid3Scene]);
+
+        if (maid3Scene.Equals(8))
+        {
+            isEngaged = true;
+            scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
+            anim.SetInteger("hAnim", 6);
+            //Debug.Log("playing first scene!");
+
+            if(isEngaged == true)
+            {
+                player.isEngaged = true;
+                foreach(var item in enemy3)
+                {
+                    item.EnemyEngager();
+                }
+
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 6, 106, 206, 5.21f));
+            }
+        }
+
+        if (maid3Scene.Equals(9))
+        {
+            isEngaged = true;
+            scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
+            anim.SetInteger("hAnim", 7);
+            //Debug.Log("playing second scene!");
+
+            if (isEngaged == true)
+            {
+                player.isEngaged = true;
+                foreach(var item in enemy3)
+                {
+                    item.EnemyEngager();
+                }
+               
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 7, 107, 207, 6.15f));
+            }
+        }
+
+        if (maid3Scene.Equals(10))
+        {
+            isEngaged = true;
+            scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
+            anim.SetInteger("hAnim", 8);
+            //Debug.Log("playing third scene!");
+
+            if (isEngaged == true)
+            {
+                player.isEngaged = true;
+                foreach(var item in enemy3)
+                {
+                    item.EnemyEngager();
+                }
+                
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 8, 108, 208, 5.08f));
+            }
+        }
+    }
 }

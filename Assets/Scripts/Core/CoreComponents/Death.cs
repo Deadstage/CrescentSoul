@@ -70,6 +70,13 @@ public class Death : CoreComponent
             enemy2.stateMachine.ChangeState(enemy2.deadState);
             Movement.SetVelocityX(0f);
         }
+
+        Enemy3 enemy3 = core.transform.parent.gameObject.GetComponent<Enemy3>();
+        if (enemy3 != null){
+            Combat.canImmuneDamage = true;
+            enemy3.stateMachine.ChangeState(enemy3.deadState);
+            Movement.SetVelocityX(0f);
+        }
         // else
         // {
         //     core.transform.parent.gameObject.SetActive(false);

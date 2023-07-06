@@ -39,12 +39,14 @@ public class StunState : State
         isStunTimeOver = false;
         isMovementStopped = false;
         Movement?.SetVelocity(stateData.stunKnockbackSpeed, stateData.stunKnockbackAngle, entity.lastDamageDirection);
+        //Debug.Log("Entered Primary Stun State");
     }
 
     public override void Exit()
     {
         base.Exit();
         entity.ResetStunResistance();
+        //Debug.Log("Exited Primary Stun State");
     }
 
     public override void LogicUpdate()

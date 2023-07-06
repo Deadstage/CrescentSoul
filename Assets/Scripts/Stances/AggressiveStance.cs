@@ -14,8 +14,8 @@ public class AggressiveStance : Stance
     private List<IDamageable> detectedDamageables = new List<IDamageable>();
     private List<IKnockbackable> detectedKnockbackables = new List<IKnockbackable>();
 
-    public GameObject parryParticlePrefab;
-    public AudioSource parrySound;
+    // public GameObject parryParticlePrefab;
+    // public AudioSource parrySound;
 
     protected override void Awake()
     {
@@ -87,18 +87,19 @@ public class AggressiveStance : Stance
         {
             detectedKnockbackables.Remove(knockbackable);
         }
-    }
-    public void ParryDetected(Collider2D collision)
-    {
-        Debug.Log("Parried!");
 
-        // Instantiate the parry effect prefab at the collision point with a random rotation
-        Instantiate(parryParticlePrefab, collision.transform.position, Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)));
+    // public void ParryDetected(Collider2D collision)
+    // {
+    //     Debug.Log("Parried!");
 
-        // Play the parry sound
-        if (parrySound != null)
-        {
-            parrySound.Play();
-        }
+    //     // Instantiate the parry effect prefab at the collision point with a random rotation
+    //     Instantiate(parryParticlePrefab, collision.transform.position, Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)));
+
+    //     // Play the parry sound
+    //     if (parrySound != null)
+    //     {
+    //         parrySound.Play();
+    //     }
+
     }
 }

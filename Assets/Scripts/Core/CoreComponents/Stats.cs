@@ -115,6 +115,20 @@ public class Stats : CoreComponent
         regen = null;
     }
 
+    public void ResetStamina()
+    {
+        currentStamina = 0;
+        OnStaminaChange?.Invoke(currentStamina);
+
+        StaminaZero?.Invoke();
+        //Debug.Log("Stamina is zero!");
+
+        if (regen != null)
+            StopCoroutine(regen);
+
+        regen = StartCoroutine(RegenStamina());
+    }
+
     public void PlayAudioClip(AudioClip clip)
     {
         if(transform.parent != null && transform.parent.parent != null && transform.parent.parent.name == "Enemy1")
@@ -142,5 +156,6 @@ public class Stats : CoreComponent
             PlayAudioClip(hitSounds[index]);
         }
     }
+
 }
 

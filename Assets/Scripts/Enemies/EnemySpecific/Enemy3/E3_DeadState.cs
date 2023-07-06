@@ -18,6 +18,7 @@ public class E3_DeadState : DeadState
     public override void Enter()
     {
         base.Enter();
+        Debug.Log(enemy.name + " entered dead state");
     }
 
     public override void Exit()
