@@ -145,8 +145,8 @@ public class Stance : MonoBehaviour
             baseAnimator.SetBool("secondaryAttack", true);
             stanceAnimator.SetBool("secondaryAttack", true);
 
-            baseAnimator.SetBool("secondaryAirAttack", true);
-            stanceAnimator.SetBool("secondaryAirAttack", true);
+            baseAnimator.SetBool("airAttack", true);
+            stanceAnimator.SetBool("airAttack", true);
 
             baseAnimator.SetInteger("attackCounter", -2);
             stanceAnimator.SetInteger("attackCounter", -2);

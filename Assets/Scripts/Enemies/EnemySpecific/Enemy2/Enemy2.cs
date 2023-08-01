@@ -100,7 +100,7 @@ public class Enemy2 : Entity, ICollisionHandler
                 if (colliderName == "TouchDamageCollider" && other.tag == "Player" && returnedState.GetType() == typeof(PlayerStunState) && returnedGrounded == true)
                 {
                     Debug.Log("Crit Damage!");
-                    sceneDictionary.M1HScene();
+                    sceneDictionary.MR1HScene();
 
                     if (isEngaged == true)
                     {

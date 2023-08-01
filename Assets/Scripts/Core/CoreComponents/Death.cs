@@ -77,10 +77,27 @@ public class Death : CoreComponent
             enemy3.stateMachine.ChangeState(enemy3.deadState);
             Movement.SetVelocityX(0f);
         }
-        // else
-        // {
-        //     core.transform.parent.gameObject.SetActive(false);
-        // }
+
+        Enemy4 enemy4 = core.transform.parent.gameObject.GetComponent<Enemy4>();
+        if (enemy4 != null){
+            Combat.canImmuneDamage = true;
+            enemy4.stateMachine.ChangeState(enemy4.deadState);
+            Movement.SetVelocityX(0f);
+        }
+
+        Enemy5 enemy5 = core.transform.parent.gameObject.GetComponent<Enemy5>();
+        if (enemy5 != null){
+            Combat.canImmuneDamage = true;
+            enemy5.stateMachine.ChangeState(enemy5.deadState);
+            Movement.SetVelocityX(0f);
+        }
+
+        Enemy6 enemy6 = core.transform.parent.gameObject.GetComponent<Enemy6>();
+        if (enemy6 != null){
+            Combat.canImmuneDamage = true;
+            enemy6.stateMachine.ChangeState(enemy6.deadState);
+            Movement.SetVelocityX(0f);
+        }
 
     }
 }
