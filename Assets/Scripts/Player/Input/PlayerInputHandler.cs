@@ -26,6 +26,7 @@ public class PlayerInputHandler : MonoBehaviour
     public bool MashInputStop { get; private set; }
     public bool PauseInput { get; private set;}
     public bool PauseInputStop { get; private set;}
+    public bool InteractionInput { get; private set; }
 
     public bool[] AttackInputs { get; private set; }
 
@@ -257,6 +258,28 @@ public class PlayerInputHandler : MonoBehaviour
             PauseInputStop = true;
         }
     }
+
+    public void OnInteractionInput(InputAction.CallbackContext context)
+    {
+        if (isPaused == false)
+        {
+            if (context.started)
+            {
+                InteractionInput = true;
+                Debug.Log("InteractionInput True");
+                
+            }
+            else if (context.canceled)
+            {
+                InteractionInput = false;
+                Debug.Log("InteractionInput False");
+            }
+        
+        }
+
+    }
+
+    public void UseInteractionInput() => InteractionInput = false;
 
     public void UseJumpInput() => JumpInput = false;
 

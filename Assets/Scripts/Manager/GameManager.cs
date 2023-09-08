@@ -46,4 +46,31 @@ public class GameManager : MonoBehaviour
             respawn = false;
         }
     }
+
+    public void SaveGame()
+    {
+        SaveData data = new SaveData();
+        data.playerPosition = player.transform.position; 
+        // if transform.position gives a Vector3, use new Vector2(player.transform.position.x, player.transform.position.y)
+
+        string json = JsonUtility.ToJson(data);
+        System.IO.File.WriteAllText("savefile.json", json);
+    }
+
+    public void LoadGame()
+    {
+        if (System.IO.File.Exists("savefile.json"))
+        {
+            string json = System.IO.File.ReadAllText("savefile.json");
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+
+            player.transform.position = data.playerPosition; 
+            // if transform.position expects a Vector3, use new Vector3(data.playerPosition.x, data.playerPosition.y, player.transform.position.z)
+
+        }
+        else
+        {
+            Debug.LogWarning("No save file found");
+        }
+    }
 }
