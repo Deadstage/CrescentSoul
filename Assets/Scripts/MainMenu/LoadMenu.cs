@@ -1,24 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using System.IO;
 
-public class MainMenu : MonoBehaviour
+public class LoadMenu : MonoBehaviour
 {
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+    private string saveFileDirectory = Application.persistentDataPath;
 
-    public void QuitGame()
+    void Start()
     {
-        Debug.Log("Quit");
-        Application.Quit();
-    }
-
-    public void OpenLoadMenu()
-    {
-        // This method should be called when you open the load menu
         ListSaveFiles();
     }
 
@@ -42,11 +30,5 @@ public class MainMenu : MonoBehaviour
         {
             Debug.LogWarning("No save files found");
         }
-    }
-
-    public void LoadSelectedSaveFile(string fileName)
-    {
-        // This method should be called when a player selects a save file to load
-        GameManager.Instance.LoadGame(fileName);
     }
 }

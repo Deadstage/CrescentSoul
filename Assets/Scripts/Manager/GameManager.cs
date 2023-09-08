@@ -18,6 +18,19 @@ public class GameManager : MonoBehaviour
 
     private CinemachineVirtualCamera CVC;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Start()
     {
         CVC = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
@@ -54,14 +67,14 @@ public class GameManager : MonoBehaviour
         // if transform.position gives a Vector3, use new Vector2(player.transform.position.x, player.transform.position.y)
 
         string json = JsonUtility.ToJson(data);
-        System.IO.File.WriteAllText("savefile.json", json);
+        System.IO.File.WriteAllText("savefile_{timestamp}.json", json);
     }
 
     public void LoadGame()
     {
-        if (System.IO.File.Exists("savefile.json"))
+        if (System.IO.File.Exists("savefile_{timestamp}.json"))
         {
-            string json = System.IO.File.ReadAllText("savefile.json");
+            string json = System.IO.File.ReadAllText("savefile_{timestamp}.json");
             SaveData data = JsonUtility.FromJson<SaveData>(json);
 
             player.transform.position = data.playerPosition; 
