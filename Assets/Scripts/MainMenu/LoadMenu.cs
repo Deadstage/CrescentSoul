@@ -38,7 +38,8 @@ public class LoadMenu : MonoBehaviour
                 newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Save File: " + fileName + " | Save Time: " + saveDateTime.ToString();
 
                 // Add a button click listener to load the save file when the item is clicked
-                newItem.GetComponent<Button>().onClick.AddListener(() => GameManager.Instance.LoadGame(fileName)); // Use GameManager.Instance to call the LoadGame method
+                //newItem.GetComponent<Button>().onClick.AddListener(() => GameManager.Instance.LoadGame(fileName)); // Use GameManager.Instance to call the LoadGame method
+                newItem.GetComponent<Button>().onClick.AddListener(() => TestButtonClick(fileName));
             }
         }
         else
@@ -47,8 +48,15 @@ public class LoadMenu : MonoBehaviour
         }
     }
 
+    public void TestButtonClick(string fileName)
+    {
+        Debug.Log("Button clicked: " + fileName);
+        LoadSelectedSaveFile(fileName);
+    }
+
     public void LoadSelectedSaveFile(string fileName)
     {
         GameManager.Instance.LoadGame(fileName);
+        Debug.Log("LoadSelectedSaveFile called with fileName: " + fileName);
     }
 }

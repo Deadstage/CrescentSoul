@@ -81,7 +81,36 @@ public class GameManager : MonoBehaviour
 
     public void LoadGame(string fileName)
     {
-        StartCoroutine(LoadGameCoroutine(fileName));
+        Debug.Log("GameManager LoadGame called with fileName: " + fileName);
+
+        string filePath = Path.Combine(Application.persistentDataPath, fileName);
+        if (File.Exists(filePath))
+        {
+            string json = File.ReadAllText(filePath);
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+
+            Debug.Log("Save data read successfully: " + json);
+
+            SceneManager.LoadScene("CS", LoadSceneMode.Single);
+            SceneManager.sceneLoaded += (scene, mode) => 
+            {
+                player = FindObjectOfType<Player>(); // Find the player object in the new scene
+                if (player != null && player.stats != null)
+                {
+                    player.transform.position = data.playerPosition;
+                    player.stats.currentHealth = data.playerHealth; // Load the player's health from the save data
+                    Debug.Log("Player data loaded successfully");
+                }
+                else
+                {
+                    Debug.LogError("Player object or stats component is null");
+                }
+            };
+        }
+        else
+        {
+            Debug.LogWarning("No save file found at " + filePath);
+        }
     }
 
     private IEnumerator LoadGameCoroutine(string fileName)
