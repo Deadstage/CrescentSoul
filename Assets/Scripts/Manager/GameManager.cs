@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using System;
+using System.Globalization;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +20,8 @@ public class GameManager : MonoBehaviour
     private bool respawn;
 
     private CinemachineVirtualCamera CVC;
+
+    public static GameManager Instance { get; private set; }
 
     private void Awake()
     {
@@ -70,20 +75,18 @@ public class GameManager : MonoBehaviour
         System.IO.File.WriteAllText("savefile_{timestamp}.json", json);
     }
 
-    public void LoadGame()
+    public void LoadGame(string fileName)
     {
-        if (System.IO.File.Exists("savefile_{timestamp}.json"))
+        string filePath = Path.Combine(Application.persistentDataPath, fileName);
+        if (File.Exists(filePath))
         {
-            string json = System.IO.File.ReadAllText("savefile_{timestamp}.json");
+            string json = File.ReadAllText(filePath);
             SaveData data = JsonUtility.FromJson<SaveData>(json);
-
-            player.transform.position = data.playerPosition; 
-            // if transform.position expects a Vector3, use new Vector3(data.playerPosition.x, data.playerPosition.y, player.transform.position.z)
-
+            player.transform.position = data.playerPosition;
         }
         else
         {
-            Debug.LogWarning("No save file found");
+            Debug.LogWarning("No save file found at " + filePath);
         }
     }
 }

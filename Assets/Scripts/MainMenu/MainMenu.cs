@@ -2,9 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
+using System.Globalization;
+using System.IO;
 
 public class MainMenu : MonoBehaviour
 {
+    private string saveFileDirectory;
+
+    void Awake()
+    {
+        saveFileDirectory = Application.persistentDataPath;
+    }
+    
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -21,6 +31,7 @@ public class MainMenu : MonoBehaviour
         // This method should be called when you open the load menu
         ListSaveFiles();
     }
+
 
     void ListSaveFiles()
     {
@@ -44,9 +55,4 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    public void LoadSelectedSaveFile(string fileName)
-    {
-        // This method should be called when a player selects a save file to load
-        GameManager.Instance.LoadGame(fileName);
-    }
 }

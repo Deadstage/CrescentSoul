@@ -1,9 +1,20 @@
 using UnityEngine;
+using System;
+using System.Globalization;
 using System.IO;
+using UnityEngine.UI;
 
 public class LoadMenu : MonoBehaviour
 {
-    private string saveFileDirectory = Application.persistentDataPath;
+    private string saveFileDirectory;
+
+    void Awake()
+    {
+        saveFileDirectory = Application.persistentDataPath;
+    }
+
+    public Transform contentPanel;
+    public GameObject listItemPrefab;
 
     void Start()
     {
@@ -15,20 +26,30 @@ public class LoadMenu : MonoBehaviour
         if (Directory.Exists(saveFileDirectory))
         {
             string[] saveFiles = Directory.GetFiles(saveFileDirectory, "savefile_*.json");
+
             foreach (string saveFile in saveFiles)
             {
                 string fileName = Path.GetFileName(saveFile);
                 string saveTime = fileName.Replace("savefile_", "").Replace(".json", "");
                 DateTime saveDateTime = DateTime.ParseExact(saveTime, "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
 
-                // Now you have the filename and the save time. You can display these in your LoadMenu UI.
-                // For example, using Debug.Log here, but you'd use UI elements in your actual game.
-                Debug.Log("Save File: " + fileName + " | Save Time: " + saveDateTime.ToString());
+                GameObject newItem = Instantiate(listItemPrefab, contentPanel);
+                Text textComponent = newItem.GetComponentInChildren<Text>();
+                textComponent.text = "Save File: " + fileName + " | Save Time: " + saveDateTime.ToString();
+
+                // Add a button click listener to load the save file when the item is clicked
+                newItem.GetComponent<Button>().onClick.AddListener(() => LoadSelectedSaveFile(fileName));
             }
         }
+
         else
         {
             Debug.LogWarning("No save files found");
         }
+    }
+
+    public void LoadSelectedSaveFile(string fileName)
+    {
+        GameManager.Instance.LoadGame(fileName);
     }
 }
