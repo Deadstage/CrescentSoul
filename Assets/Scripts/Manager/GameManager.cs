@@ -10,8 +10,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private Transform respawnPoint;
-    [SerializeField]
-    private GameObject player;
+
     [SerializeField]
     private float respawnTime;
 
@@ -22,6 +21,8 @@ public class GameManager : MonoBehaviour
     private CinemachineVirtualCamera CVC;
 
     public static GameManager Instance { get; private set; }
+
+    public Player player;
 
     private void Awake()
     {
@@ -59,8 +60,9 @@ public class GameManager : MonoBehaviour
     {
         if(Time.time >= respawnTimeStart + respawnTime && respawn)
         {
-            var playerTemp = Instantiate(player, respawnPoint);
-            CVC.m_Follow = playerTemp.transform;
+            GameObject playerGameObject = Instantiate(player.gameObject, respawnPoint);
+            player = playerGameObject.GetComponent<Player>(); // Get the Player component
+            CVC.m_Follow = playerGameObject.transform;
             respawn = false;
         }
     }
@@ -68,11 +70,12 @@ public class GameManager : MonoBehaviour
     public void SaveGame()
     {
         SaveData data = new SaveData();
-        data.playerPosition = player.transform.position; 
-        // if transform.position gives a Vector3, use new Vector2(player.transform.position.x, player.transform.position.y)
+        data.playerPosition = player.transform.position;
+        data.playerHealth = player.stats.currentHealth; // Save the player's current health
 
         string json = JsonUtility.ToJson(data);
-        System.IO.File.WriteAllText("savefile_{timestamp}.json", json);
+        string filePath = Path.Combine(Application.persistentDataPath, "savefile_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".json");
+        File.WriteAllText(filePath, json);
     }
 
     public void LoadGame(string fileName)
@@ -83,10 +86,12 @@ public class GameManager : MonoBehaviour
             string json = File.ReadAllText(filePath);
             SaveData data = JsonUtility.FromJson<SaveData>(json);
             player.transform.position = data.playerPosition;
+            player.stats.currentHealth = data.playerHealth; // Load the player's health from the save data
         }
         else
         {
             Debug.LogWarning("No save file found at " + filePath);
         }
     }
+
 }

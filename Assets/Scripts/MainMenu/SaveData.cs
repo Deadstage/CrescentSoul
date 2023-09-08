@@ -5,7 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class SaveData
 {
-    public Vector2 playerPosition;
-    public int health;
-    // add any other data you want to save here
+    public Vector3 playerPosition;
+    public float playerHealth; // Add a field to store the player's health
 }

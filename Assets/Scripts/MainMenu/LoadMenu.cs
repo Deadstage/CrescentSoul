@@ -34,14 +34,12 @@ public class LoadMenu : MonoBehaviour
                 DateTime saveDateTime = DateTime.ParseExact(saveTime, "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
 
                 GameObject newItem = Instantiate(listItemPrefab, contentPanel);
-                Text textComponent = newItem.GetComponentInChildren<Text>();
-                textComponent.text = "Save File: " + fileName + " | Save Time: " + saveDateTime.ToString();
+                newItem.GetComponentInChildren<Text>().text = "Save File: " + fileName + " | Save Time: " + saveDateTime.ToString();
 
                 // Add a button click listener to load the save file when the item is clicked
-                newItem.GetComponent<Button>().onClick.AddListener(() => LoadSelectedSaveFile(fileName));
+                newItem.GetComponent<Button>().onClick.AddListener(() => GameManager.Instance.LoadGame(fileName)); // Use GameManager.Instance to call the LoadGame method
             }
         }
-
         else
         {
             Debug.LogWarning("No save files found");

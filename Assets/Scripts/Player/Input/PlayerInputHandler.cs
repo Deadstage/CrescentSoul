@@ -359,6 +359,12 @@ public class PlayerInputHandler : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f; // Reset the time scale to normal
+        SceneManager.LoadScene("MainMenu"); // Load the main menu scene (replace "MainMenu" with the actual name of your main menu scene)
+    }
+
     public void QuitGame()
     {
         #if UNITY_EDITOR
