@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
     
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(0); // Load the game scene which is now at index 0
     }
 
     public void QuitGame()

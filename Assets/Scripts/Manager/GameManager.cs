@@ -5,6 +5,7 @@ using Cinemachine;
 using System;
 using System.Globalization;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -80,13 +81,30 @@ public class GameManager : MonoBehaviour
 
     public void LoadGame(string fileName)
     {
+        StartCoroutine(LoadGameCoroutine(fileName));
+    }
+
+    private IEnumerator LoadGameCoroutine(string fileName)
+    {
         string filePath = Path.Combine(Application.persistentDataPath, fileName);
         if (File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
             SaveData data = JsonUtility.FromJson<SaveData>(json);
-            player.transform.position = data.playerPosition;
-            player.stats.currentHealth = data.playerHealth; // Load the player's health from the save data
+
+            // Wait for the game scene to be fully loaded
+            yield return new WaitUntil(() => SceneManager.GetActiveScene().name == "CS"); // Replace with your actual game scene name
+
+            // Now try to access the player object and its components
+            if (player != null && player.stats != null)
+            {
+                player.transform.position = data.playerPosition;
+                player.stats.currentHealth = data.playerHealth; // Load the player's health from the save data
+            }
+            else
+            {
+                Debug.LogError("Player object or stats component is null");
+            }
         }
         else
         {

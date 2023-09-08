@@ -3,6 +3,7 @@ using System;
 using System.Globalization;
 using System.IO;
 using UnityEngine.UI;
+using TMPro;
 
 public class LoadMenu : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class LoadMenu : MonoBehaviour
                 DateTime saveDateTime = DateTime.ParseExact(saveTime, "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
 
                 GameObject newItem = Instantiate(listItemPrefab, contentPanel);
-                newItem.GetComponentInChildren<Text>().text = "Save File: " + fileName + " | Save Time: " + saveDateTime.ToString();
+                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Save File: " + fileName + " | Save Time: " + saveDateTime.ToString();
 
                 // Add a button click listener to load the save file when the item is clicked
                 newItem.GetComponent<Button>().onClick.AddListener(() => GameManager.Instance.LoadGame(fileName)); // Use GameManager.Instance to call the LoadGame method
