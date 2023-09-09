@@ -4,6 +4,7 @@ using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class LoadMenu : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class LoadMenu : MonoBehaviour
 
     public GameObject deleteConfirmationPanel;
     private string fileToDelete;
+
+    public TextMeshProUGUI corruptedSaveFileText;
 
     void Start()
     {
@@ -122,4 +125,22 @@ public class LoadMenu : MonoBehaviour
         fileToDelete = null;
         deleteConfirmationPanel.SetActive(false);
     }
+
+    public void ShowCorruptedSaveFileMessage()
+    {
+        corruptedSaveFileText.gameObject.SetActive(true);
+        StartCoroutine(FadeOutCorruptedMessage());
+    }
+
+    private IEnumerator FadeOutCorruptedMessage()
+    {
+        // Assuming the text starts fully visible
+        for (float t = 0; t <= 1; t += Time.deltaTime / 2) // Adjust 2 to change the fade duration
+        {
+            corruptedSaveFileText.color = new Color(corruptedSaveFileText.color.r, corruptedSaveFileText.color.g, corruptedSaveFileText.color.b, Mathf.Lerp(1, 0, t));
+            yield return null;
+        }
+        corruptedSaveFileText.gameObject.SetActive(false);
+    }
+
 }

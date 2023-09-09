@@ -6,6 +6,8 @@ using System;
 using System.Globalization;
 using System.IO;
 using UnityEngine.SceneManagement;
+using System.Security.Cryptography;
+using System.Text;
 
 public class GameManager : MonoBehaviour
 {
@@ -74,16 +76,16 @@ public class GameManager : MonoBehaviour
         data.playerPosition = player.transform.position;
         data.playerHealth = player.stats.currentHealth;
 
-        // Get the highest save number in the existing save files
         int highestSaveNumber = GetHighestSaveNumber();
         data.saveNumber = highestSaveNumber + 1;
 
-        // Save the timestamp in a readable format
         data.saveTime = DateTime.Now.ToString("dd/MM/yyyy - HH:mm:ss");
 
         string json = JsonUtility.ToJson(data);
+        string hash = GenerateSHA256String(json);
         string filePath = Path.Combine(Application.persistentDataPath, "savefile_" + data.saveNumber + ".json");
         File.WriteAllText(filePath, json);
+        File.WriteAllText(filePath + ".hash", hash);
     }
 
     private int GetHighestSaveNumber()
@@ -111,25 +113,40 @@ public class GameManager : MonoBehaviour
         if (File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
-            SaveData data = JsonUtility.FromJson<SaveData>(json);
+            string hash = File.ReadAllText(filePath + ".hash");
+            string newHash = GenerateSHA256String(json);
 
-            Debug.Log("Save data read successfully: " + json);
-
-            SceneManager.LoadScene("CS", LoadSceneMode.Single);
-            SceneManager.sceneLoaded += (scene, mode) => 
+            if (newHash == hash)
             {
-                player = FindObjectOfType<Player>(); // Find the player object in the new scene
-                if (player != null && player.stats != null)
+                SaveData data = JsonUtility.FromJson<SaveData>(json);
+
+                Debug.Log("Save data read successfully: " + json);
+
+                SceneManager.LoadScene("CS", LoadSceneMode.Single);
+                SceneManager.sceneLoaded += (scene, mode) => 
                 {
-                    player.transform.position = data.playerPosition;
-                    player.stats.currentHealth = data.playerHealth; // Load the player's health from the save data
-                    Debug.Log("Player data loaded successfully");
-                }
-                else
+                    player = FindObjectOfType<Player>(); 
+                    if (player != null && player.stats != null)
+                    {
+                        player.transform.position = data.playerPosition;
+                        player.stats.currentHealth = data.playerHealth; 
+                        Debug.Log("Player data loaded successfully");
+                    }
+                    else
+                    {
+                        Debug.LogError("Player object or stats component is null");
+                    }
+                };
+            }
+            else
+            {
+                Debug.LogError("Data has been tampered with");
+                LoadMenu loadMenu = FindObjectOfType<LoadMenu>();
+                if (loadMenu != null)
                 {
-                    Debug.LogError("Player object or stats component is null");
+                    loadMenu.ShowCorruptedSaveFileMessage();
                 }
-            };
+            }
         }
         else
         {
@@ -145,14 +162,12 @@ public class GameManager : MonoBehaviour
             string json = File.ReadAllText(filePath);
             SaveData data = JsonUtility.FromJson<SaveData>(json);
 
-            // Wait for the game scene to be fully loaded
-            yield return new WaitUntil(() => SceneManager.GetActiveScene().name == "CS"); // Replace with your actual game scene name
+            yield return new WaitUntil(() => SceneManager.GetActiveScene().name == "CS"); 
 
-            // Now try to access the player object and its components
             if (player != null && player.stats != null)
             {
                 player.transform.position = data.playerPosition;
-                player.stats.currentHealth = data.playerHealth; // Load the player's health from the save data
+                player.stats.currentHealth = data.playerHealth; 
             }
             else
             {
@@ -165,4 +180,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    
+
+    private string GenerateSHA256String(string inputString)
+    {
+        using (SHA256 sha256 = SHA256.Create())
+        {
+            byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(inputString));
+            StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                builder.Append(bytes[i].ToString("x2"));
+            }
+            return builder.ToString();
+        }
+    }
+
+    
 }
