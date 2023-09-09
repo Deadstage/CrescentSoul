@@ -6,5 +6,7 @@ using UnityEngine;
 public class SaveData
 {
     public Vector3 playerPosition;
-    public float playerHealth; // Add a field to store the player's health
+    public float playerHealth;
+    public string saveTime; // to store the save timestamp in a readable format
+    public int saveNumber; // to store the save number
 }

@@ -72,11 +72,35 @@ public class GameManager : MonoBehaviour
     {
         SaveData data = new SaveData();
         data.playerPosition = player.transform.position;
-        data.playerHealth = player.stats.currentHealth; // Save the player's current health
+        data.playerHealth = player.stats.currentHealth;
+
+        // Get the highest save number in the existing save files
+        int highestSaveNumber = GetHighestSaveNumber();
+        data.saveNumber = highestSaveNumber + 1;
+
+        // Save the timestamp in a readable format
+        data.saveTime = DateTime.Now.ToString("dd/MM/yyyy - HH:mm:ss");
 
         string json = JsonUtility.ToJson(data);
-        string filePath = Path.Combine(Application.persistentDataPath, "savefile_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".json");
+        string filePath = Path.Combine(Application.persistentDataPath, "savefile_" + data.saveNumber + ".json");
         File.WriteAllText(filePath, json);
+    }
+
+    private int GetHighestSaveNumber()
+    {
+        int highestSaveNumber = 0;
+        string[] saveFiles = Directory.GetFiles(Application.persistentDataPath, "savefile_*.json");
+        foreach (string saveFile in saveFiles)
+        {
+            string fileName = Path.GetFileName(saveFile);
+            string saveNumberStr = fileName.Replace("savefile_", "").Replace(".json", "");
+            int saveNumber;
+            if (int.TryParse(saveNumberStr, out saveNumber))
+            {
+                highestSaveNumber = Math.Max(highestSaveNumber, saveNumber);
+            }
+        }
+        return highestSaveNumber;
     }
 
     public void LoadGame(string fileName)
