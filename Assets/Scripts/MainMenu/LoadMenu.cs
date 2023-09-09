@@ -42,18 +42,17 @@ public class LoadMenu : MonoBehaviour
         if (Directory.Exists(saveFileDirectory))
         {
             string[] saveFiles = Directory.GetFiles(saveFileDirectory, "savefile_*.json");
-
-            // Sort files numerically based on the save number
             Array.Sort(saveFiles, (x, y) => 
             {
-                if (int.TryParse(x.Split('_')[1].Split('.')[0], out int xNum) && int.TryParse(y.Split('_')[1].Split('.')[0], out int yNum))
+                string xSubString = x.Split('_')[1].Split('.')[0];
+                string ySubString = y.Split('_')[1].Split('.')[0];
+
+                if (int.TryParse(xSubString, out int xNum) && int.TryParse(ySubString, out int yNum))
                 {
-                    return xNum - yNum;
+                    return xNum.CompareTo(yNum);
                 }
                 else
                 {
-                    // Handle the case where one or both of the strings couldn't be parsed as integers
-                    // (for example, by returning 0 to indicate that they are equal)
                     return 0;
                 }
             });
@@ -62,8 +61,8 @@ public class LoadMenu : MonoBehaviour
             foreach (string saveFile in saveFiles)
             {
                 string fileName = Path.GetFileName(saveFile);
-                string saveTime = fileName.Split('_')[1].Replace(".json", "");
-                DateTime saveDateTime = DateTime.ParseExact(saveTime, "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
+                DateTime saveDateTime = File.GetLastWriteTime(saveFile);
+
                 GameObject newItem = Instantiate(listItemPrefab, contentPanel);
                 newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Save " + saveNumber + " | " + saveDateTime.ToString("dd/MM/yyyy - HH:mm:ss");
                 newItem.GetComponent<Button>().onClick.AddListener(() => SelectSaveFile(fileName));
