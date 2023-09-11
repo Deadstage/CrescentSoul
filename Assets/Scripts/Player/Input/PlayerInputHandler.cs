@@ -5,6 +5,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PlayerInputHandler : MonoBehaviour
 {
@@ -45,6 +46,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     private PlayerInput playerInputComponent;
 
+    public bool isSaveMenuOpen = false;
+
     private void Start()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -73,6 +76,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnPrimaryAttackInput(InputAction.CallbackContext context)
     {   
+        if (isSaveMenuOpen) return;
 
         if (isPaused == false)
         {
@@ -90,6 +94,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnSecondaryAttackInput(InputAction.CallbackContext context)
     {
+        if (isSaveMenuOpen) return;
+
         //Debug.Log("OnSecondaryAttackInput called");
         if (isPaused == false)
         {
@@ -110,6 +116,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
+        if (isSaveMenuOpen) return;
+
         RawMovementInput = context.ReadValue<Vector2>();
 
         if (isPaused == false)
@@ -136,6 +144,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnJumpInput(InputAction.CallbackContext context)
     {
+        if (isSaveMenuOpen) return;
+
         if (isPaused == false)
         {
             if (context.started)
@@ -154,6 +164,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnFallThroughInput(InputAction.CallbackContext context)
     {   
+        if (isSaveMenuOpen) return;
+
         if (isPaused == false)
         {
             if (context.started)
@@ -175,6 +187,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnMashInput(InputAction.CallbackContext context)
     {   
+        if (isSaveMenuOpen) return;
+
         if (isPaused == false)
         {
             if (context.started)
@@ -202,6 +216,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnDashInput(InputAction.CallbackContext context)
     {   
+        if (isSaveMenuOpen) return;
+
         if (isPaused == false)
         {
             if (context.started)
@@ -219,6 +235,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnDashDirectionInput(InputAction.CallbackContext context)
     {   
+        if (isSaveMenuOpen) return;
+
         if (isPaused == false)
         {
             RawDashDirectionInput = context.ReadValue<Vector2>();
@@ -229,6 +247,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnPauseInput(InputAction.CallbackContext context)
     {
+        if (isSaveMenuOpen) return;
+
         if (context.started)
         {
             if (isPaused == false)
@@ -261,6 +281,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnInteractionInput(InputAction.CallbackContext context)
     {
+        if (isSaveMenuOpen) return;
+        
         if (isPaused == false)
         {
             if (context.started)
@@ -357,6 +379,8 @@ public class PlayerInputHandler : MonoBehaviour
         PauseInputStop = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void GoToMainMenu()

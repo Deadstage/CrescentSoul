@@ -6,6 +6,7 @@ public class SavePoint : MonoBehaviour
 {
     public PlayerInputHandler playerInputHandler;
     public GameManager gameManager; // Reference to your GameManager script
+    public GameObject saveMenuUI; // Reference to the new save menu UI
 
     private bool playerInSavePoint = false;
 
@@ -13,10 +14,21 @@ public class SavePoint : MonoBehaviour
     {
         if (playerInSavePoint && playerInputHandler.InteractionInput)
         {
-            gameManager.SaveGame(); // Calls the SaveGame method in the GameManager script
-            playerInputHandler.UseInteractionInput();  // Reset the interaction input
-            Debug.Log("Game saved at save point.");
+            OpenSaveMenu();
+            playerInputHandler.UseInteractionInput();
         }
+    }
+
+    private void OpenSaveMenu()
+    {
+        saveMenuUI.SetActive(true); // Open the save menu UI
+        playerInputHandler.isSaveMenuOpen = true; // Disable player movement and attacks
+    }
+
+    public void CloseSaveMenu()
+    {
+        saveMenuUI.SetActive(false); // Close the save menu UI
+        playerInputHandler.isSaveMenuOpen = false; // Enable player movement and attacks
     }
 
     private void OnTriggerEnter2D(Collider2D other) // Updated to 2D

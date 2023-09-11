@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;  // Subscribe to the sceneLoaded event
         }
         else
         {
@@ -43,10 +44,33 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         CVC = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
+
+        // Find and assign the Player object reference when the game scene is loaded
+        StartCoroutine(AssignPlayerReference());
+
         //Time.timeScale = 0.1f;
         //Time.timeScale = 0.5f;
         //Time.timeScale = 0.7f;
     }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "CS")  // Replace with your actual game scene name
+        {
+            StartCoroutine(AssignPlayerReference());
+        }
+    }
+
+    private IEnumerator AssignPlayerReference()
+    {
+        while (player == null)
+        {
+            player = FindObjectOfType<Player>();
+            yield return new WaitForSeconds(0.1f);
+        }
+        Debug.Log("Player reference assigned");
+    }
+
 
     private void Update()
     {
@@ -72,6 +96,13 @@ public class GameManager : MonoBehaviour
 
     public void SaveGame()
     {
+
+        if (player == null)
+        {
+            Debug.LogError("Player object reference not found");
+            return;
+        }
+
         SaveData data = new SaveData();
         data.playerPosition = player.transform.position;
         data.playerHealth = player.stats.currentHealth;
