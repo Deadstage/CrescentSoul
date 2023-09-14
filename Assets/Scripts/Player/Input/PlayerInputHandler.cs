@@ -48,6 +48,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public bool isSaveMenuOpen = false;
 
+    public GameObject memoriesMenu; // Reference to the Memories Menu GameObject
+
     private void Start()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -288,13 +290,13 @@ public class PlayerInputHandler : MonoBehaviour
             if (context.started)
             {
                 InteractionInput = true;
-                Debug.Log("InteractionInput True");
+                //Debug.Log("InteractionInput True");
                 
             }
             else if (context.canceled)
             {
                 InteractionInput = false;
-                Debug.Log("InteractionInput False");
+                //Debug.Log("InteractionInput False");
             }
         
         }
@@ -396,6 +398,19 @@ public class PlayerInputHandler : MonoBehaviour
         #else
             Application.Quit();
         #endif
+    }
+
+    public void OpenMemoriesMenu()
+    {
+        if (memoriesMenu != null)
+        {
+            pauseMenu.SetActive(false); // Hide the pause menu
+            memoriesMenu.SetActive(true); // Show the memories menu
+        }
+        else
+        {
+            Debug.LogError("Memories Menu not assigned in PlayerInputHandler");
+        }
     }
 }
 
