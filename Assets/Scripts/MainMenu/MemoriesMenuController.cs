@@ -15,19 +15,21 @@ public class MemoriesMenuController : MonoBehaviour
 
     public MemoriesManager memoriesManager; // Reference to the Memories Manager
 
+    private string currentMemoryType; // The current memory type being displayed
+
     private void PopulateScrollView(List<Memories> memories, GameObject scrollViewContent)
     {
-        // First, clear any existing children of the scrollViewContent
+        // Clear any existing children of the scrollViewContent
         foreach (Transform child in scrollViewContent.transform)
         {
             Destroy(child.gameObject);
         }
 
-        // Now, create and populate memory items for each memory in the list
+        // Create and populate memory items for each memory in the list
         foreach (Memories memory in memories)
         {
             GameObject memoryItem = Instantiate(memoryItemPrefab, scrollViewContent.transform);
-            memoryItem.GetComponent<MemoryItem>().Setup(memory);
+            memoryItem.GetComponent<MemoryItem>().SetMemory(memory);
         }
     }
 
@@ -70,9 +72,18 @@ public class MemoriesMenuController : MonoBehaviour
             // Activate the selected memory scroll view
             scrollView.SetActive(true);
 
+            currentMemoryType = memoryType;
+
+            Debug.Log(memoryType + " Memories Scroll View activated");
+            Debug.Log(memoryType + " Memories Scroll View active state: " + scrollView.activeSelf);
+
             // Get the memories of the selected type and populate the scroll view
             List<Memories> memories = memoriesManager.GetMemoriesOfType(memoryType);
-            PopulateScrollView(memories, scrollView);
+            
+            // Get the "Content" game object of the scroll view
+            GameObject scrollViewContent = scrollView.transform.Find("Viewport/Content").gameObject;
+            
+            PopulateScrollView(memories, scrollViewContent);
         }
         else
         {
@@ -80,9 +91,51 @@ public class MemoriesMenuController : MonoBehaviour
         }
     }
 
-    // This method would populate the scroll view with the given list of memories
-    // private void PopulateScrollView(List<Memories> memories, GameObject scrollView)
-    // {
-    //     // Your code here to populate the scroll view
-    // }
+    public void UpdateDisplayedMemories()
+    {
+        if (!string.IsNullOrEmpty(currentMemoryType))
+        {
+            GameObject currentScrollView = null;
+            switch (currentMemoryType)
+            {
+                case "Cold":
+                    currentScrollView = coldMemoriesScrollView;
+                    break;
+                case "Warm":
+                    currentScrollView = warmMemoriesScrollView;
+                    break;
+                case "Stoic":
+                    currentScrollView = stoicMemoriesScrollView;
+                    break;
+                case "Dark":
+                    currentScrollView = darkMemoriesScrollView;
+                    break;
+                case "Fading":
+                    currentScrollView = fadingMemoriesScrollView;
+                    break;
+            }
+
+            if (currentScrollView != null)
+            {
+                GameObject scrollViewContent = currentScrollView.transform.Find("Viewport/Content").gameObject;
+                List<Memories> memories = memoriesManager.GetMemoriesOfType(currentMemoryType);
+                PopulateScrollView(memories, scrollViewContent);
+            }
+        }
+    }
+
+    public void DeactivateAllViews()
+    {
+        coldMemoriesScrollView.SetActive(false);
+        warmMemoriesScrollView.SetActive(false);
+        stoicMemoriesScrollView.SetActive(false);
+        darkMemoriesScrollView.SetActive(false);
+        fadingMemoriesScrollView.SetActive(false);
+    }
+
+    // Call this method when the menu is opened to update the displayed memories
+    public void OnMenuOpened()
+    {
+        UpdateDisplayedMemories();
+    }
 }

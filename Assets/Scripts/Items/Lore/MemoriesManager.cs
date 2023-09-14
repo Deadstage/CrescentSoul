@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class MemoriesManager : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class MemoriesManager : MonoBehaviour
 
     private void Start()
     {
+
+        MemoriesList.Clear();
+
         // Create memories (you would do this for all your memories)
         Memories coldMemory1 = new Memories { Type = "Cold", ID = 1, Description = "This is a cold memory of number 1", isCollected = false };
         Memories coldMemory2 = new Memories { Type = "Cold", ID = 2, Description = "This is a cold memory of number 2", isCollected = false };
@@ -17,21 +21,22 @@ public class MemoriesManager : MonoBehaviour
         // Add memories to the list
         MemoriesList.Add(coldMemory1);
         MemoriesList.Add(coldMemory2);
+        MemoriesList.Add(coldMemory3);
         // ... (and so on)
     }
 
 
     public void AddMemory(Memories memory)
     {
-        if (!IsMemoryCollected(memory.ID))
+        Memories existingMemory = MemoriesList.Find(m => m.ID == memory.ID);
+        if (existingMemory != null)
         {
-            memory.isCollected = true;
-            MemoriesList.Add(memory);
-            Debug.Log("Memory added: " + memory.Description + ". Total memories: " + MemoriesList.Count);
+            existingMemory.isCollected = true;
+            Debug.Log("Memory added: " + memory.Description + ". Total memories: " + MemoriesList.Count(m => m.isCollected));
         }
         else
         {
-            Debug.Log("Memory already collected");
+            Debug.LogError("Memory with ID " + memory.ID + " not found in the list");
         }
     }
 
