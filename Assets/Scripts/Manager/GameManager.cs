@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
             player = FindObjectOfType<Player>();
             yield return new WaitForSeconds(0.1f);
         }
-        Debug.Log("Player reference assigned");
+        //Debug.Log("Player reference assigned");
     }
 
 

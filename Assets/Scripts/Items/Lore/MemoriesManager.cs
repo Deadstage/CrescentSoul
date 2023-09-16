@@ -13,22 +13,48 @@ public class MemoriesManager : MonoBehaviour
         MemoriesList.Clear();
 
         // Create memories (you would do this for all your memories)
-        Memories coldMemory1 = new Memories { Type = "Cold", ID = 1, Description = "This is a cold memory of number 1", isCollected = false };
-        Memories coldMemory2 = new Memories { Type = "Cold", ID = 2, Description = "This is a cold memory of number 2", isCollected = false };
-        Memories coldMemory3 = new Memories { Type = "Cold", ID = 3, Description = "This is a cold memory of number 3", isCollected = false };
+        Memories coldMemory1 = new Memories { Type = "Cold", ID = 1, Description = "When we first met... You asked me if I knew the way...", isCollected = false };
+        Memories coldMemory2 = new Memories { Type = "Cold", ID = 2, Description = "In truth, I didn't... But I wanted you to hope...", isCollected = false };
+        Memories coldMemory3 = new Memories { Type = "Cold", ID = 3, Description = "We thought it was a never ending adventure...", isCollected = false };
+        Memories coldMemory4 = new Memories { Type = "Cold", ID = 4, Description = "I miss the verdant forests... The grassy plains... The blue skies...", isCollected = false };
+
+        Memories warmMemory1 = new Memories { Type = "Warm", ID = 1, Description = "Do you... Know the way...?", isCollected = false };
+        Memories warmMemory2 = new Memories { Type = "Warm", ID = 2, Description = "The stars... Can you take me there...?", isCollected = false };
+
+        Memories stoicMemory1 = new Memories { Type = "Stoic", ID = 1, Description = "A beautiful piece of work... Are you sure...?", isCollected = false };
+        Memories stoicMemory2 = new Memories { Type = "Stoic", ID = 2, Description = "You must be mistaken... It's not befitting...", isCollected = false };
+
+        Memories darkMemory1 = new Memories { Type = "Dark", ID = 1, Description = "Why do you look at me like that...? Don't I disgust you...?", isCollected = false };
+        Memories darkMemory2 = new Memories { Type = "Dark", ID = 2, Description = "Born beneath the darkest star... My birthrite...", isCollected = false };
+
+        Memories fadingMemory1 = new Memories { Type = "Fading", ID = 1, Description = "You're lost, aren't you...?", isCollected = false };
+        Memories fadingMemory2 = new Memories { Type = "Fading", ID = 2, Description = "Me...? Just an observer...", isCollected = false };
         // ... (and so on)
 
         // Add memories to the list
         MemoriesList.Add(coldMemory1);
         MemoriesList.Add(coldMemory2);
         MemoriesList.Add(coldMemory3);
+        MemoriesList.Add(coldMemory4);
+
+        MemoriesList.Add(warmMemory1);
+        MemoriesList.Add(warmMemory2);
+
+        MemoriesList.Add(stoicMemory1);
+        MemoriesList.Add(stoicMemory2);
+
+        MemoriesList.Add(darkMemory1);
+        MemoriesList.Add(darkMemory2);
+
+        MemoriesList.Add(fadingMemory1);
+        MemoriesList.Add(fadingMemory2);
         // ... (and so on)
     }
 
 
     public void AddMemory(Memories memory)
     {
-        Memories existingMemory = MemoriesList.Find(m => m.ID == memory.ID);
+        Memories existingMemory = MemoriesList.Find(m => m.ID == memory.ID && m.Type == memory.Type);
         if (existingMemory != null)
         {
             existingMemory.isCollected = true;
@@ -36,7 +62,7 @@ public class MemoriesManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Memory with ID " + memory.ID + " not found in the list");
+            Debug.LogError("Memory with ID " + memory.ID + " and Type " + memory.Type + " not found in the list");
         }
     }
 

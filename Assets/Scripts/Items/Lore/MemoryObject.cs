@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal; // Don't forget to add this namespace to access Light2D properties
 
 public class MemoryObject : MonoBehaviour
 {
@@ -7,6 +8,19 @@ public class MemoryObject : MonoBehaviour
 
     private PlayerInputHandler playerInputHandler;
     private MemoriesManager memoriesManager;
+
+    public float rotationSpeed = 60f; // Speed of rotation, adjust this value as needed
+    public float floatSpeed = 0.5f; // Speed of floating, adjust this value as needed
+    public float floatHeight = 0.3f; // Height of floating, adjust this value as needed
+
+    public float maxOuterRadius = 2.27f; // Max outer radius of the light
+    public float minOuterRadius = 0.1f; // Min outer radius of the light, adjust as needed
+    public float maxIntensity = 0.27f; // Max intensity of the light
+    public float minIntensity = 0.1f; // Min intensity of the light, adjust as needed
+    public float lightPulseSpeed = 1.0f; // Speed of the light pulsing effect, adjust as needed
+
+    private Vector3 initialPosition;
+    private Light2D pointLight; // Reference to the Light2D component
 
     private void Start()
     {
@@ -17,6 +31,9 @@ public class MemoryObject : MonoBehaviour
         {
             Debug.LogError("MemoryData is not assigned on " + gameObject.name);
         }
+
+        initialPosition = transform.position;
+        pointLight = GetComponentInChildren<Light2D>(); // Get the Light2D component from the child objects
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -57,7 +74,20 @@ public class MemoryObject : MonoBehaviour
                 //Debug.Log("PlayerInputHandler not found");
             }
         }
+
+        // Rotate the object constantly and make it float up and down
+        transform.Rotate(0, 0, -rotationSpeed * Time.deltaTime);
+        transform.position = initialPosition + new Vector3(0, Mathf.Sin(Time.time * floatSpeed) * floatHeight, 0);
+
+        // Create a pulsing light effect
+        if (pointLight != null)
+        {
+            float pulse = Mathf.PingPong(Time.time * lightPulseSpeed, maxOuterRadius - minOuterRadius) + minOuterRadius;
+            pointLight.pointLightOuterRadius = pulse;
+            pointLight.intensity = Mathf.Lerp(minIntensity, maxIntensity, (pulse - minOuterRadius) / (maxOuterRadius - minOuterRadius));
+        }
     }
+    
 
     private void CollectMemory()
     {
@@ -65,13 +95,13 @@ public class MemoryObject : MonoBehaviour
         {
             if (!memoriesManager.IsMemoryCollected(MemoryData.ID))
             {
-                Debug.Log("Memory collected");
+                Debug.Log("Memory collected: " + MemoryData.Description + " of type " + MemoryData.Type);
                 memoriesManager.AddMemory(MemoryData);
                 gameObject.SetActive(false); // Deactivate this GameObject to indicate the memory has been collected
             }
             else
             {
-                Debug.Log("Memory already collected");
+                Debug.Log("Memory already collected: " + MemoryData.Description + " of type " + MemoryData.Type);
             }
         }
         else

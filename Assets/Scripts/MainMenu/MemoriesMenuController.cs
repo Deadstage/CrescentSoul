@@ -11,13 +11,17 @@ public class MemoriesMenuController : MonoBehaviour
     public GameObject darkMemoriesScrollView; // Reference to the Dark Memories Scroll View GameObject
     public GameObject fadingMemoriesScrollView; // Reference to the Fading Memories Scroll View GameObject
 
-    public GameObject memoryItemPrefab; // Assign your memory item prefab here
+    public GameObject coldMemoryPrefab; // Assign memory item prefab
+    public GameObject warmMemoryPrefab;
+    public GameObject stoicMemoryPrefab;
+    public GameObject darkMemoryPrefab;
+    public GameObject fadingMemoryPrefab;
 
     public MemoriesManager memoriesManager; // Reference to the Memories Manager
 
     private string currentMemoryType; // The current memory type being displayed
 
-    private void PopulateScrollView(List<Memories> memories, GameObject scrollViewContent)
+    private void PopulateScrollView(List<Memories> memories, GameObject scrollViewContent, string currentMemoryType)
     {
         // Clear any existing children of the scrollViewContent
         foreach (Transform child in scrollViewContent.transform)
@@ -28,7 +32,8 @@ public class MemoriesMenuController : MonoBehaviour
         // Create and populate memory items for each memory in the list
         foreach (Memories memory in memories)
         {
-            GameObject memoryItem = Instantiate(memoryItemPrefab, scrollViewContent.transform);
+            GameObject memoryPrefab = GetPrefabBasedOnMemoryType(currentMemoryType);
+            GameObject memoryItem = Instantiate(memoryPrefab, scrollViewContent.transform);
             memoryItem.GetComponent<MemoryItem>().SetMemory(memory);
         }
     }
@@ -83,7 +88,7 @@ public class MemoriesMenuController : MonoBehaviour
             // Get the "Content" game object of the scroll view
             GameObject scrollViewContent = scrollView.transform.Find("Viewport/Content").gameObject;
             
-            PopulateScrollView(memories, scrollViewContent);
+            PopulateScrollView(memories, scrollViewContent, memoryType);
         }
         else
         {
@@ -119,8 +124,27 @@ public class MemoriesMenuController : MonoBehaviour
             {
                 GameObject scrollViewContent = currentScrollView.transform.Find("Viewport/Content").gameObject;
                 List<Memories> memories = memoriesManager.GetMemoriesOfType(currentMemoryType);
-                PopulateScrollView(memories, scrollViewContent);
+                PopulateScrollView(memories, scrollViewContent, currentMemoryType); // Changed memoryType to currentMemoryType
             }
+        }
+    }
+
+    private GameObject GetPrefabBasedOnMemoryType(string memoryType)
+    {
+        switch (memoryType)
+        {
+            case "Cold":
+                return coldMemoryPrefab;
+            case "Warm":
+                return warmMemoryPrefab;
+            case "Dark":
+                return darkMemoryPrefab;
+            case "Stoic":
+                return stoicMemoryPrefab;
+            case "Fading":
+                return fadingMemoryPrefab;
+            default:
+                return null; // or return a default prefab
         }
     }
 
