@@ -79,8 +79,8 @@ public class MemoriesMenuController : MonoBehaviour
 
             currentMemoryType = memoryType;
 
-            Debug.Log(memoryType + " Memories Scroll View activated");
-            Debug.Log(memoryType + " Memories Scroll View active state: " + scrollView.activeSelf);
+            //Debug.Log(memoryType + " Memories Scroll View activated");
+            //Debug.Log(memoryType + " Memories Scroll View active state: " + scrollView.activeSelf);
 
             // Get the memories of the selected type and populate the scroll view
             List<Memories> memories = memoriesManager.GetMemoriesOfType(memoryType);

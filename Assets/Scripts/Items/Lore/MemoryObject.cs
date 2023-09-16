@@ -31,6 +31,14 @@ public class MemoryObject : MonoBehaviour
         {
             Debug.LogError("MemoryData is not assigned on " + gameObject.name);
         }
+        else
+        {
+            // Check if this memory has been collected and deactivate if necessary
+            if (memoriesManager.IsMemoryCollected(MemoryData.ID, MemoryData.Type))
+            {
+                gameObject.SetActive(false);
+            }
+        }
 
         initialPosition = transform.position;
         pointLight = GetComponentInChildren<Light2D>(); // Get the Light2D component from the child objects
@@ -93,15 +101,15 @@ public class MemoryObject : MonoBehaviour
     {
         if (memoriesManager != null && MemoryData != null)
         {
-            if (!memoriesManager.IsMemoryCollected(MemoryData.ID))
+            if (!memoriesManager.IsMemoryCollected(MemoryData.ID, MemoryData.Type)) // Updated this line
             {
-                Debug.Log("Memory collected: " + MemoryData.Description + " of type " + MemoryData.Type);
+                Debug.Log("Memory collected");
                 memoriesManager.AddMemory(MemoryData);
                 gameObject.SetActive(false); // Deactivate this GameObject to indicate the memory has been collected
             }
             else
             {
-                Debug.Log("Memory already collected: " + MemoryData.Description + " of type " + MemoryData.Type);
+                Debug.Log("Memory already collected");
             }
         }
         else

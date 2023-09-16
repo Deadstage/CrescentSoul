@@ -96,7 +96,6 @@ public class GameManager : MonoBehaviour
 
     public void SaveGame()
     {
-
         if (player == null)
         {
             Debug.LogError("Player object reference not found");
@@ -106,6 +105,17 @@ public class GameManager : MonoBehaviour
         SaveData data = new SaveData();
         data.playerPosition = player.transform.position;
         data.playerHealth = player.stats.currentHealth;
+
+        // Get the list of collected memory IDs and save it to SaveData
+        MemoriesManager memoriesManager = FindObjectOfType<MemoriesManager>();
+        if (memoriesManager != null)
+        {
+            data.collectedMemoryIDs = memoriesManager.GetCollectedMemoryIDs();
+        }
+        else
+        {
+            Debug.LogError("MemoriesManager not found");
+        }
 
         int highestSaveNumber = GetHighestSaveNumber();
         data.saveNumber = highestSaveNumber + 1;
@@ -162,6 +172,17 @@ public class GameManager : MonoBehaviour
                         player.transform.position = data.playerPosition;
                         player.stats.currentHealth = data.playerHealth; 
                         Debug.Log("Player data loaded successfully");
+
+                        // Load the list of collected memory IDs and update MemoriesManager
+                        MemoriesManager memoriesManager = FindObjectOfType<MemoriesManager>();
+                        if (memoriesManager != null)
+                        {
+                            memoriesManager.SetCollectedMemoryIDs(data.collectedMemoryIDs);
+                        }
+                        else
+                        {
+                            Debug.LogError("MemoriesManager not found");
+                        }
                     }
                     else
                     {

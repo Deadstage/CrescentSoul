@@ -47,6 +47,7 @@ public class PlayerInputHandler : MonoBehaviour
     private PlayerInput playerInputComponent;
 
     public bool isSaveMenuOpen = false;
+    public bool isTeleportMenuOpen = false;
 
     public GameObject memoriesMenu; // Reference to the Memories Menu GameObject
 
@@ -78,7 +79,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnPrimaryAttackInput(InputAction.CallbackContext context)
     {   
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
 
         if (isPaused == false)
         {
@@ -96,7 +97,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnSecondaryAttackInput(InputAction.CallbackContext context)
     {
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
 
         //Debug.Log("OnSecondaryAttackInput called");
         if (isPaused == false)
@@ -118,7 +119,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
 
         RawMovementInput = context.ReadValue<Vector2>();
 
@@ -146,7 +147,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnJumpInput(InputAction.CallbackContext context)
     {
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
 
         if (isPaused == false)
         {
@@ -166,7 +167,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnFallThroughInput(InputAction.CallbackContext context)
     {   
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
 
         if (isPaused == false)
         {
@@ -189,7 +190,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnMashInput(InputAction.CallbackContext context)
     {   
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
 
         if (isPaused == false)
         {
@@ -218,7 +219,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnDashInput(InputAction.CallbackContext context)
     {   
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
 
         if (isPaused == false)
         {
@@ -237,7 +238,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnDashDirectionInput(InputAction.CallbackContext context)
     {   
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
 
         if (isPaused == false)
         {
@@ -249,7 +250,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnPauseInput(InputAction.CallbackContext context)
     {
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
 
         if (context.started)
         {
@@ -283,24 +284,21 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnInteractionInput(InputAction.CallbackContext context)
     {
-        if (isSaveMenuOpen) return;
+        if (isSaveMenuOpen || isTeleportMenuOpen) return;
         
         if (isPaused == false)
         {
             if (context.started)
             {
                 InteractionInput = true;
-                //Debug.Log("InteractionInput True");
-                
+                Debug.Log("InteractionInput started");
             }
             else if (context.canceled)
             {
                 InteractionInput = false;
-                //Debug.Log("InteractionInput False");
+                Debug.Log("InteractionInput canceled");
             }
-        
         }
-
     }
 
     public void UseInteractionInput() => InteractionInput = false;

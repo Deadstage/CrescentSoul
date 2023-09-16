@@ -7,12 +7,17 @@ public class MemoriesManager : MonoBehaviour
 {
     public List<Memories> MemoriesList = new List<Memories>();
 
-    private void Start()
+    private void Awake()
+    {
+        InitializeMemoriesList();
+    }
+
+    private void InitializeMemoriesList()
     {
 
         MemoriesList.Clear();
 
-        // Create memories (you would do this for all your memories)
+        // Create memories (do this for all memories)
         Memories coldMemory1 = new Memories { Type = "Cold", ID = 1, Description = "When we first met... You asked me if I knew the way...", isCollected = false };
         Memories coldMemory2 = new Memories { Type = "Cold", ID = 2, Description = "In truth, I didn't... But I wanted you to hope...", isCollected = false };
         Memories coldMemory3 = new Memories { Type = "Cold", ID = 3, Description = "We thought it was a never ending adventure...", isCollected = false };
@@ -66,9 +71,9 @@ public class MemoriesManager : MonoBehaviour
         }
     }
 
-    public bool IsMemoryCollected(int id)
+    public bool IsMemoryCollected(int id, string type)
     {
-        return MemoriesList.Exists(memory => memory.ID == id && memory.isCollected);
+        return MemoriesList.Exists(memory => memory.ID == id && memory.Type == type && memory.isCollected);
     }
 
     public List<Memories> GetMemoriesOfType(string type)
@@ -82,5 +87,40 @@ public class MemoriesManager : MonoBehaviour
             }
         }
         return memoriesOfType;
+    }
+
+    public List<string> GetCollectedMemoryIDs()
+    {
+        List<string> collectedMemoryIDs = new List<string>();
+        foreach (Memories memory in MemoriesList)
+        {
+            if (memory.isCollected)
+            {
+                collectedMemoryIDs.Add(memory.Type + "_" + memory.ID);
+            }
+        }
+        return collectedMemoryIDs;
+    }
+
+    public void SetCollectedMemoryIDs(List<string> collectedMemoryIDs)
+    {
+        foreach (string memoryID in collectedMemoryIDs)
+        {
+            string[] parts = memoryID.Split('_');
+            if (parts.Length == 2)
+            {
+                string type = parts[0];
+                int id = int.Parse(parts[1]);
+                Memories memory = MemoriesList.Find(m => m.Type == type && m.ID == id);
+                if (memory != null)
+                {
+                    memory.isCollected = true;
+                }
+                else
+                {
+                    Debug.LogError("Memory with ID " + id + " and Type " + type + " not found in the list");
+                }
+            }
+        }
     }
 }
