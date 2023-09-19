@@ -26,7 +26,7 @@ public class TeleportMenu : MonoBehaviour
         }
         else
         {
-            Debug.Log("TeleportManager found");
+            //Debug.Log("TeleportManager found");
         }
 
         playerInputHandler = FindObjectOfType<PlayerInputHandler>();
@@ -36,7 +36,7 @@ public class TeleportMenu : MonoBehaviour
         }
         else
         {
-            Debug.Log("PlayerInputHandler found");
+            //Debug.Log("PlayerInputHandler found");
         }
 
         // Set up the teleport button listener here instead of in ShowMenu
@@ -68,6 +68,8 @@ public class TeleportMenu : MonoBehaviour
             return;
         }
 
+        //Debug.Log("ShowMenu called, unlockedRooms data: " + JsonUtility.ToJson(unlockedRooms)); // Log to check the data when showing the menu
+
         // Clear any existing buttons
         foreach (Transform child in roomListContainer)
         {
@@ -77,15 +79,15 @@ public class TeleportMenu : MonoBehaviour
         // Create a button for each unlocked room
         foreach (var room in unlockedRooms)
         {
-            if (room.Key == null || room.Value == null)
+            if (room.roomId == null || room.spawnPoint == null)
             {
-                Debug.LogError("Room key or value is null");
+                Debug.LogError("Room ID or spawn point is null");
                 continue;
             }
 
             GameObject buttonObj = Instantiate(roomButtonPrefab, roomListContainer);
-            buttonObj.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = room.Key; // Assuming the room ID is a suitable display name
-            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectRoom(room.Key, room.Value));
+            buttonObj.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = room.roomId; // Assuming the room ID is a suitable display name
+            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectRoom(room.roomId, room.spawnPoint));
         }
 
         // Show the menu

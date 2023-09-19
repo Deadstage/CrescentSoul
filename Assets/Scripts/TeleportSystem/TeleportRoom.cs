@@ -28,6 +28,7 @@ public class TeleportRoom : MonoBehaviour
         {
             // Notify the TeleportManager that this room has been unlocked
             teleportManager.UnlockRoom(roomId, teleportSpawnPoint.transform.position);
+            //Debug.Log("OnTriggerEnter2D called, room unlocked: " + roomId); // Log to check when a room is unlocked
         }
     }
 }

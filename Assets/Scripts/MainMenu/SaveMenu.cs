@@ -110,10 +110,23 @@ public class SaveMenu : MonoBehaviour
         if (!string.IsNullOrEmpty(fileToDelete))
         {
             string filePath = Path.Combine(saveFileDirectory, fileToDelete);
+            string hashFilePath = Path.Combine(saveFileDirectory, fileToDelete + ".hash");
+            
             if (File.Exists(filePath))
             {
                 File.Delete(filePath);
                 Debug.Log("File deleted: " + fileToDelete);
+                
+                if (File.Exists(hashFilePath))
+                {
+                    File.Delete(hashFilePath);
+                    Debug.Log("Hash file deleted: " + Path.GetFileName(hashFilePath));
+                }
+                else
+                {
+                    Debug.LogWarning("Hash file not found: " + Path.GetFileName(hashFilePath));
+                }
+                
                 ListSaveFiles();
             }
             else

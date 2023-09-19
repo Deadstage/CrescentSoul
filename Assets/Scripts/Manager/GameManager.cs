@@ -117,6 +117,19 @@ public class GameManager : MonoBehaviour
             Debug.LogError("MemoriesManager not found");
         }
 
+            // Get the list of unlocked rooms and save it to SaveData
+        TeleportManager teleportManager = FindObjectOfType<TeleportManager>();
+
+        if (teleportManager != null)
+        {
+            data.unlockedRooms = teleportManager.GetUnlockedRooms();
+            //Debug.Log("SaveGame called, unlockedRooms data: " + JsonUtility.ToJson(data.unlockedRooms)); // Log to check the data when saving
+        }
+        else
+        {
+            Debug.LogError("TeleportManager not found");
+        }
+
         int highestSaveNumber = GetHighestSaveNumber();
         data.saveNumber = highestSaveNumber + 1;
 
@@ -160,13 +173,15 @@ public class GameManager : MonoBehaviour
             if (newHash == hash)
             {
                 SaveData data = JsonUtility.FromJson<SaveData>(json);
+                Debug.Log("LoadGame called, SaveData: " + json); // Log to check the data when loading
 
                 Debug.Log("Save data read successfully: " + json);
 
                 SceneManager.LoadScene("CS", LoadSceneMode.Single);
                 SceneManager.sceneLoaded += (scene, mode) => 
                 {
-                    player = FindObjectOfType<Player>(); 
+                    player = FindObjectOfType<Player>();
+
                     if (player != null && player.stats != null)
                     {
                         player.transform.position = data.playerPosition;
@@ -182,6 +197,17 @@ public class GameManager : MonoBehaviour
                         else
                         {
                             Debug.LogError("MemoriesManager not found");
+                        }
+
+                        // Load the list of unlocked rooms and update TeleportManager
+                        TeleportManager teleportManager = FindObjectOfType<TeleportManager>();
+                        if (teleportManager != null)
+                        {
+                            teleportManager.SetUnlockedRooms(data.unlockedRooms);
+                        }
+                        else
+                        {
+                            Debug.LogError("TeleportManager not found");
                         }
                     }
                     else

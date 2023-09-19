@@ -291,12 +291,12 @@ public class PlayerInputHandler : MonoBehaviour
             if (context.started)
             {
                 InteractionInput = true;
-                Debug.Log("InteractionInput started");
+                //Debug.Log("InteractionInput started");
             }
             else if (context.canceled)
             {
                 InteractionInput = false;
-                Debug.Log("InteractionInput canceled");
+                //Debug.Log("InteractionInput canceled");
             }
         }
     }
