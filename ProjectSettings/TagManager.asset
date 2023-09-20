@@ -15,6 +15,7 @@ TagManager:
   - Brazier
   - PlayerEnemyCacher
   - EnemyAttack
+  - ElevatorSensor
   layers:
   - Default
   - TransparentFX

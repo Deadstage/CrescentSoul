@@ -51,6 +51,12 @@ public class PlayerInputHandler : MonoBehaviour
 
     public GameObject memoriesMenu; // Reference to the Memories Menu GameObject
 
+    public Elevator elevator; // Reference to the Elevator script
+
+    public ElevatorTopButton elevatorTopButton; // Reference to the ElevatorTopButton script
+    public ElevatorMiddleButton elevatorMiddleButton; // Reference to the ElevatorMiddleButton script
+    public ElevatorBottomButton elevatorBottomButton; // Reference to the ElevatorBottomButton script
+
     private void Start()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -153,9 +159,17 @@ public class PlayerInputHandler : MonoBehaviour
         {
             if (context.started)
             {
-                JumpInput = true;
-                JumpInputStop = false;
-                jumpInputStartTime = Time.time;
+                if (elevator.IsPlayerOnElevator())
+                {
+                    elevator.MoveUp();
+                    JumpInput = false; // Prevent the player from jumping while on the elevator
+                }
+                else
+                {
+                    JumpInput = true;
+                    JumpInputStop = false;
+                    jumpInputStartTime = Time.time;
+                }
             }
 
             if (context.canceled)
@@ -173,17 +187,21 @@ public class PlayerInputHandler : MonoBehaviour
         {
             if (context.started)
             {
-                FallThroughInput = true;
-                FallThroughInputStop = false;
-
-                //Debug.Log("FallThrough True");
+                if (elevator.IsPlayerOnElevator())
+                {
+                    elevator.MoveDown();
+                    // No need to prevent fall through as you mentioned crouching is fine
+                }
+                else
+                {
+                    FallThroughInput = true;
+                    FallThroughInputStop = false;
+                }
             }
 
             if (context.canceled)
             {
                 FallThroughInputStop = true;
-
-                //Debug.Log("Fallthrough False");
             }
         }
     }
@@ -292,6 +310,20 @@ public class PlayerInputHandler : MonoBehaviour
             {
                 InteractionInput = true;
                 //Debug.Log("InteractionInput started");
+
+                // Check if the player is within the collider of any elevator button and presses the "E" key
+                if (elevatorTopButton.IsPlayerNearButton())
+                {
+                    elevatorTopButton.PressButton();
+                }
+                else if (elevatorMiddleButton.IsPlayerNearButton())
+                {
+                    elevatorMiddleButton.PressButton();
+                }
+                else if (elevatorBottomButton.IsPlayerNearButton())
+                {
+                    elevatorBottomButton.PressButton();
+                }
             }
             else if (context.canceled)
             {
