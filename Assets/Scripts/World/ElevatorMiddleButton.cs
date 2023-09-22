@@ -7,13 +7,40 @@ public class ElevatorMiddleButton : MonoBehaviour
     public Elevator elevator; // Reference to the Elevator script
     public Transform targetPosition; // The position the elevator should move to when this button is pressed
 
-    private bool playerNearButton = false;
+    public PlayerInputHandler playerInputHandler;
+    private bool playerInButtonArea = false;
+
+    public Animator buttonAnimator; // Reference to the Animator component
+
+    private void Awake()
+    {
+        playerInputHandler = FindObjectOfType<PlayerInputHandler>();
+
+        // If you didn't set the Animator in the Unity Editor, you can get it like this
+        if (buttonAnimator == null)
+        {
+            buttonAnimator = GetComponent<Animator>();
+        }
+    }
+
+    private void Update()
+    {
+        if (playerInButtonArea && playerInputHandler.InteractionInput)
+        {
+            elevator.MoveToPosition(targetPosition);
+            playerInputHandler.UseInteractionInput(); // Reset the interaction input
+
+            // Trigger the button animation
+            buttonAnimator.SetTrigger("ButtonPressed"); // Assuming "ButtonPressed" is the name of your trigger in the Animator Controller
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            playerNearButton = true;
+            playerInButtonArea = true;
+            Debug.Log("Player entered the middle button area");  // Debug log added
         }
     }
 
@@ -21,17 +48,8 @@ public class ElevatorMiddleButton : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            playerNearButton = false;
+            playerInButtonArea = false;
+            Debug.Log("Player exited the middle button area");  // Debug log added
         }
-    }
-
-    public bool IsPlayerNearButton()
-    {
-        return playerNearButton;
-    }
-
-    public void PressButton()
-    {
-        elevator.MoveToPosition(targetPosition);
     }
 }

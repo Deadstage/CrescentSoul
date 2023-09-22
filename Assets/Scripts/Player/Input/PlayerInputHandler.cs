@@ -309,26 +309,11 @@ public class PlayerInputHandler : MonoBehaviour
             if (context.started)
             {
                 InteractionInput = true;
-                //Debug.Log("InteractionInput started");
-
-                // Check if the player is within the collider of any elevator button and presses the "E" key
-                if (elevatorTopButton.IsPlayerNearButton())
-                {
-                    elevatorTopButton.PressButton();
-                }
-                else if (elevatorMiddleButton.IsPlayerNearButton())
-                {
-                    elevatorMiddleButton.PressButton();
-                }
-                else if (elevatorBottomButton.IsPlayerNearButton())
-                {
-                    elevatorBottomButton.PressButton();
-                }
+                // Removed the IsPlayerNearButton checks. The buttons themselves will handle this.
             }
             else if (context.canceled)
             {
                 InteractionInput = false;
-                //Debug.Log("InteractionInput canceled");
             }
         }
     }

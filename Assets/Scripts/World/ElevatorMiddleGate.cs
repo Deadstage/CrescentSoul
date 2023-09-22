@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ElevatorMiddleGate : MonoBehaviour
 {
-    public Vector3 openPosition; // The position the gate should move to when it is open
-    public Vector3 closedPosition; // The position the gate should move to when it is closed
+    public GameObject openPosition; // The position the gate should move to when it is open
+    public GameObject closedPosition; // The position the gate should move to when it is closed
     public float moveSpeed = 10f; // The speed at which the gate should move
     public float tolerance = 0.1f; // The tolerance to consider the gate has reached the target position
 
@@ -17,7 +17,7 @@ public class ElevatorMiddleGate : MonoBehaviour
         {
             StopCoroutine(moveCoroutine);
         }
-        moveCoroutine = StartCoroutine(MoveToPosition(openPosition));
+        moveCoroutine = StartCoroutine(MoveToPosition(openPosition.transform.position));
     }
 
     public void CloseGate()
@@ -26,7 +26,7 @@ public class ElevatorMiddleGate : MonoBehaviour
         {
             StopCoroutine(moveCoroutine);
         }
-        moveCoroutine = StartCoroutine(MoveToPosition(closedPosition));
+        moveCoroutine = StartCoroutine(MoveToPosition(closedPosition.transform.position));
     }
 
     private IEnumerator MoveToPosition(Vector3 targetPosition)

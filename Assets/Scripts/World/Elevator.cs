@@ -18,13 +18,17 @@ public class Elevator : MonoBehaviour
     public float moveSpeed = 10f;
 
     public GameObject player; // Reference to the player GameObject
+    private bool elevatorCalled = false;  // New variable
 
     private bool isMoving = false;
+
+    private Vector3 lastPosition;  // Add this variable to keep track of the last position
 
     public void PlayerEnteredElevator()
     {
         playerOnElevator = true;
         player.transform.parent = transform; // Set the elevator as the player's parent
+        elevatorCalled = true; // Add this line
     }
 
     public void PlayerExitedElevator()
@@ -45,7 +49,7 @@ public class Elevator : MonoBehaviour
 
     private void Update()
     {
-        if (playerOnElevator)
+        if (elevatorCalled)  // Just check for elevatorCalled
         {
             MoveElevator();
         }
@@ -59,6 +63,8 @@ public class Elevator : MonoBehaviour
         {
             // The elevator has reached the target position
             isMoving = false;
+            elevatorCalled = false;  // Reset this back to false
+            //Debug.Log("Elevator reached destination. Resetting elevatorCalled to false.");  // Debug log here
             OpenCloseGates();
         }
         else
@@ -67,14 +73,17 @@ public class Elevator : MonoBehaviour
         }
     }
 
+
     public void MoveToPosition(Transform targetPosition)
     {
         if (!isMoving)
         {
             currentTargetPosition = targetPosition;
             isMoving = true;
+            elevatorCalled = true;  // Set this to true when button is pressed
         }
     }
+
 
     public void MoveUp()
     {
@@ -89,6 +98,7 @@ public class Elevator : MonoBehaviour
                 currentTargetPosition = middlePosition;
             }
             // If it's already at the top position, it won't change the target position
+            elevatorCalled = true;  // Add this line
         }
     }
 
@@ -109,6 +119,7 @@ public class Elevator : MonoBehaviour
                 currentTargetPosition = middlePosition;
             }
             // If it's already at the bottom position, it won't change the target position
+            elevatorCalled = true;  // Add this line
         }
     }
 
@@ -124,6 +135,13 @@ public class Elevator : MonoBehaviour
 
     private void OpenCloseGates()
     {
+        StartCoroutine(DelayedOpenCloseGates());
+    }
+
+    private IEnumerator DelayedOpenCloseGates()
+    {
+        yield return new WaitForSeconds(0.7f);
+
         if (currentTargetPosition == topPosition)
         {
             topGate.OpenGate();
