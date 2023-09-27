@@ -154,9 +154,12 @@ GameObject:
   - component: {fileID: 4045827833330637715}
   - component: {fileID: 4045827833330637712}
   - component: {fileID: 4045827833330637713}
+  - component: {fileID: 905811628}
+  - component: {fileID: 905811625}
+  - component: {fileID: 4592963510056158243}
   m_Layer: 9
   m_Name: Torch_0
-  m_TagString: Untagged
+  m_TagString: Torch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,6 +250,62 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &905811628
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045827833330637726}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.18, y: 1.01}
+    newSize: {x: 0.18, y: 1.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.18, y: 1.01}
+  m_EdgeRadius: 0
+--- !u!114 &905811625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045827833330637726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4755c04141aa2d64e8f21379e5032eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionParticles: {fileID: 2861497703149578357, guid: 3442551ca47749a4d9ca592381114f14, type: 3}
+  destructionForce: 50
+  pointLight2D: {fileID: 4045827835163561156}
+  torchSoundAmbience: {fileID: 1370464589525659383}
+  torchSprite: {fileID: 4045827833330637712}
+--- !u!114 &4592963510056158243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045827833330637726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a53b61e44c46148bb14c0c14c453d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPosition: {x: 0, y: 0}
 --- !u!1 &4045827835163561156
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ TagManager:
   - PlayerEnemyCacher
   - EnemyAttack
   - ElevatorSensor
+  - Torch
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - Boundary
   - WorldCollider
   - DeadLayer
-  - 
+  - ObjectParticles
   - 
   - 
   - 

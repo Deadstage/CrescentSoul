@@ -25,6 +25,7 @@ public class Stats : CoreComponent
 
     protected override void Awake()
     {
+        //Debug.Log("Stats Awake called for: " + gameObject.name);
         base.Awake();
 
         currentHealth = maxHealth;

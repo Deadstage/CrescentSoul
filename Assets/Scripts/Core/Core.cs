@@ -10,6 +10,7 @@ public class Core : MonoBehaviour
 
     private void Awake()
     {
+        //Debug.Log("Core Awake called for: " + gameObject.name);
         var comps = GetComponentsInChildren<CoreComponent>();
 
         foreach (var component in comps)
