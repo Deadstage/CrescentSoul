@@ -1,0 +1,1392 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.33f1 (915a7af8b0d5) revision 9525882'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32698 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\Games\2020.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Games/CrescentSoul
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57131
+Successfully changed project path to: D:/Games/CrescentSoul
+D:/Games/CrescentSoul
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 87.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path D:/Games/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Games/CrescentSoul/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   
+    VRAM:     8072 MB
+    Driver:   31.0.15.3699
+Initialize mono
+Mono path[0] = 'D:/Games/2020.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Games/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Games/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Games/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002469 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 79.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.647 seconds
+Domain Reload Profiling:
+	ReloadAssembly (648ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (491ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (165ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (201ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (80ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (78ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005625 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 84.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.296 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1297ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1073ms)
+			LoadAssemblies (138ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (333ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (462ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (85ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (248ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4047 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 170.5 MB.
+System memory in use after: 167.1 MB.
+
+Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 4443.
+Total: 5.655700 ms (FindLiveObjects: 0.308900 ms CreateObjectMapping: 0.208300 ms MarkObjects: 3.505900 ms  DeleteObjects: 1.631400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/World/Destructables/Wall Torch
+  artifactKey: Guid(fb2ac315ff5ca5e43bec91c1701ec052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch using Guid(fb2ac315ff5ca5e43bec91c1701ec052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e65158cb8875ab672832daf294c12076') in 0.010641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.487139 seconds.
+  path: Assets/Sprites/Level Assets/Objects/Lights/Torch-Green Pieces.png
+  artifactKey: Guid(29585c5cdf50d5e4d833547a03f9bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/Objects/Lights/Torch-Green Pieces.png using Guid(29585c5cdf50d5e4d833547a03f9bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d8fdd5162583d2d2b781444ba2ce26') in 0.141070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.716080 seconds.
+  path: Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall Pieces.png
+  artifactKey: Guid(efb02e2545c0aca4498d2959b108b6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall Pieces.png using Guid(efb02e2545c0aca4498d2959b108b6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da66fc883d28af38a51f800cc62afb8e') in 0.024069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.422992 seconds.
+  path: Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall-Green Pieces.png
+  artifactKey: Guid(ee004d5126e15744b818570ac5e8cdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall-Green Pieces.png using Guid(ee004d5126e15744b818570ac5e8cdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e1f3d85473f103cc8e47e517ae743ba') in 0.022095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.470043 seconds.
+  path: Assets/Sprites/Level Assets/Objects/Lights/Torch-Green Pieces.png
+  artifactKey: Guid(29585c5cdf50d5e4d833547a03f9bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/Objects/Lights/Torch-Green Pieces.png using Guid(29585c5cdf50d5e4d833547a03f9bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297508facd1d8390bf4886d4af0cb72a') in 0.013587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.826065 seconds.
+  path: Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall Pieces.png
+  artifactKey: Guid(efb02e2545c0aca4498d2959b108b6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall Pieces.png using Guid(efb02e2545c0aca4498d2959b108b6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a831b5de3ac99147ebb97b3f20c9e118') in 0.010568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.647897 seconds.
+  path: Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall-Green Pieces.png
+  artifactKey: Guid(ee004d5126e15744b818570ac5e8cdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall-Green Pieces.png using Guid(ee004d5126e15744b818570ac5e8cdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd779af54b69ee2edc18f7805b8a8d129') in 0.010668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.868426 seconds.
+  path: Assets/Sprites/Level Assets/Objects/Lights/Torch-Green Pieces.png
+  artifactKey: Guid(29585c5cdf50d5e4d833547a03f9bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/Objects/Lights/Torch-Green Pieces.png using Guid(29585c5cdf50d5e4d833547a03f9bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c0e01e3dee596b51c1c277b3999afc') in 0.036471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.207017 seconds.
+  path: Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall Pieces.png
+  artifactKey: Guid(efb02e2545c0aca4498d2959b108b6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall Pieces.png using Guid(efb02e2545c0aca4498d2959b108b6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '565a7ac06e2f773050bd6e32213aa4fd') in 0.025532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.002553 seconds.
+  path: Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall-Green Pieces.png
+  artifactKey: Guid(ee004d5126e15744b818570ac5e8cdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level Assets/Objects/Lights/Torch-Wall-Green Pieces.png using Guid(ee004d5126e15744b818570ac5e8cdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfeded1070989ff67e27e92ff5400841') in 0.032475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 411.254762 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc4dedc97217a24ae175c9e5dc12d82') in 0.156946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.222659 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70d2f86575d32c6f00184c9ca9f2a019') in 0.020296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.732286 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6f05cce313bcf6499a6d5b9ae1a69e') in 0.023085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 85.091818 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b042ccda518e321c2ce49da52fcfa6') in 0.015303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.027162 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c16ea1afcf478634c3d21c9b0f2455a') in 0.011128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.599938 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '891592e29df37c2da97ef3297c8fc152') in 0.012806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.789080 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25a67a3905235d5733b6744ec1f7874') in 0.006902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.415520 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d87488f9b29beb9c685567f19bed541') in 0.012463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.223348 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78dddd11ef9878957a99047775b27f3') in 0.010266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.577095 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64c65c33fd7c1655fd75cd224aafcbc2') in 0.011857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.434710 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517183017546184a7f82e3b27d7838ac') in 0.009928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.766033 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14fb49beb4ed0348e1dd214344615e12') in 0.011419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.758420 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c21ab542019d8f042a6a3d3c67b1b4f6') in 0.010400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.395840 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1842ba425421a99a6aa6739b56cfb10') in 0.010799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.112397 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523161860331db5b8bce1710b9bcae04') in 0.010581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.906944 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0418500daea934bd63dfd6653fc65a21') in 0.006954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.634963 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6d785614f77baf65d8038d21dc8e12') in 0.013977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.371727 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102a48efd68bc9ba9faa44fbbc0d0550') in 0.009727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.179002 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa5092706efc45e9a6a91b1a715c1be') in 0.010081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.594105 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8524062ddbe88d5aa6593c6f2ccd146') in 0.010808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.768002 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff9d4e73c2180600e56c8d72129af802') in 0.011532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.975042 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a725adbe974b580d33dc389bc2a9a7') in 0.009873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.210939 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a53226ade932c956f3ba6e897cee95d') in 0.011658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.382785 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31abcd57ddfe49294cbeb78a5507baff') in 0.010962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.395430 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0223b95abb99420bd01e2bcaeb83aea') in 0.007616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.998148 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56b553ded282bf8e8de3b0ba6ebc6ec') in 0.014610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.433308 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe98afff4c433b258dadb2399b2b5be') in 0.011677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.810583 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8445c0a08d1b7b539de1fe06f014db72') in 0.010973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.140429 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe387c41ff3129c432423e3f4fc5149c') in 0.009749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.999151 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c4a293043f240bff654dfeb37b965c') in 0.012028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.767619 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0d941f2cc4663679d1a49f4bbfa1bd') in 0.010898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.199947 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '079f78eef90fc32c90f270ba7081f023') in 0.009419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.004468 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da1dcabcaf2527830c16dba8f6212eb') in 0.010032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.793454 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1085d7ce1c4e434aee9508432548cd05') in 0.009718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.389193 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78f3370cf61a32447c36a95a1ec3cc18') in 0.010194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.780071 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b321ea07aad9df4e399bca1849a23796') in 0.006748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.819884 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e6c465f1d661be917b6204e1d4e35c') in 0.013198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.777437 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef85a67c387e7d4a82697983f58d3d65') in 0.010609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.393889 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79debd2136edc734ca06ff2d6646af0e') in 0.011154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.616256 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd7e3d4603275f4ea81f9a983411a62') in 0.009992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.594944 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e7816359685f7607edd457e2286a2d') in 0.009840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.213588 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5bb769cebf2ddb147ef635f77f5ade5') in 0.010872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.824165 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297f3d0a31894d9d4dcbc79eefc374a6') in 0.009312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.231438 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b21a5f4da9050d1ab69660c14fdd4ef') in 0.013613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.535129 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd08d893d75c3ffca8c465653aceea7f') in 0.012082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.584675 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4464f8dd9fe25aeef392b1708a26a4ac') in 0.013919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.444369 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b72d2a756453332e767b38c998f2d7') in 0.009967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.360685 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b786520b5cbcd4f6d6f4e23420180b') in 0.010350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.596822 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c321bf4247676e9ab280bcc8e07be984') in 0.010013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.826432 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d9e18fdcd29b623ce4b0ddbc38465d') in 0.030718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.162909 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f4d3f4c4550a0e10c15f4ad6ed869c') in 0.009770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.185165 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fb6650abc37d8b57b70920f0b5fa8f1') in 0.011265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.012940 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca7bca3b6070ae4b5b3c91072541341') in 0.010899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.576234 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a33d7f506d31e8369c58e80a33fa15c') in 0.010529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.185691 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a22ff1583056754f84a14421851beb') in 0.006464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.806266 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0795b13da6421581aa3f54feefbd9b10') in 0.014322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.401926 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95195fde4f108480ac117156032ad1c7') in 0.010766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.394560 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d7870617e99f65fc1428572685c84e7') in 0.010980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.386201 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b231706bae242119b169253b648a9d') in 0.010201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.201906 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef2de7683c5a8b79487b9b4fb10761a') in 0.010038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.403494 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ca85041bc362f78df2a77f6219fa7a') in 0.011287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.232802 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc2a9dc96e0a271f7c3d1777df3f66f0') in 0.010200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.052043 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9b074d8fb3ffa57620a2496b38297b') in 0.013641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.763507 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd814eaa738e82893a4a76423d7dfbdcb') in 0.014038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.981829 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d85bb6fb8bb763ed88e66642742007') in 0.009356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.584045 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746c8a29415d3941f61033d36e094cdc') in 0.009222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.391566 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '898581c182de8eca57721bf1e39819a9') in 0.010840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.796068 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2206aa37db9e627b9ac983dae40e26') in 0.014641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.580687 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12c0ae86f5906e54682fae57d0eed68') in 0.009296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.789009 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3170ac0dc22951608a405e14e066c9') in 0.009681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.000283 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46c90e5b1fd132ffaf778e1b7624dc1') in 0.010090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.010683 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7da0c586669a437f36a598928cc5681') in 0.006436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.011448 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2c5eeb070c05d17f6149e2a238aa0d') in 0.014889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.189013 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0ae2f43be90a16162a00addfec6b49') in 0.009865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.400680 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c745c89c447f446a39f1e4b86cb888') in 0.011335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.376611 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb779e34920b2ae21446b614f90bd9c') in 0.009943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.612428 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3c3b9c091f73094a6282c4791a006c') in 0.011971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.596782 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f5981c50450727bfe5c2476131c28d7') in 0.011674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.801154 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a50b697846f74005119b6b653e9c06') in 0.011192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.191118 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8538558fa69f9305f185ffd26198e6ea') in 0.010499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.038142 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7dbcda6cd099138e10c5f06b3e63232') in 0.014868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.628015 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f5580d2477f9c3f8109a6ae1ea2842') in 0.024190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.904247 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6925760ea1f132880aafa353adf4b1') in 0.011627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.786518 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d179aa882352c4a1eeaa81a724027d8') in 0.010347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.207199 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2807375485f8d8e0851bb2e22a0e299') in 0.010160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.393301 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe7773ec9d68ecfd31e61fde0505fb6') in 0.009721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.183479 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f1de1575a02ce990af272765135c57') in 0.010397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.881474 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11351757b3f3f646b60609b57f427990') in 0.007259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.789797 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f6bd2c825f1a7d109629566c733d12') in 0.013272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.777451 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8875845b5f069b56c6c269819761721d') in 0.010418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.028555 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d852474d7d4ff172e701e3111dcf9a') in 0.010016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.768222 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8899d8aa0de1bd7d1cf32baec83975') in 0.010204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.411308 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40561092db5e5749430dad999472b21') in 0.010063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.999922 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa091385382a6673112079be4c36e0e1') in 0.010180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.593731 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ecb29930046e65e6402ed612ba85d8') in 0.010797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.010285 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d166c4f809480dfba8858cb61fa41c2') in 0.006458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.203788 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830eabcb013f0805530e176329b06584') in 0.014042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.182165 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bd232f8802b50b3da767d9fa1cfcba7') in 0.009533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.388567 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8733217372d2230019d7288874eb84bb') in 0.009494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.021514 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf3cd32d7f413416df1d75897d16877') in 0.010183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.598985 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94feb52b1a9e84989959baea74243d55') in 0.011014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.000498 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707c24278d755361a6afa9b1e1d4188a') in 0.010597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.216795 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a211a554068524df2d49d93f18f8e00') in 0.011525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.601888 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c716cf448d6d482e50207eb31f052c68') in 0.006888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.009511 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf2d1383c40cab139a3585e293e9136') in 0.014285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.391221 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13de58745da4b366c5f479c0291d817') in 0.011157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.177926 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f90d34acf41bd1da405ad8458d164d') in 0.009535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.804870 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff58a96aa20c329482b9f024dbf28ad') in 0.011805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.601976 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4606327b0c1b5af1469d6cb40efa1d3c') in 0.013522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.398462 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7c840af2e27d6d406583f1ef2a30162') in 0.011545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.394159 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca141d434b4da0080e117e83d33d99b7') in 0.010978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.587493 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7df7065355d524d9b4cda685146eee') in 0.006602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.416769 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9ed7039da3b4da08a5e09226495b7e') in 0.015509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.789403 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941248711850584fd06bf07b24b4ad31') in 0.009628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.404133 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6ff928462201ba99d6fbf1ced29d87') in 0.011298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.587351 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc03fac9886baba4fabddc8fe2f5ffe') in 0.009674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.226607 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a775b6ca6cbad8feb6f8b6704b906b') in 0.010992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.413198 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6302df0627aca3a906ed5281e1caa3ee') in 0.011354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.590541 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '425a3f5e0770f7aef0a8fb1d014bec66') in 0.010974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.762652 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08e0089243e978406b2263cfdd081c1') in 0.010158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.265708 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0edea633c01a5800ae25960c61b4be5') in 0.016246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.392952 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc67addc573a19c3d3178d322b2cdf86') in 0.014508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.575060 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8719a184f7ac7f12143c314a1f785d7') in 0.011259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.397844 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0245da08164fb64707dd51c4e43a3b80') in 0.012842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.395540 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c88b043d61900f5b92ac4016e9c590') in 0.010211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.591781 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab93abb0cc0ab6e103bcd3e057b31691') in 0.009762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.045948 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '478dfa203a381da100bc8b5d0511297b') in 0.010684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.163153 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102bc00d884de17011d2e5a274a5992b') in 0.013495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.247123 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e597ca0a7f107082d1ed29d4c68f5915') in 0.015064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.430755 seconds.
+  path: Assets/Prefabs/World/Torch-Green_0.prefab
+  artifactKey: Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Green_0.prefab using Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91872c0e092ff92644423455fb981d72') in 0.020916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.227621 seconds.
+  path: Assets/Prefabs/World/Torch-Green_0.prefab
+  artifactKey: Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Green_0.prefab using Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c19f18d2684aae78cf2ce7224d37617') in 0.026866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.017816 seconds.
+  path: Assets/Prefabs/World/Torch-Green_0.prefab
+  artifactKey: Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Green_0.prefab using Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf0ad3e522e03d378777e746692f3a8c') in 0.011165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.741527 seconds.
+  path: Assets/Prefabs/World/Torch-Green_0.prefab
+  artifactKey: Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Green_0.prefab using Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9cf120a9d1c1aea1c8a0fc2187e8a15') in 0.011542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.433970 seconds.
+  path: Assets/Prefabs/World/Torch-Green_0.prefab
+  artifactKey: Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Green_0.prefab using Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49af01e0a26602cbf4bd8088f912957a') in 0.013969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.551748 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c92d8f0dbc027feb538b653f4c1bc47') in 0.016440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.396558 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f76b7fcbb79700b504ed651bd2da8a68') in 0.011196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.489109 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c6900308ccb658049f3d8a670f2729') in 0.019417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.278040 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225079bb77fa98a80eed35d42626c9df') in 0.012264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.269353 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2d43abf41c3a0d4a654b336739ff91') in 0.011410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.684848 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ffe15945d7b49ea5a6cf6bedce0cae1') in 0.020900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.880159 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a978ef809fcd24d1750bb2758651d3') in 0.011291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.636862 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38db8cb2efda1a714b40a540ca1f2e05') in 0.014077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.501334 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82f13f7da95211b786261e6793a8a9f1') in 0.011300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.612042 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a75a3a3288217ce1d23d1d0eb20f1ae6') in 0.019153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.649667 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a15f6e1586f9fdf90af228ec8a9291c') in 0.012004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.957829 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3823dd0ebfc5b19812cf8ae06c240a53') in 0.011703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.212027 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b79d17891b6957ff5bcdb0e25d37c5c') in 0.012885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.143850 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d4177664a5f002a065d22a5b0b3e30') in 0.012918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.782663 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbfb6fc84daacad2ae115761093c8c9a') in 0.011811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.012460 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcabcf49fa2187f7b711b6599edfd9b5') in 0.010747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.246102 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d5a3a1083345a85f31dbafa801a9585') in 0.010839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.302901 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926ea5d3b7b58493b6c914594461b67c') in 0.011709 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006731 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.189 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1189ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (975ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (330ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (348ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3958 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.4 MB.
+System memory in use after: 168.0 MB.
+
+Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 4523.
+Total: 5.013700 ms (FindLiveObjects: 0.296300 ms CreateObjectMapping: 0.182600 ms MarkObjects: 3.074200 ms  DeleteObjects: 1.459700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 83.357764 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '602b6fd00b4f39e68c3ec5b881eaf3d3') in 0.154790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.133986 seconds.
+  path: Assets/Prefabs/World/Torch-Wall_0.prefab
+  artifactKey: Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall_0.prefab using Guid(3182b696d7fff974096a412809d1128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42289007377a2fa3ae4bdd13eb69febd') in 0.012408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.088392 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77c6bc3100bf34e44ec040c0d06e4db') in 0.012318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.672667 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca6515ea78c616ddd2cb7c530a39ac6') in 0.014201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.811820 seconds.
+  path: Assets/Prefabs/World/Torch-Green_0.prefab
+  artifactKey: Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Green_0.prefab using Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5190d8aeb9c78e7006f400efdb3d0fb') in 0.024178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.985171 seconds.
+  path: Assets/Prefabs/World/Torch-Green_0.prefab
+  artifactKey: Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Green_0.prefab using Guid(3b85682cf05f18c4ea6336258c2eef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355b80ec126d20752281b5392120e94f') in 0.012806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.082968 seconds.
+  path: Assets/Prefabs/World/Torch-Wall-Green_0.prefab
+  artifactKey: Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Torch-Wall-Green_0.prefab using Guid(3da31f78b4a9b1147bc84112f5873a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db9d2bd2d65d177c56b26c89a59489c') in 0.013660 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006059 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.217 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1217ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1020ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (333ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (381ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (248ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3957 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.4 MB.
+System memory in use after: 168.1 MB.
+
+Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 4562.
+Total: 5.463600 ms (FindLiveObjects: 0.316700 ms CreateObjectMapping: 0.198000 ms MarkObjects: 3.265200 ms  DeleteObjects: 1.682400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 120.405922 seconds.
+  path: Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab
+  artifactKey: Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Standing Torch/DestructionParticlesGreen.prefab using Guid(2ff2a47e52a407b48834c490954f6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd561cdaf3ffe390d23947eeebcb3527') in 0.145627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.468392 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab
+  artifactKey: Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticles2.prefab using Guid(815ae4f84f0f1774c9dff5bed34b3b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0acbd37a623bc83259c1fd7374928939') in 0.021278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.393511 seconds.
+  path: Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab
+  artifactKey: Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/World/Destructables/Wall Torch/DestructionParticlesGreen2.prefab using Guid(322bd4471533e69488ff333b954277cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a77aa313849c42e884ee9ce4d049edc') in 0.016029 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014117 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.755 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2755ms)
+		BeginReloadAssembly (246ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (2365ms)
+			LoadAssemblies (251ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (591ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (1074ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (167ms)
+				ProcessInitializeOnLoadAttributes (871ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (157ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3957 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.7 MB.
+System memory in use after: 168.3 MB.
+
+Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 4601.
+Total: 11.023500 ms (FindLiveObjects: 0.801400 ms CreateObjectMapping: 0.621300 ms MarkObjects: 6.951000 ms  DeleteObjects: 2.648300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006019 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.174 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1175ms)
+		BeginReloadAssembly (159ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (952ms)
+			LoadAssemblies (152ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (311ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (345ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3957 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.6 MB.
+System memory in use after: 168.3 MB.
+
+Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 4604.
+Total: 5.823400 ms (FindLiveObjects: 0.342500 ms CreateObjectMapping: 0.143900 ms MarkObjects: 3.459200 ms  DeleteObjects: 1.877000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
