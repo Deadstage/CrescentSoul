@@ -16,29 +16,21 @@ public class Death : CoreComponent
 
     private Rigidbody2D deathRB;
 
+    public ItemDrop itemDrop;
+
+    private void OnEnable()
+    {
+        if (itemDrop == null)
+        {
+            itemDrop = GameObject.Find("ItemDropManager").GetComponent<ItemDrop>();
+        }
+    }
 
     public override void Init(Core core)
     {
         base.Init(core);
-
         Stats.HealthZero += Die;
     }
-
-    // private void OnEnable()
-    // {
-    //     if (Stats != null)
-    //     {
-    //         Stats.HealthZero += Die;
-    //     }
-    // }
-
-    // private void OnDisable()
-    // {
-    //     if (Stats != null)
-    //     {
-    //         Stats.HealthZero -= Die;
-    //     }
-    // }
 
     public void Die()
     {
@@ -48,8 +40,7 @@ public class Death : CoreComponent
         deathRB.constraints = RigidbodyConstraints2D.FreezePosition;
 
         BoxCollider2D[] colliders = core.transform.parent.gameObject.GetComponentsInChildren<BoxCollider2D>();
-
-        foreach(BoxCollider2D collider2D in colliders)
+        foreach (BoxCollider2D collider2D in colliders)
         {
             collider2D.enabled = false;
         }
@@ -99,5 +90,58 @@ public class Death : CoreComponent
             Movement.SetVelocityX(0f);
         }
 
+        int coinAmount = 0;
+        if (core.transform.parent.gameObject.GetComponent<Enemy1>() != null)
+        {
+            coinAmount = Random.Range(10, 21);
+        }
+        else if (core.transform.parent.gameObject.GetComponent<Enemy2>() != null)
+        {
+            coinAmount = Random.Range(20, 41);
+        }
+        else if (core.transform.parent.gameObject.GetComponent<Enemy3>() != null)
+        {
+            coinAmount = Random.Range(30, 61);
+        }
+        else if (core.transform.parent.gameObject.GetComponent<Enemy4>() != null)
+        {
+            coinAmount = Random.Range(40, 81);
+        }
+        else if (core.transform.parent.gameObject.GetComponent<Enemy5>() != null)
+        {
+            coinAmount = Random.Range(50, 101);
+        }
+        else if (core.transform.parent.gameObject.GetComponent<Enemy6>() != null)
+        {
+            coinAmount = Random.Range(60, 121);
+        }
+
+        if (itemDrop != null)
+        {
+            Vector3 spawnPosition = core.transform.parent.gameObject.transform.position;
+            for (int i = 0; i < coinAmount; i++)
+            {
+                itemDrop.DropItem(spawnPosition, "Coin");
+            }
+        }
+
+        if (itemDrop != null)
+        {
+            Vector3 spawnPosition = core.transform.parent.gameObject.transform.position;
+            float rand = Random.Range(0f, 1f);
+            if (rand < 0.05f)  // 5% chance
+            {
+                itemDrop.DropItem(spawnPosition, "LargeHealth");
+            }
+            else if (rand < 0.15f)  // 10% chance
+            {
+                itemDrop.DropItem(spawnPosition, "MediumHealth");
+            }
+            else if (rand < 0.3f)  // 15% chance
+            {
+                itemDrop.DropItem(spawnPosition, "SmallHealth");
+            }
+            // 70% chance to drop nothing
+        }
     }
 }

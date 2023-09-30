@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDead: 0
+  itemDrop: {fileID: 5486433512850534730, guid: 3bf7e65c9932f8d4898c0d98770159ca, type: 3}
 --- !u!1 &618803476
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,10 +375,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxKnockbackTime: 0.2
   damageParticles: {fileID: 5091670522101146816, guid: 04a8ecd7f4f3a4e4988e315b22adda64, type: 3}
+  playerStats: {fileID: 0}
   maxDamageImmuneTime: 1
   maxKnockbackImmuneTime: 1
   canImmuneDamage: 0
   canImmuneKnockback: 0
+  audioSource: {fileID: 0}
+  deflectedSound: {fileID: 0}
 --- !u!61 &1021110187
 BoxCollider2D:
   m_ObjectHideFlags: 0

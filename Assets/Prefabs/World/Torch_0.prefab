@@ -293,6 +293,7 @@ MonoBehaviour:
   pointLight2D: {fileID: 4045827835163561156}
   torchSoundAmbience: {fileID: 1370464589525659383}
   torchSprite: {fileID: 4045827833330637712}
+  itemDrop: {fileID: 5486433512850534730, guid: 3bf7e65c9932f8d4898c0d98770159ca, type: 3}
 --- !u!114 &4592963510056158243
 MonoBehaviour:
   m_ObjectHideFlags: 0

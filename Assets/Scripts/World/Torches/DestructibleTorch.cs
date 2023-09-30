@@ -5,9 +5,18 @@ public class DestructibleTorch : MonoBehaviour, IDamageable
 {
     public GameObject destructionParticles;
     public float destructionForce = 5f;
-    public GameObject pointLight2D; // Reference to the Point Light 2D child GameObject
-    public GameObject torchSoundAmbience; // Reference to the Torch Sound Ambience child GameObject
-    public SpriteRenderer torchSprite; // Reference to the SpriteRenderer component on the main GameObject
+    public GameObject pointLight2D;
+    public GameObject torchSoundAmbience;
+    public SpriteRenderer torchSprite;
+    public ItemDrop itemDrop;
+
+    private void OnEnable()
+    {
+        if (itemDrop == null)
+        {
+            itemDrop = GameObject.Find("ItemDropManager").GetComponent<ItemDrop>();
+        }
+    }
 
     public void Damage(float amount)
     {
@@ -16,12 +25,11 @@ public class DestructibleTorch : MonoBehaviour, IDamageable
 
     private void DestroyTorch()
     {
-        // Deactivate visual and auditory components
         pointLight2D.SetActive(false);
         torchSoundAmbience.SetActive(false);
         torchSprite.enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
 
-        // Instantiate the destruction particles and apply force
         GameObject particles = Instantiate(destructionParticles, transform.position, Quaternion.identity);
         foreach (Transform child in particles.transform)
         {
@@ -32,11 +40,22 @@ public class DestructibleTorch : MonoBehaviour, IDamageable
             }
         }
 
-        // Start the coroutine to despawn the pieces
-        StartCoroutine(DespawnPieces(particles));
+        itemDrop.DropItem(transform.position, "Coin");
 
-        // Schedule the deactivation of the main torch GameObject
-        Invoke("DeactivateTorch", 3f);
+        float rand = Random.Range(0f, 1f);
+        if (rand < 0.01f)  // 1% chance
+        {
+            itemDrop.DropItem(transform.position, "LargeHealth");
+        }
+        else if (rand < 0.04f)  // 3% chance
+        {
+            itemDrop.DropItem(transform.position, "MediumHealth");
+        }
+        else if (rand < 0.1f)  // 6% chance
+        {
+            itemDrop.DropItem(transform.position, "SmallHealth");
+        }
+        // 90% chance to drop nothing
     }
 
     private IEnumerator DespawnPieces(GameObject particles)
@@ -51,6 +70,7 @@ public class DestructibleTorch : MonoBehaviour, IDamageable
         pointLight2D.SetActive(true);
         torchSoundAmbience.SetActive(true);
         torchSprite.enabled = true;
+        GetComponent<BoxCollider2D>().enabled = true;
     }
 
     private void DeactivateTorch()

@@ -18,4 +18,5 @@ public class SaveData
     public int saveNumber; // to store the save number
     public List<string> collectedMemoryIDs = new List<string>(); // to store the collected memory IDs
     public List<UnlockedRoom> unlockedRooms = new List<UnlockedRoom>(); // to store the unlocked rooms
+    public int currentCoins;  // to store the current coins
 }

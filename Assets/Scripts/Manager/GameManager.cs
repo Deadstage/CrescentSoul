@@ -119,7 +119,6 @@ public class GameManager : MonoBehaviour
 
             // Get the list of unlocked rooms and save it to SaveData
         TeleportManager teleportManager = FindObjectOfType<TeleportManager>();
-
         if (teleportManager != null)
         {
             data.unlockedRooms = teleportManager.GetUnlockedRooms();
@@ -128,6 +127,17 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.LogError("TeleportManager not found");
+        }
+
+        // Get the CurrencyManager and save the current coin count
+        CurrencyManager currencyManager = FindObjectOfType<CurrencyManager>();
+        if (currencyManager != null)
+        {
+            data.currentCoins = currencyManager.currentCoins;
+        }
+        else
+        {
+            Debug.LogError("CurrencyManager not found");
         }
 
         int highestSaveNumber = GetHighestSaveNumber();
@@ -209,6 +219,18 @@ public class GameManager : MonoBehaviour
                         {
                             Debug.LogError("TeleportManager not found");
                         }
+
+                            // Load the player's coin count and update CurrencyManager
+                            CurrencyManager currencyManager = FindObjectOfType<CurrencyManager>();
+                            if (currencyManager != null)
+                            {
+                                currencyManager.currentCoins = data.currentCoins;
+                                currencyManager.UpdateCoinUI();  // Update the UI to reflect the loaded coin count
+                            }
+                            else
+                            {
+                                Debug.LogError("CurrencyManager not found");
+                            }
                     }
                     else
                     {
