@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
         // Find and assign the Player object reference when the game scene is loaded
         StartCoroutine(AssignPlayerReference());
 
+        //Time setters just for testing the game at lower speeds
         //Time.timeScale = 0.1f;
         //Time.timeScale = 0.5f;
         //Time.timeScale = 0.7f;
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "CS")  // Replace with your actual game scene name
+        if (scene.name == "CS")
         {
             StartCoroutine(AssignPlayerReference());
         }
@@ -140,6 +141,27 @@ public class GameManager : MonoBehaviour
             Debug.LogError("CurrencyManager not found");
         }
 
+        KeyInventory keyInventory = FindObjectOfType<KeyInventory>();
+        if (keyInventory != null)
+        {
+            List<KeyItem> allKeys = keyInventory.GetAllKeys();
+            data.collectedKeys = allKeys;
+        }
+        else
+        {
+            Debug.LogError("KeyInventory not found");
+        }
+
+        DoorManager doorManager = FindObjectOfType<DoorManager>();
+        if (doorManager != null)
+        {
+            data.openedDoors = doorManager.GetOpenedDoors();
+        }
+        else
+        {
+            Debug.LogError("DoorManager not found");
+        }
+
         int highestSaveNumber = GetHighestSaveNumber();
         data.saveNumber = highestSaveNumber + 1;
 
@@ -204,10 +226,12 @@ public class GameManager : MonoBehaviour
                         {
                             memoriesManager.SetCollectedMemoryIDs(data.collectedMemoryIDs);
                         }
+
                         else
                         {
                             Debug.LogError("MemoriesManager not found");
                         }
+
 
                         // Load the list of unlocked rooms and update TeleportManager
                         TeleportManager teleportManager = FindObjectOfType<TeleportManager>();
@@ -215,23 +239,54 @@ public class GameManager : MonoBehaviour
                         {
                             teleportManager.SetUnlockedRooms(data.unlockedRooms);
                         }
+
                         else
                         {
                             Debug.LogError("TeleportManager not found");
                         }
 
-                            // Load the player's coin count and update CurrencyManager
-                            CurrencyManager currencyManager = FindObjectOfType<CurrencyManager>();
-                            if (currencyManager != null)
+
+                        // Load the player's coin count and update CurrencyManager
+                        CurrencyManager currencyManager = FindObjectOfType<CurrencyManager>();
+                        if (currencyManager != null)
+                        {
+                            currencyManager.currentCoins = data.currentCoins;
+                            currencyManager.UpdateCoinUI();  // Update the UI to reflect the loaded coin count
+                        }
+
+                        else
+                        {
+                            Debug.LogError("CurrencyManager not found");
+                        }
+
+
+                        KeyInventory keyInventory = FindObjectOfType<KeyInventory>();
+                        if (keyInventory != null)
+                        {
+                            foreach (KeyItem keyItem in data.collectedKeys)
                             {
-                                currencyManager.currentCoins = data.currentCoins;
-                                currencyManager.UpdateCoinUI();  // Update the UI to reflect the loaded coin count
+                                keyInventory.AddKey(keyItem.color, keyItem.sprite, keyItem.description);
                             }
-                            else
-                            {
-                                Debug.LogError("CurrencyManager not found");
-                            }
+                        }
+
+                        else
+                        {
+                            Debug.LogError("KeyInventory not found");
+                        }
+
+
+                        DoorManager doorManager = FindObjectOfType<DoorManager>();
+                        if (doorManager != null)
+                        {
+                            doorManager.SetOpenedDoors(data.openedDoors);
+                            doorManager.UpdateDoorStates();  // Add this line
+                        }
+                        else
+                        {
+                            Debug.LogError("DoorManager not found");
+                        }
                     }
+
                     else
                     {
                         Debug.LogError("Player object or stats component is null");

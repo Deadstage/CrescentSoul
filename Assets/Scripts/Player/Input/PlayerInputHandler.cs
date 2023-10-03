@@ -56,6 +56,7 @@ public class PlayerInputHandler : MonoBehaviour
     public ElevatorTopButton elevatorTopButton; // Reference to the ElevatorTopButton script
     public ElevatorMiddleButton elevatorMiddleButton; // Reference to the ElevatorMiddleButton script
     public ElevatorBottomButton elevatorBottomButton; // Reference to the ElevatorBottomButton script
+    public GameObject inventoryMenu; // Reference to the Inventory Menu GameObject
 
     private void Start()
     {
@@ -427,6 +428,19 @@ public class PlayerInputHandler : MonoBehaviour
             Debug.LogError("Memories Menu not assigned in PlayerInputHandler");
         }
     }
+
+    public void OpenInventoryMenu()
+{
+    if (inventoryMenu != null)
+    {
+        pauseMenu.SetActive(false); // Hide the pause menu
+        inventoryMenu.SetActive(true); // Show the inventory menu
+    }
+    else
+    {
+        Debug.LogError("Inventory Menu not assigned in PlayerInputHandler");
+    }
+}
 }
 
 
