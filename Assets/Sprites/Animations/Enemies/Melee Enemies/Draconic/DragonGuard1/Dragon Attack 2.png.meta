@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: f1601c080bb904348a7fc19cdee4439d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3931792185332345229
+    second: Dragon Attack 2_0
+  - first:
+      213: 1643704883808794539
+    second: Dragon Attack 2_1
+  - first:
+      213: 2538321490044572407
+    second: Dragon Attack 2_2
+  - first:
+      213: 4319275188470543734
+    second: Dragon Attack 2_3
+  - first:
+      213: -5877299444249943136
+    second: Dragon Attack 2_4
+  - first:
+      213: 659824390803274753
+    second: Dragon Attack 2_5
+  - first:
+      213: -4737469485967039548
+    second: Dragon Attack 2_6
+  - first:
+      213: -2943314988261227420
+    second: Dragon Attack 2_7
+  - first:
+      213: -2334755147958171780
+    second: Dragon Attack 2_8
+  - first:
+      213: 274822995131022401
+    second: Dragon Attack 2_9
+  - first:
+      213: 1448738398103847804
+    second: Dragon Attack 2_10
+  - first:
+      213: -1401813547431617423
+    second: Dragon Attack 2_11
+  - first:
+      213: -1597153750380876760
+    second: Dragon Attack 2_12
+  - first:
+      213: 8661279614360902486
+    second: Dragon Attack 2_13
+  - first:
+      213: 7327614219714998885
+    second: Dragon Attack 2_14
+  - first:
+      213: -3079991226356462328
+    second: Dragon Attack 2_15
+  - first:
+      213: -6331734732752646184
+    second: Dragon Attack 2_16
+  - first:
+      213: 1871314222571236960
+    second: Dragon Attack 2_17
+  - first:
+      213: -5443770800279792711
+    second: Dragon Attack 2_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dragon Attack 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376db96c6d77f69c0800000000000000
+      internalID: -3931792185332345229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_1
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba77ff212ec9fc610800000000000000
+      internalID: 1643704883808794539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_2
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2d8d352fde93320800000000000000
+      internalID: 2538321490044572407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_3
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675f1ff36e521fb30800000000000000
+      internalID: 4319275188470543734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_4
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3a1e27b43af6ea0800000000000000
+      internalID: -5877299444249943136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_5
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cb7fb99ca282900800000000000000
+      internalID: 659824390803274753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_6
+      rect:
+        serializedVersion: 2
+        x: 3108
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3aeaa4a90214eb0800000000000000
+      internalID: -4737469485967039548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_7
+      rect:
+        serializedVersion: 2
+        x: 3626
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4644b9ecc9e3727d0800000000000000
+      internalID: -2943314988261227420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_8
+      rect:
+        serializedVersion: 2
+        x: 4144
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7740702098499fd0800000000000000
+      internalID: -2334755147958171780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_9
+      rect:
+        serializedVersion: 2
+        x: 4662
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cb4e8de0e50d300800000000000000
+      internalID: 274822995131022401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_10
+      rect:
+        serializedVersion: 2
+        x: 5180
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73c277b5e3fa1410800000000000000
+      internalID: 1448738398103847804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_11
+      rect:
+        serializedVersion: 2
+        x: 5698
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c12087102cb8ce0800000000000000
+      internalID: -1401813547431617423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_12
+      rect:
+        serializedVersion: 2
+        x: 6216
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c6dd84025c5d9e0800000000000000
+      internalID: -1597153750380876760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_13
+      rect:
+        serializedVersion: 2
+        x: 6734
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b505a7beb033870800000000000000
+      internalID: 8661279614360902486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_14
+      rect:
+        serializedVersion: 2
+        x: 7252
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562b6393f4ae0b560800000000000000
+      internalID: 7327614219714998885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_15
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d04b15c4ca145d0800000000000000
+      internalID: -3079991226356462328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_16
+      rect:
+        serializedVersion: 2
+        x: 8288
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df864abec82128a0800000000000000
+      internalID: -6331734732752646184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_17
+      rect:
+        serializedVersion: 2
+        x: 8806
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06eae7bee5e38f910800000000000000
+      internalID: 1871314222571236960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Attack 2_18
+      rect:
+        serializedVersion: 2
+        x: 9324
+        y: 0
+        width: 518
+        height: 272
+      alignment: 9
+      pivot: {x: 0.4895481, y: 0.4695351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3ddaaac47d374b0800000000000000
+      internalID: -5443770800279792711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

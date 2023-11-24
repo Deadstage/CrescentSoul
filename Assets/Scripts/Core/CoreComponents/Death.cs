@@ -90,6 +90,13 @@ public class Death : CoreComponent
             Movement.SetVelocityX(0f);
         }
 
+        Enemy7 enemy7 = core.transform.parent.gameObject.GetComponent<Enemy7>();
+        if (enemy7 != null){
+            Combat.canImmuneDamage = true;
+            enemy7.stateMachine.ChangeState(enemy7.deadState);
+            Movement.SetVelocityX(0f);
+        }
+
         int coinAmount = 0;
         if (core.transform.parent.gameObject.GetComponent<Enemy1>() != null)
         {
@@ -114,6 +121,10 @@ public class Death : CoreComponent
         else if (core.transform.parent.gameObject.GetComponent<Enemy6>() != null)
         {
             coinAmount = Random.Range(60, 121);
+        }
+        else if (core.transform.parent.gameObject.GetComponent<Enemy7>() != null)
+        {
+            coinAmount = Random.Range(70, 141);
         }
 
         if (itemDrop != null)

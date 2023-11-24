@@ -24,6 +24,8 @@ public class SceneDictionary : MonoBehaviour
 
     public Enemy6[] enemy6;
 
+    public Enemy7[] enemy7;
+
     public bool isEngaged = false;
 
     public MashBar mashBar;
@@ -55,6 +57,10 @@ public class SceneDictionary : MonoBehaviour
         hScene.Add(20, "Maid4Scene1_1");
         hScene.Add(21, "Maid4Scene2_1");
         hScene.Add(22, "Maid4Scene3_1");
+
+        hScene.Add(24, "DG1Scene1_1");
+        hScene.Add(25, "DG1Scene2_1");
+        hScene.Add(26, "DG1Scene3_1");
         
 
         anim = GetComponent<Animator>();
@@ -89,6 +95,11 @@ public class SceneDictionary : MonoBehaviour
             Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), item.GetComponent<Collider2D>());
         }
 
+        foreach(var item in enemy7)
+        {
+            Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), item.GetComponent<Collider2D>());
+        }
+
         mashBar.gameObject.SetActive(false);
 
     }
@@ -105,6 +116,10 @@ public class SceneDictionary : MonoBehaviour
             enemy1[0].isEngaged = false;
             enemy2[0].isEngaged = false;
             enemy3[0].isEngaged = false;
+            enemy4[0].isEngaged = false;
+            enemy5[0].isEngaged = false;
+            enemy6[0].isEngaged = false;
+            enemy7[0].isEngaged = false;
             player.isEngaged = false;
             this.isEngaged = false;
             anim.SetInteger("hAnim", -1);
@@ -136,6 +151,42 @@ public class SceneDictionary : MonoBehaviour
             if(enemy3[0].isEngaged == true)
             {
                 foreach(var item in enemy3)
+                {
+                    item.EnemyDisengager();
+                    item.EnemyDisengaged();
+                }
+            }
+
+            if(enemy4[0].isEngaged == true)
+            {
+                foreach(var item in enemy4)
+                {
+                    item.EnemyDisengager();
+                    item.EnemyDisengaged();
+                }
+            }
+
+            if(enemy5[0].isEngaged == true)
+            {
+                foreach(var item in enemy5)
+                {
+                    item.EnemyDisengager();
+                    item.EnemyDisengaged();
+                }
+            }
+
+            if(enemy6[0].isEngaged == true)
+            {
+                foreach(var item in enemy6)
+                {
+                    item.EnemyDisengager();
+                    item.EnemyDisengaged();
+                }
+            }
+
+            if(enemy7[0].isEngaged == true)
+            {
+                foreach(var item in enemy7)
                 {
                     item.EnemyDisengager();
                     item.EnemyDisengaged();
@@ -552,6 +603,72 @@ public class SceneDictionary : MonoBehaviour
                 }
                 
                 changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 17, 117, 217, 8.63f));
+            }
+        }
+    }
+
+    public void DG1Scene()
+    {
+        int dg1Scene = rnd.Next(24, 27);
+        //Debug.Log(hScene[dg1Scene]);
+
+        if (dg1Scene.Equals(24))
+        {
+            isEngaged = true;
+            scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
+
+            anim.SetInteger("hAnim", 18);
+            //Debug.Log("playing first scene!");
+
+            if (isEngaged == true)
+            {
+                player.isEngaged = true;
+                foreach(var item in enemy7)
+                {
+                    item.EnemyEngager();
+                }
+                
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 18, 118, 218, 6.50f));
+            }
+        }
+
+        if (dg1Scene.Equals(25))
+        {
+            isEngaged = true;
+            scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
+            
+            anim.SetInteger("hAnim", 19);
+            //Debug.Log("playing second scene!");
+
+            if (isEngaged == true)
+            {
+                player.isEngaged = true;
+                foreach(var item in enemy7)
+                {
+                    item.EnemyEngager();
+                }
+                
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 19, 119, 219, 6.00f));
+            }
+        }
+
+        if (dg1Scene.Equals(26))
+        {
+            isEngaged = true;
+            scenePlayer.transform.position = player.transform.position + new Vector3(0, -1, 0);
+            
+            anim.SetInteger("hAnim", 20);
+            //Debug.Log("playing third scene!");
+
+            if (isEngaged == true)
+            {
+                player.isEngaged = true;
+                foreach(var item in enemy7)
+                {
+                    item.EnemyEngager();
+                }
+                
+                changeAnimationCoroutine = StartCoroutine(ChangeAnimationPhaseAfterDelay(5, 20, 120, 220, 6f));
             }
         }
     }
